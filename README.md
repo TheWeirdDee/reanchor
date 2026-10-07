@@ -14,7 +14,7 @@ Built for the Bitget AI Base Camp Hackathon S2, track AI Trading Desk, sub-theme
 
 ## Demo
 
-[Watch the 98-second walkthrough](evidence/demo/reanchor-demo.mp4) (1920x1080, narrated with captions). It starts from a fresh intention and shows, on the real product: extraction, confirmation, the historical stress test, the deterministic action and why it was taken, the decision-time boundary and the later outcome, sources, live Bitget data through the Agent Hub MCP, and the disclosed data MCP outage. Nothing in it is mocked.
+[Watch the 98-second walkthrough](https://www.youtube.com/watch?v=C0t3rhKuGpo) (1920x1080, narrated with captions). It starts from a fresh intention and shows, on the real product: extraction, confirmation, the historical stress test, the deterministic action and why it was taken, the decision-time boundary and the later outcome, sources, live Bitget data through the Agent Hub MCP, and the disclosed data MCP outage. Nothing in it is mocked.
 
 ## How it works
 
