@@ -2,11 +2,11 @@
   "config": {
     "argv": [
       "C:\\Program Files\\nodejs\\node.exe",
-      "C:\\Users\\DELL\\Desktop\\reanchor\\node_modules\\@playwright\\test\\cli.js",
+      "<project>\\node_modules\\@playwright\\test\\cli.js",
       "test"
     ],
-    "configFile": "C:\\Users\\DELL\\Desktop\\reanchor\\playwright.config.ts",
-    "rootDir": "C:/Users/DELL/Desktop/reanchor/tests/e2e",
+    "configFile": "<project>\\playwright.config.ts",
+    "rootDir": "<project>/tests/e2e",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": false,
@@ -22,7 +22,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/DELL/Desktop/reanchor/test-results",
+        "outputDir": "<project>/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -30,7 +30,7 @@
         },
         "id": "desktop",
         "name": "desktop",
-        "testDir": "C:/Users/DELL/Desktop/reanchor/tests/e2e",
+        "testDir": "<project>/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -38,7 +38,7 @@
         "timeout": 90000
       },
       {
-        "outputDir": "C:/Users/DELL/Desktop/reanchor/test-results",
+        "outputDir": "<project>/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -46,7 +46,7 @@
         },
         "id": "tablet",
         "name": "tablet",
-        "testDir": "C:/Users/DELL/Desktop/reanchor/tests/e2e",
+        "testDir": "<project>/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -54,7 +54,7 @@
         "timeout": 90000
       },
       {
-        "outputDir": "C:/Users/DELL/Desktop/reanchor/test-results",
+        "outputDir": "<project>/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -62,7 +62,7 @@
         },
         "id": "mobile",
         "name": "mobile",
-        "testDir": "C:/Users/DELL/Desktop/reanchor/tests/e2e",
+        "testDir": "<project>/tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -1139,7 +1139,7 @@
                   "type": "skip",
                   "description": "Model calls limited to one width to respect free-tier quota; explanations are cached server-side",
                   "location": {
-                    "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                    "file": "<project>\\tests\\e2e\\flows.spec.ts",
                     "line": 269,
                     "column": 8
                   }
@@ -1164,7 +1164,7 @@
                       "type": "skip",
                       "description": "Model calls limited to one width to respect free-tier quota; explanations are cached server-side",
                       "location": {
-                        "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                        "file": "<project>\\tests\\e2e\\flows.spec.ts",
                         "line": 269,
                         "column": 8
                       }
@@ -1363,7 +1363,7 @@
                   "type": "skip",
                   "description": "Iterates all five widths itself",
                   "location": {
-                    "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                    "file": "<project>\\tests\\e2e\\flows.spec.ts",
                     "line": 396,
                     "column": 8
                   }
@@ -1388,7 +1388,7 @@
                       "type": "skip",
                       "description": "Iterates all five widths itself",
                       "location": {
-                        "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                        "file": "<project>\\tests\\e2e\\flows.spec.ts",
                         "line": 396,
                         "column": 8
                       }
@@ -1417,7 +1417,7 @@
                   "type": "skip",
                   "description": "Rendering check; one width is enough",
                   "location": {
-                    "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                    "file": "<project>\\tests\\e2e\\flows.spec.ts",
                     "line": 427,
                     "column": 8
                   }
@@ -1442,7 +1442,7 @@
                       "type": "skip",
                       "description": "Rendering check; one width is enough",
                       "location": {
-                        "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                        "file": "<project>\\tests\\e2e\\flows.spec.ts",
                         "line": 427,
                         "column": 8
                       }
@@ -1845,7 +1845,7 @@
                   "type": "skip",
                   "description": "Model calls limited to one width to respect free-tier quota; explanations are cached server-side",
                   "location": {
-                    "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                    "file": "<project>\\tests\\e2e\\flows.spec.ts",
                     "line": 269,
                     "column": 8
                   }
@@ -1870,7 +1870,7 @@
                       "type": "skip",
                       "description": "Model calls limited to one width to respect free-tier quota; explanations are cached server-side",
                       "location": {
-                        "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                        "file": "<project>\\tests\\e2e\\flows.spec.ts",
                         "line": 269,
                         "column": 8
                       }
@@ -2069,7 +2069,7 @@
                   "type": "skip",
                   "description": "Iterates all five widths itself",
                   "location": {
-                    "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                    "file": "<project>\\tests\\e2e\\flows.spec.ts",
                     "line": 396,
                     "column": 8
                   }
@@ -2094,7 +2094,7 @@
                       "type": "skip",
                       "description": "Iterates all five widths itself",
                       "location": {
-                        "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                        "file": "<project>\\tests\\e2e\\flows.spec.ts",
                         "line": 396,
                         "column": 8
                       }
@@ -2123,7 +2123,7 @@
                   "type": "skip",
                   "description": "Rendering check; one width is enough",
                   "location": {
-                    "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                    "file": "<project>\\tests\\e2e\\flows.spec.ts",
                     "line": 427,
                     "column": 8
                   }
@@ -2148,7 +2148,7 @@
                       "type": "skip",
                       "description": "Rendering check; one width is enough",
                       "location": {
-                        "file": "C:\\Users\\DELL\\Desktop\\reanchor\\tests\\e2e\\flows.spec.ts",
+                        "file": "<project>\\tests\\e2e\\flows.spec.ts",
                         "line": 427,
                         "column": 8
                       }
