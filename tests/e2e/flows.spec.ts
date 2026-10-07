@@ -386,7 +386,7 @@ test("metadata: title, description, social tags, icon and theme color on every p
   }
   const icon = await page.request.get("/icon.svg");
   expect(icon.status()).toBe(200);
-  expect(await icon.text()).toContain("M38 7 75 70H1z");
+  expect(await icon.text()).toContain("M12 8.6V18.6");
   expect((await page.request.get("/favicon.ico")).status()).toBe(404);
   const card = await page.request.get("/social-card");
   expect(card.headers()["content-type"]).toContain("image/png");
