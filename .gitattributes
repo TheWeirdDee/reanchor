@@ -1,0 +1,10 @@
+# Source, config and docs: stored and checked out with LF on every OS.
+* text=auto eol=lf
+
+# Saved data and evidence are hashed and recomputed byte for byte (data/manifest.json, npm run evidence:verify).
+# Never convert their line endings.
+data/** -text
+evidence/** -text
+
+*.png binary
+*.svg text eol=lf
