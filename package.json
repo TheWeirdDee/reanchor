@@ -1,0 +1,58 @@
+{
+  "name": "reanchor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "data:discover": "tsx scripts/discover.ts",
+    "data:ingest": "tsx scripts/ingest.ts",
+    "data:validate": "tsx scripts/validate-dataset.ts",
+    "data:replay": "tsx scripts/build-replay.ts",
+    "evidence:verify": "tsx scripts/verify-evidence.ts",
+    "data:all": "npm run data:discover && npm run data:ingest && npm run data:validate && npm run data:replay && npm run evidence:verify",
+    "data:mcp": "tsx scripts/ingest.ts --mcp-only",
+    "audit:g2g3": "tsx scripts/audit-g2-g3.ts",
+    "net:diagnose": "tsx scripts/diagnose-network.ts",
+    "model:check": "tsx --env-file-if-exists=.env.local scripts/model-check.ts",
+    "mcp:probe": "tsx scripts/mcp-probe.ts",
+    "agent:crosscheck": "tsx scripts/agent-mcp-crosscheck.ts",
+    "audit:all": "tsx scripts/audit-all.ts"
+  },
+  "dependencies": {
+    "@bitget-ai/bitget-agent-mcp": "^3.3.1",
+    "@date-fns/tz": "^1.5.0",
+    "@gsap/react": "^2.1.2",
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "date-fns": "^4.4.0",
+    "gsap": "^3.15.0",
+    "lucide-react": "^1.50.0",
+    "next": "16.3.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1",
+    "undici": "^8.11.2",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24.19.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
