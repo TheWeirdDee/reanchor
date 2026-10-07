@@ -1,6 +1,6 @@
 {
-  "startedAt": "2026-10-07T10:07:59.713Z",
-  "finishedAt": "2026-10-07T10:10:09.106Z",
+  "startedAt": "2026-10-07T12:25:42.700Z",
+  "finishedAt": "2026-10-07T12:28:09.147Z",
   "offline": false,
   "results": [
     {
@@ -10,7 +10,7 @@
       "network": false,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 3820,
+      "durationMs": 4428,
       "tail": "> reanchor@1.0.0 typecheck\n> tsc --noEmit"
     },
     {
@@ -20,7 +20,7 @@
       "network": false,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 9172,
+      "durationMs": 13544,
       "tail": "> reanchor@1.0.0 lint\n> eslint"
     },
     {
@@ -30,8 +30,8 @@
       "network": false,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 3815,
-      "tail": "      Tests  90 passed (90)\n   Start at  11:08:13\n   Duration  2.51s (import 43%, tests 35%, transform 20%, worker 1%)\n\u001b[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:\n  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `\"type\": \"module\"` in the closest package.json\nSet `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.\u001b[39m"
+      "durationMs": 4041,
+      "tail": "      Tests  93 passed (93)\n   Start at  13:26:01\n   Duration  2.70s (import 49%, tests 31%, transform 19%, worker 1%)\n\u001b[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:\n  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `\"type\": \"module\"` in the closest package.json\nSet `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.\u001b[39m"
     },
     {
       "gate": "G5",
@@ -40,8 +40,8 @@
       "network": true,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 6056,
-      "tail": "[2026-10-07T10:08:22.513Z] PASS boundary Friday reference (bar ending weekend start): Fri 2026-09-25 19:45 ET close: agent 225 vs dataset 225\n[2026-10-07T10:08:22.513Z] PASS boundary Sunday decision (bar ending transition): Sun 2026-09-27 19:45 ET close: agent 223.55 vs dataset 223.55\n[2026-10-07T10:08:22.513Z] PASS boundary Reopening (bar starting 09:30 ET): Mon 2026-09-28 09:30 ET open: agent 229.56 vs dataset 229.56\n[2026-10-07T10:08:22.513Z] PASS boundary First-hour endpoint (bar ending 10:30 ET): Mon 2026-09-28 10:15 ET close: agent 231.27 vs dataset 231.27\n[2026-10-07T10:08:22.513Z] PASS recent-candles: 8 rows; latest bar start 2026-10-07T10:00:00.000Z\n[2026-10-07T10:08:22.520Z] Wrote data/agent-tool-receipts.json (6/6 calls OK)"
+      "durationMs": 6060,
+      "tail": "[2026-10-07T12:26:10.697Z] PASS boundary Friday reference (bar ending weekend start): Fri 2026-09-25 19:45 ET close: agent 225 vs dataset 225\n[2026-10-07T12:26:10.697Z] PASS boundary Sunday decision (bar ending transition): Sun 2026-09-27 19:45 ET close: agent 223.55 vs dataset 223.55\n[2026-10-07T12:26:10.697Z] PASS boundary Reopening (bar starting 09:30 ET): Mon 2026-09-28 09:30 ET open: agent 229.56 vs dataset 229.56\n[2026-10-07T12:26:10.697Z] PASS boundary First-hour endpoint (bar ending 10:30 ET): Mon 2026-09-28 10:15 ET close: agent 231.27 vs dataset 231.27\n[2026-10-07T12:26:10.697Z] PASS recent-candles: 8 rows; latest bar start 2026-10-07T12:15:00.000Z\n[2026-10-07T12:26:10.707Z] Wrote data/agent-tool-receipts.json (6/6 calls OK)"
     },
     {
       "gate": "G5 (disclosure)",
@@ -54,8 +54,8 @@
       },
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 5406,
-      "tail": "> reanchor@1.0.0 mcp:probe\n> tsx scripts/mcp-probe.ts\n[2026-10-07T10:08:27.887Z] attempt 1: connected; guide OK (5 categories); do_query ERROR 503"
+      "durationMs": 7157,
+      "tail": "> reanchor@1.0.0 mcp:probe\n> tsx scripts/mcp-probe.ts\n[2026-10-07T12:26:17.784Z] attempt 1: connected; guide OK (5 categories); do_query ERROR 503"
     },
     {
       "gate": "G6",
@@ -64,8 +64,8 @@
       "network": true,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 3395,
-      "tail": "> reanchor@1.0.0 model:check\n> tsx --env-file-if-exists=.env.local scripts/model-check.ts\n[2026-10-07T10:08:31.320Z] provider=gemini model=gemini-3.5-flash-lite credential=present verification=VERIFIED (Gemini models endpoint returned models/gemini-3.5-flash-lite) realCall=OK answer=7 in 1213 ms"
+      "durationMs": 2415,
+      "tail": "> reanchor@1.0.0 model:check\n> tsx --env-file-if-exists=.env.local scripts/model-check.ts\n[2026-10-07T12:26:20.295Z] provider=gemini model=gemini-3.5-flash-lite credential=present verification=VERIFIED (Gemini models endpoint returned models/gemini-3.5-flash-lite) realCall=OK answer=7 in 782 ms"
     },
     {
       "gate": "G2",
@@ -74,8 +74,8 @@
       "network": false,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 1244,
-      "tail": "[2026-10-07T10:08:32.494Z] rAAPL: weekends=18 boundaryComplete=1 primary=1 corporateUnknown=0 turnoverSessions=1 -> UNSUPPORTED: 1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 1 turnover-eligible weekend sessions (need 3)\n[2026-10-07T10:08:32.499Z] rMSFT: weekends=18 boundaryComplete=1 primary=1 corporateUnknown=0 turnoverSessions=0 -> UNSUPPORTED: 1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 0 turnover-eligible weekend sessions (need 3)\n[2026-10-07T10:08:32.508Z] rAMZN: weekends=18 boundaryComplete=1 primary=1 corporateUnknown=0 turnoverSessions=0 -> UNSUPPORTED: 1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 0 turnover-eligible weekend sessions (need 3)\n[2026-10-07T10:08:32.513Z] rMETA: weekends=18 boundaryComplete=5 primary=4 corporateUnknown=0 turnoverSessions=1 -> UNSUPPORTED: 5 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 1 turnover-eligible weekend sessions (need 3)\n[2026-10-07T10:08:32.517Z] rQQQ: weekends=18 boundaryComplete=7 primary=7 corporateUnknown=0 turnoverSessions=1 -> UNSUPPORTED: 1 turnover-eligible weekend sessions (need 3)\n[2026-10-07T10:08:32.539Z] Supported: RNVDAUSDT"
+      "durationMs": 1256,
+      "tail": "[2026-10-07T12:26:21.470Z] rAAPL: weekends=18 boundaryComplete=1 primary=1 corporateUnknown=0 turnoverSessions=1 -> UNSUPPORTED: 1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 1 turnover-eligible weekend sessions (need 3)\n[2026-10-07T12:26:21.476Z] rMSFT: weekends=18 boundaryComplete=1 primary=1 corporateUnknown=0 turnoverSessions=0 -> UNSUPPORTED: 1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 0 turnover-eligible weekend sessions (need 3)\n[2026-10-07T12:26:21.485Z] rAMZN: weekends=18 boundaryComplete=1 primary=1 corporateUnknown=0 turnoverSessions=0 -> UNSUPPORTED: 1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 0 turnover-eligible weekend sessions (need 3)\n[2026-10-07T12:26:21.490Z] rMETA: weekends=18 boundaryComplete=5 primary=4 corporateUnknown=0 turnoverSessions=1 -> UNSUPPORTED: 5 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 1 turnover-eligible weekend sessions (need 3)\n[2026-10-07T12:26:21.495Z] rQQQ: weekends=18 boundaryComplete=7 primary=7 corporateUnknown=0 turnoverSessions=1 -> UNSUPPORTED: 1 turnover-eligible weekend sessions (need 3)\n[2026-10-07T12:26:21.512Z] Supported: RNVDAUSDT"
     },
     {
       "gate": "G4/G8",
@@ -84,8 +84,8 @@
       "network": false,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 1513,
-      "tail": "> reanchor@1.0.0 data:replay\n> tsx scripts/build-replay.ts\n[2026-10-07T10:08:34.062Z] rNVDA: 23 weekends replayed\n[2026-10-07T10:08:34.073Z] Replay generation complete."
+      "durationMs": 1471,
+      "tail": "> reanchor@1.0.0 data:replay\n> tsx scripts/build-replay.ts\n[2026-10-07T12:26:23.007Z] rNVDA: 23 weekends replayed\n[2026-10-07T12:26:23.019Z] Replay generation complete."
     },
     {
       "gate": "G2/G3",
@@ -94,8 +94,8 @@
       "network": false,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 4704,
-      "tail": "> reanchor@1.0.0 audit:g2g3\n> tsx scripts/audit-g2-g3.ts\n[2026-10-07T10:08:38.789Z] Audit written: 23 episodes, 7 coverage sessions, 10 sensitivity cases"
+      "durationMs": 5086,
+      "tail": "> reanchor@1.0.0 audit:g2g3\n> tsx scripts/audit-g2-g3.ts\n[2026-10-07T12:26:28.084Z] Audit written: 23 episodes, 7 coverage sessions, 10 sensitivity cases"
     },
     {
       "gate": "G1/G7",
@@ -104,7 +104,7 @@
       "network": false,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 13557,
+      "durationMs": 14562,
       "tail": "├ ƒ /method\n├ ○ /robots.txt\n├ ○ /sitemap.xml\n└ ƒ /social-card\n○  (Static)   prerendered as static content\nƒ  (Dynamic)  server-rendered on demand"
     },
     {
@@ -114,8 +114,8 @@
       "network": false,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 2016,
-      "tail": "[2026-10-07T10:08:54.181Z] PASS synthetic-isolation: data files clean (12), src imports clean (66)\n[2026-10-07T10:08:54.195Z] PASS no-emoji: 92 files clean\n[2026-10-07T10:08:54.328Z] PASS no-secrets-in-project: no credential patterns found\n[2026-10-07T10:08:54.328Z] PASS env-local-ignored: .env.local exists and is excluded by .gitignore\n[2026-10-07T10:08:54.348Z] PASS client-bundle-clean: 17 client bundles contain no secrets or server adapters\n[2026-10-07T10:08:54.350Z] Evidence verification passed."
+      "durationMs": 2908,
+      "tail": "[2026-10-07T12:26:45.316Z] PASS synthetic-isolation: data files clean (12), src imports clean (66)\n[2026-10-07T12:26:45.330Z] PASS no-emoji: 92 files clean\n[2026-10-07T12:26:45.538Z] PASS no-secrets-in-project: no credential patterns found\n[2026-10-07T12:26:45.539Z] PASS env-local-ignored: .env.local exists and is excluded by .gitignore\n[2026-10-07T12:26:45.559Z] PASS client-bundle-clean: 17 client bundles contain no secrets or server adapters\n[2026-10-07T12:26:45.561Z] Evidence verification passed."
     },
     {
       "gate": "G7",
@@ -124,13 +124,13 @@
       "network": true,
       "status": "PASS",
       "exitCode": 0,
-      "durationMs": 74693,
-      "tail": "  ok 54 [mobile] › tests\\e2e\\flows.spec.ts:372:5 › method page shows coverage for all candidates and every anchored section (364ms)\n  ok 55 [mobile] › tests\\e2e\\flows.spec.ts:384:5 › metadata: title, description, social tags, icon and theme color on every public page; no localhost URLs (1.0s)\n  -  56 [mobile] › tests\\e2e\\flows.spec.ts:405:5 › desk at 1440/1280/1024/768/390: decision lands in view after a run, no overflow, 44px targets\n  -  57 [mobile] › tests\\e2e\\flows.spec.ts:436:5 › the decision card renders the computed action, not a fixed STAND DOWN\n  6 skipped\n  51 passed (1.2m)"
+      "durationMs": 83516,
+      "tail": "  ok 57 [mobile] › tests\\e2e\\flows.spec.ts:399:5 › metadata: title, description, social tags, icon and theme color on every public page; no localhost URLs (1.2s)\n  -  58 [mobile] › tests\\e2e\\flows.spec.ts:420:5 › desk at 1440/1280/1024/768/390: decision lands in view after a run, no overflow, 44px targets\n  -  59 [mobile] › tests\\e2e\\flows.spec.ts:451:5 › the decision card renders the computed action, not a fixed STAND DOWN\n  -  60 [mobile] › tests\\e2e\\flows.spec.ts:469:5 › an unknown replay date is rejected as a request error with the correct key suggested\n  8 skipped\n  52 passed (1.4m)"
     }
   ],
   "dataMcp": {
     "note": "Disclosure only. G5 passes on the Bitget Agent Hub MCP; the data MCP is the corporate-action source and is reported separately.",
-    "lastProbeAt": "2026-10-07T10:08:23.583Z",
+    "lastProbeAt": "2026-10-07T12:26:11.783Z",
     "connected": true,
     "catalogCall": "OK (5 categories)",
     "researchQuery": {
