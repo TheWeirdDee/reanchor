@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-10-07T00:13:47.900Z",
+  "dataMode": "SNAPSHOT",
+  "pullFinishedAt": "2026-10-02T21:24:26.423Z",
+  "sources": {
+    "tokenCandles": {
+      "source": "Bitget public market data v3 /api/v3/market/history-candles",
+      "category": "SPOT",
+      "type": "market",
+      "granularity": "15m",
+      "timestampSemantics": "interval start, UTC milliseconds",
+      "units": {
+        "price": "USDT per token",
+        "baseVolume": "tokens",
+        "quoteTurnover": "USDT"
+      }
+    },
+    "session": {
+      "source": "NYSE holiday calendar (nyse.com) + Bitget /api/v3/reality/market/calendar and /states",
+      "timezone": "America/New_York"
+    },
+    "underlyingAnchor": {
+      "source": "Nasdaq.com historical quotes",
+      "units": "USD",
+      "note": "Official daily open/close; raw retained locally only"
+    },
+    "corporateActions": {
+      "source": "Bitget AI MCP bitget-mcp-server do_query equity_fundamental_dividends / equity_calendar"
+    }
+  },
+  "supportedSymbols": [
+    "RNVDAUSDT"
+  ],
+  "unsupported": {
+    "rTSLA": "5 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one)",
+    "rAAPL": "1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 1 turnover-eligible weekend sessions (need 3)",
+    "rMSFT": "1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 0 turnover-eligible weekend sessions (need 3)",
+    "rAMZN": "1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 0 turnover-eligible weekend sessions (need 3)",
+    "rMETA": "5 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 1 turnover-eligible weekend sessions (need 3)",
+    "rQQQ": "1 turnover-eligible weekend sessions (need 3)"
+  },
+  "redistribution": "Bitget and Nasdaq redistribution terms not verified; data/raw is excluded from version control and should not be published until reviewed.",
+  "files": {
+    "instruments.json": "934f64cb49c18f689fe9499e14243aff87188c671b3e4fe075017af379c5df9c",
+    "bars.json": "3f0f0a3be7cf324ae5b61df1176e3d64aacf9f715a1a17f7b8307ffb26bdfaaa",
+    "anchors.json": "8aa1622bca58fead2c0c871780426164aa7d0d7575c4c3c570319fb74cb3bbe3",
+    "corporate-actions.json": "286488bebeb9bdb1b1a7c0bb14fae2ed2a0929d7e1625dcbb1b61a2f62e4bddf",
+    "corporate-fallback.json": "c4c4c573564de2e2f7b94481a407e41931e2c0bca272abe0a249d2ce5ca360e7",
+    "agent-tool-receipts.json": "0f3554d45508764137b07b7dc95adac26d9bc873088bfe3b35d4111c4952dafe",
+    "tool-receipts.json": "3f61d6a546345407909e10cd7137915dd3ab7b385f5becd931eaa1fb91400dbf",
+    "ingest-status.json": "0ef82cb8430d1f87aa41dc962602904505b615491cfee2a0e3b017e5a313514b",
+    "validation-report.json": "fd8e2c4d8f5fea24160edd1d8089d295502b0f7394641528892c1c858ff362a3",
+    "weekends.json": "04861684043a3012327b591eb36388dcf55c5400a4afd9216b721ac448dfed32",
+    "evaluations.json": "f34ea27b3286d65343f41670a7bbc775fe3d7b28d6829e6a73561d04bf22cd58"
+  }
+}
