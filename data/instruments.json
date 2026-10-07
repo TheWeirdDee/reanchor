@@ -1,0 +1,351 @@
+{
+  "discoveredAt": "2026-10-02T21:11:21.780Z",
+  "instruments": [
+    {
+      "symbol": "RNVDAUSDT",
+      "baseCoin": "rNVDA",
+      "quoteCoin": "USDT",
+      "underlying": "NVDA",
+      "underlyingAssetClass": "stocks",
+      "pricePrecision": 2,
+      "quantityPrecision": 4,
+      "minOrderQty": 0.0001,
+      "minOrderAmount": 10,
+      "buyLimitPriceRatio": 0.1,
+      "sellLimitPriceRatio": 0.1,
+      "launchTimeMs": 1776914552903,
+      "weekendTradable": true,
+      "tradingPeriod": [
+        "overnight",
+        "pre_market",
+        "regular",
+        "after_hours"
+      ],
+      "identityEvidence": [
+        "instruments: symbol=RNVDAUSDT baseCoin=rNVDA category=SPOT symbolType=stock isReality=yes status=online",
+        "reality stock-info: code=NVDA weekendTradable=yes tradingPeriod=overnight,pre_market,regular,after_hours"
+      ],
+      "supported": true,
+      "exclusionReason": null
+    },
+    {
+      "symbol": "RTSLAUSDT",
+      "baseCoin": "rTSLA",
+      "quoteCoin": "USDT",
+      "underlying": "TSLA",
+      "underlyingAssetClass": "stocks",
+      "pricePrecision": 2,
+      "quantityPrecision": 4,
+      "minOrderQty": 0.0001,
+      "minOrderAmount": 10,
+      "buyLimitPriceRatio": 0.1,
+      "sellLimitPriceRatio": 0.1,
+      "launchTimeMs": 1780323652017,
+      "weekendTradable": true,
+      "tradingPeriod": [
+        "overnight",
+        "pre_market",
+        "regular",
+        "after_hours"
+      ],
+      "identityEvidence": [
+        "instruments: symbol=RTSLAUSDT baseCoin=rTSLA category=SPOT symbolType=stock isReality=yes status=online",
+        "reality stock-info: code=TSLA weekendTradable=yes tradingPeriod=overnight,pre_market,regular,after_hours"
+      ],
+      "supported": true,
+      "exclusionReason": null
+    },
+    {
+      "symbol": "RAAPLUSDT",
+      "baseCoin": "rAAPL",
+      "quoteCoin": "USDT",
+      "underlying": "AAPL",
+      "underlyingAssetClass": "stocks",
+      "pricePrecision": 2,
+      "quantityPrecision": 4,
+      "minOrderQty": 0.0001,
+      "minOrderAmount": 10,
+      "buyLimitPriceRatio": 0.1,
+      "sellLimitPriceRatio": 0.1,
+      "launchTimeMs": 1780322400000,
+      "weekendTradable": true,
+      "tradingPeriod": [
+        "overnight",
+        "pre_market",
+        "regular",
+        "after_hours"
+      ],
+      "identityEvidence": [
+        "instruments: symbol=RAAPLUSDT baseCoin=rAAPL category=SPOT symbolType=stock isReality=yes status=online",
+        "reality stock-info: code=AAPL weekendTradable=yes tradingPeriod=overnight,pre_market,regular,after_hours"
+      ],
+      "supported": true,
+      "exclusionReason": null
+    },
+    {
+      "symbol": "RMSFTUSDT",
+      "baseCoin": "rMSFT",
+      "quoteCoin": "USDT",
+      "underlying": "MSFT",
+      "underlyingAssetClass": "stocks",
+      "pricePrecision": 2,
+      "quantityPrecision": 4,
+      "minOrderQty": 0.0001,
+      "minOrderAmount": 10,
+      "buyLimitPriceRatio": 0.1,
+      "sellLimitPriceRatio": 0.1,
+      "launchTimeMs": 1780322400000,
+      "weekendTradable": true,
+      "tradingPeriod": [
+        "overnight",
+        "pre_market",
+        "regular",
+        "after_hours"
+      ],
+      "identityEvidence": [
+        "instruments: symbol=RMSFTUSDT baseCoin=rMSFT category=SPOT symbolType=stock isReality=yes status=online",
+        "reality stock-info: code=MSFT weekendTradable=yes tradingPeriod=overnight,pre_market,regular,after_hours"
+      ],
+      "supported": true,
+      "exclusionReason": null
+    },
+    {
+      "symbol": "RAMZNUSDT",
+      "baseCoin": "rAMZN",
+      "quoteCoin": "USDT",
+      "underlying": "AMZN",
+      "underlyingAssetClass": "stocks",
+      "pricePrecision": 2,
+      "quantityPrecision": 4,
+      "minOrderQty": 0.0001,
+      "minOrderAmount": 10,
+      "buyLimitPriceRatio": 0.1,
+      "sellLimitPriceRatio": 0.1,
+      "launchTimeMs": 1780322400000,
+      "weekendTradable": true,
+      "tradingPeriod": [
+        "overnight",
+        "pre_market",
+        "regular",
+        "after_hours"
+      ],
+      "identityEvidence": [
+        "instruments: symbol=RAMZNUSDT baseCoin=rAMZN category=SPOT symbolType=stock isReality=yes status=online",
+        "reality stock-info: code=AMZN weekendTradable=yes tradingPeriod=overnight,pre_market,regular,after_hours"
+      ],
+      "supported": true,
+      "exclusionReason": null
+    },
+    {
+      "symbol": "RMETAUSDT",
+      "baseCoin": "rMETA",
+      "quoteCoin": "USDT",
+      "underlying": "META",
+      "underlyingAssetClass": "stocks",
+      "pricePrecision": 2,
+      "quantityPrecision": 4,
+      "minOrderQty": 0.0001,
+      "minOrderAmount": 10,
+      "buyLimitPriceRatio": 0.1,
+      "sellLimitPriceRatio": 0.1,
+      "launchTimeMs": 1780322400000,
+      "weekendTradable": true,
+      "tradingPeriod": [
+        "overnight",
+        "pre_market",
+        "regular",
+        "after_hours"
+      ],
+      "identityEvidence": [
+        "instruments: symbol=RMETAUSDT baseCoin=rMETA category=SPOT symbolType=stock isReality=yes status=online",
+        "reality stock-info: code=META weekendTradable=yes tradingPeriod=overnight,pre_market,regular,after_hours"
+      ],
+      "supported": true,
+      "exclusionReason": null
+    },
+    {
+      "symbol": "RQQQUSDT",
+      "baseCoin": "rQQQ",
+      "quoteCoin": "USDT",
+      "underlying": "QQQ",
+      "underlyingAssetClass": "etf",
+      "pricePrecision": 2,
+      "quantityPrecision": 4,
+      "minOrderQty": 0.0001,
+      "minOrderAmount": 10,
+      "buyLimitPriceRatio": 0.1,
+      "sellLimitPriceRatio": 0.1,
+      "launchTimeMs": 1780322400000,
+      "weekendTradable": true,
+      "tradingPeriod": [
+        "overnight",
+        "pre_market",
+        "regular",
+        "after_hours"
+      ],
+      "identityEvidence": [
+        "instruments: symbol=RQQQUSDT baseCoin=rQQQ category=SPOT symbolType=stock isReality=yes status=online",
+        "reality stock-info: code=QQQ weekendTradable=yes tradingPeriod=overnight,pre_market,regular,after_hours"
+      ],
+      "supported": true,
+      "exclusionReason": null
+    }
+  ],
+  "marketStates": {
+    "market": "US",
+    "daylightType": "standard",
+    "stateList": [
+      {
+        "state": "pre_market",
+        "timeZone": "EST",
+        "startTime": "04:00",
+        "endTime": "09:30"
+      },
+      {
+        "state": "regular",
+        "timeZone": "EST",
+        "startTime": "09:30",
+        "endTime": "16:00"
+      },
+      {
+        "state": "after_hours",
+        "timeZone": "EST",
+        "startTime": "16:00",
+        "endTime": "20:00"
+      },
+      {
+        "state": "overnight",
+        "timeZone": "EST",
+        "startTime": "20:00",
+        "endTime": "04:00"
+      }
+    ]
+  },
+  "marketCalendar": {
+    "timeZone": "EST",
+    "closures": [
+      {
+        "startEt": "2026-06-18 20:00",
+        "endEt": "2026-06-19 20:00"
+      },
+      {
+        "startEt": "2026-07-02 20:00",
+        "endEt": "2026-07-03 20:00"
+      },
+      {
+        "startEt": "2026-09-06 20:00",
+        "endEt": "2026-09-07 20:00"
+      }
+    ],
+    "regularConfig": [
+      "SATURDAY",
+      "SUNDAY"
+    ]
+  },
+  "receipts": [
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/market/instruments",
+      "params": {
+        "category": "SPOT"
+      },
+      "retrievedAt": "2026-10-02T21:11:11.071Z",
+      "httpStatus": 200,
+      "apiCode": "00000",
+      "rows": 3393
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/reality/market/states",
+      "params": {},
+      "retrievedAt": "2026-10-02T21:11:11.775Z",
+      "httpStatus": 200,
+      "apiCode": "00000"
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/reality/market/calendar",
+      "params": {},
+      "retrievedAt": "2026-10-02T21:11:13.008Z",
+      "httpStatus": 200,
+      "apiCode": "00000"
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/reality/market/stock-info",
+      "params": {
+        "symbol": "RNVDAUSDT"
+      },
+      "retrievedAt": "2026-10-02T21:11:14.268Z",
+      "httpStatus": 200,
+      "apiCode": "00000",
+      "rows": 1
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/reality/market/stock-info",
+      "params": {
+        "symbol": "RTSLAUSDT"
+      },
+      "retrievedAt": "2026-10-02T21:11:15.558Z",
+      "httpStatus": 200,
+      "apiCode": "00000",
+      "rows": 1
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/reality/market/stock-info",
+      "params": {
+        "symbol": "RAAPLUSDT"
+      },
+      "retrievedAt": "2026-10-02T21:11:17.205Z",
+      "httpStatus": 200,
+      "apiCode": "00000",
+      "rows": 1
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/reality/market/stock-info",
+      "params": {
+        "symbol": "RMSFTUSDT"
+      },
+      "retrievedAt": "2026-10-02T21:11:18.038Z",
+      "httpStatus": 200,
+      "apiCode": "00000",
+      "rows": 1
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/reality/market/stock-info",
+      "params": {
+        "symbol": "RAMZNUSDT"
+      },
+      "retrievedAt": "2026-10-02T21:11:19.251Z",
+      "httpStatus": 200,
+      "apiCode": "00000",
+      "rows": 1
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/reality/market/stock-info",
+      "params": {
+        "symbol": "RMETAUSDT"
+      },
+      "retrievedAt": "2026-10-02T21:11:20.511Z",
+      "httpStatus": 200,
+      "apiCode": "00000",
+      "rows": 1
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/reality/market/stock-info",
+      "params": {
+        "symbol": "RQQQUSDT"
+      },
+      "retrievedAt": "2026-10-02T21:11:21.770Z",
+      "httpStatus": 200,
+      "apiCode": "00000",
+      "rows": 1
+    }
+  ]
+}
