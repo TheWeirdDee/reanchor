@@ -396,6 +396,20 @@
         "statusCode": 503,
         "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
       }
+    },
+    {
+      "at": "2026-10-07T10:08:23.583Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
     }
   ]
 }
