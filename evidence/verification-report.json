@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-10-07T00:38:04.673Z",
+  "ok": true,
+  "checks": [
+    {
+      "name": "manifest-hashes",
+      "ok": true,
+      "detail": "11 files match"
+    },
+    {
+      "name": "weekends-reproduce",
+      "ok": true,
+      "detail": "23/23 weekend rows reproduce from bars"
+    },
+    {
+      "name": "evaluations-reproduce",
+      "ok": true,
+      "detail": "69/69 evaluation rows reproduce from code"
+    },
+    {
+      "name": "agent-mcp-crosscheck",
+      "ok": true,
+      "detail": "6/6 Agent Hub MCP calls OK; 6/6 cross-checks match"
+    },
+    {
+      "name": "turnover-units",
+      "ok": true,
+      "detail": "quote turnover / base volume lies within the bar range for >99% of bars"
+    },
+    {
+      "name": "synthetic-isolation",
+      "ok": true,
+      "detail": "data files clean (12), src imports clean (65)"
+    },
+    {
+      "name": "no-emoji",
+      "ok": true,
+      "detail": "90 files clean"
+    },
+    {
+      "name": "no-secrets-in-project",
+      "ok": true,
+      "detail": "no credential patterns found"
+    },
+    {
+      "name": "env-local-ignored",
+      "ok": true,
+      "detail": ".env.local exists and is excluded by .gitignore"
+    },
+    {
+      "name": "client-bundle-clean",
+      "ok": true,
+      "detail": "17 client bundles contain no secrets or server adapters"
+    }
+  ]
+}
