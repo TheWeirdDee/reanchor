@@ -1,0 +1,55 @@
+{
+  "source": "Bitget AI MCP (bitget-mcp-server) do_query equity_fundamental_dividends / equity_calendar",
+  "retrievedAt": "2026-10-06T05:27:24.006Z",
+  "byUnderlying": {
+    "NVDA": {
+      "status": "UNKNOWN",
+      "events": [],
+      "splitQueryOutcome": "ERROR",
+      "earnings": [],
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"; \"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\""
+    },
+    "TSLA": {
+      "status": "UNKNOWN",
+      "events": [],
+      "splitQueryOutcome": "ERROR",
+      "earnings": [],
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"; \"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\""
+    },
+    "AAPL": {
+      "status": "UNKNOWN",
+      "events": [],
+      "splitQueryOutcome": "ERROR",
+      "earnings": [],
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"; \"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\""
+    },
+    "MSFT": {
+      "status": "UNKNOWN",
+      "events": [],
+      "splitQueryOutcome": "ERROR",
+      "earnings": [],
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"; \"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\""
+    },
+    "AMZN": {
+      "status": "UNKNOWN",
+      "events": [],
+      "splitQueryOutcome": "ERROR",
+      "earnings": [],
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"; \"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\""
+    },
+    "META": {
+      "status": "UNKNOWN",
+      "events": [],
+      "splitQueryOutcome": "ERROR",
+      "earnings": [],
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"; \"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\""
+    },
+    "QQQ": {
+      "status": "UNKNOWN",
+      "events": [],
+      "splitQueryOutcome": "ERROR",
+      "earnings": [],
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"; \"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\""
+    }
+  }
+}
