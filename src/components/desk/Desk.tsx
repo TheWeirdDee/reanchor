@@ -27,6 +27,7 @@ export function Desk() {
   const [text, setText] = useState("");
   const [parsing, setParsing] = useState(false);
   const [parseNote, setParseNote] = useState<{ tone: "ok" | "warn" | "bad"; title: string; items: string[] } | null>(null);
+  const [lastParse, setLastParse] = useState<{ said: string; fields: { label: string; value: string }[] } | null>(null);
   const [form, setForm] = useState<FormState>({ symbol: "", intent: "HOLD", holding: "", trade: "", limit: "" });
   const [sources, setSources] = useState<FieldSource>({});
   const [confirmed, setConfirmed] = useState(false);
@@ -80,6 +81,7 @@ export function Desk() {
   async function parse() {
     setParsing(true);
     setParseNote(null);
+    setLastParse(null);
     try {
       const r = await fetch("/api/parse", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text }) });
       const j = await r.json();
@@ -107,6 +109,14 @@ export function Desk() {
       setForm((f) => ({ ...f, ...next }));
       setSources(src);
       setConfirmed(false);
+      const extracted = [
+        { label: "Instrument", value: x.symbol ? (meta?.instruments?.find((i) => i.symbol === x.symbol)?.baseCoin ?? x.symbol) : "not identified" },
+        { label: "Intent", value: x.intent ? INTENT_NAME[x.intent] : "not identified" },
+        { label: "Holding", value: x.holdingUsdt !== null ? `${x.holdingUsdt.toLocaleString("en-US")} USDT` : "not stated" },
+        { label: "Trade size", value: x.tradeUsdt !== null ? `${x.tradeUsdt.toLocaleString("en-US")} USDT` : "not stated" },
+        { label: "Limit price", value: x.limitPrice !== null ? String(x.limitPrice) : "not stated" },
+      ];
+      setLastParse({ said: text.trim(), fields: extracted });
       const items = [...x.ambiguities];
       if (x.unsupportedRequest) items.unshift(x.unsupportedRequest);
       if (!x.symbol) items.push("Instrument not identified; choose one below");
@@ -222,6 +232,7 @@ export function Desk() {
                 Use example sentence
               </button>
             </div>
+            <AuthorityBoundary modelName={meta.model.available ? meta.model.model : null} />
             {parsing && (
               <div className="mt-2">
                 <Spinner label="Reading your sentence" />
@@ -232,6 +243,22 @@ export function Desk() {
                 ? `Model: ${meta.model.model}. It only fills the form; it never chooses the action.`
                 : `Natural-language parsing is unavailable on this server (${meta.model.reason}). The structured form below works without it.`}
             </p>
+            {lastParse && (
+              <div className="mt-3 rounded-2xl border border-line bg-paper/60 p-4">
+                <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-3">You said</p>
+                <p className="mt-1 text-[15px] italic text-ink">&ldquo;{lastParse.said}&rdquo;</p>
+                <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-3">Gemini extracted</p>
+                <dl className="mt-1.5 grid grid-cols-2 gap-x-4 gap-y-1.5 text-sm">
+                  {lastParse.fields.map((f) => (
+                    <div key={f.label} className="flex min-w-0 gap-2">
+                      <dt className="shrink-0 text-ink-3">{f.label}</dt>
+                      <dd className={`min-w-0 truncate font-semibold ${f.value.startsWith("not ") ? "text-ink-3" : "text-ink"}`}>{f.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+                <p className="mt-3 text-xs text-ink-3">Check these in step 2. Nothing runs until you confirm.</p>
+              </div>
+            )}
             {parseNote && (
               <div className="mt-3">
                 <Notice tone={parseNote.tone} title={parseNote.title}>
@@ -442,6 +469,24 @@ const INTENT_HINT: Record<Intent, string> = {
   BUY_DIP: "I want to buy after a weekend fall",
   SELL_POP: "I want to sell some of what I hold after a weekend rise",
 };
+
+/** Who does what: the model handles language; deterministic rules decide what the evidence permits. */
+function AuthorityBoundary({ modelName }: { modelName: string | null }) {
+  return (
+    <div className="mt-4 grid grid-cols-2 gap-2" aria-label="Who decides">
+      <div className="rounded-xl border border-line bg-paper/60 px-3 py-2.5">
+        <p className="font-mono text-[10.5px] uppercase tracking-[0.14em] text-ink-3">AI {modelName ? `(${modelName})` : "(unavailable)"}</p>
+        <p className="mt-1 text-sm font-semibold text-ink">Understands your sentence</p>
+        <p className="mt-1 text-xs leading-snug text-ink-3">Extracts instrument, intent, holding, trade size and limit price. Explains the result afterwards.</p>
+      </div>
+      <div className="rounded-xl border border-brand/30 bg-brand-soft px-3 py-2.5">
+        <p className="font-mono text-[10.5px] uppercase tracking-[0.14em] text-brand-deep">Deterministic rules</p>
+        <p className="mt-1 text-sm font-semibold text-ink">Decide what the evidence permits</p>
+        <p className="mt-1 text-xs leading-snug text-ink-3">Select prior weekends, measure moves, apply thresholds, choose the action, size the trade.</p>
+      </div>
+    </div>
+  );
+}
 
 function EmptyResult() {
   return (
