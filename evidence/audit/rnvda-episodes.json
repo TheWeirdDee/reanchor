@@ -1,0 +1,1587 @@
+{
+  "generatedAt": "2026-10-07T00:13:50.889Z",
+  "referenceInputs": {
+    "HOLD": {
+      "holdingUsdt": 2000,
+      "tradeUsdt": null
+    },
+    "BUY_DIP": {
+      "holdingUsdt": null,
+      "tradeUsdt": 500
+    },
+    "SELL_POP": {
+      "holdingUsdt": 2000,
+      "tradeUsdt": 500
+    }
+  },
+  "rows": [
+    {
+      "weekend": "2026-04-25",
+      "lastTradingDay": "2026-04-24",
+      "fridayRefTs": "Fri 2026-04-24 20:00 ET",
+      "fridayRef": 208.102,
+      "decisionTs": "Sun 2026-04-26 20:00 ET",
+      "decisionPrice": null,
+      "transitionTs": "Sun 2026-04-26 20:00 ET",
+      "reopenTs": "Mon 2026-04-27 09:30 ET",
+      "reopenPrice": 209.44,
+      "endpointTs": "Mon 2026-04-27 10:30 ET",
+      "endpointPrice": 208.712,
+      "w": null,
+      "r": null,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": false,
+      "cohortEligible": false,
+      "exclusions": [
+        "Missing 15m bar ending exactly at the decision cutoff"
+      ],
+      "priorEligibleBeforeDecision": 0,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: Only 0 completed weekend sessions before the decision",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: Only 0 completed weekend sessions before the decision",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ],
+        "SELL_POP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: Only 0 completed weekend sessions before the decision",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ],
+        "SELL_POP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-05-02",
+      "lastTradingDay": "2026-05-01",
+      "fridayRefTs": "Fri 2026-05-01 20:00 ET",
+      "fridayRef": 198.098,
+      "decisionTs": "Sun 2026-05-03 20:00 ET",
+      "decisionPrice": null,
+      "transitionTs": "Sun 2026-05-03 20:00 ET",
+      "reopenTs": "Mon 2026-05-04 09:30 ET",
+      "reopenPrice": 199.484,
+      "endpointTs": "Mon 2026-05-04 10:30 ET",
+      "endpointPrice": 197.414,
+      "w": null,
+      "r": null,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": false,
+      "cohortEligible": false,
+      "exclusions": [
+        "Missing 15m bar ending exactly at the decision cutoff"
+      ],
+      "priorEligibleBeforeDecision": 0,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: Only 1 completed weekend sessions before the decision",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: Only 1 completed weekend sessions before the decision",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ],
+        "SELL_POP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: Only 1 completed weekend sessions before the decision",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ],
+        "SELL_POP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-05-09",
+      "lastTradingDay": "2026-05-08",
+      "fridayRefTs": "Fri 2026-05-08 20:00 ET",
+      "fridayRef": 215.038,
+      "decisionTs": "Sun 2026-05-10 20:00 ET",
+      "decisionPrice": null,
+      "transitionTs": "Sun 2026-05-10 20:00 ET",
+      "reopenTs": "Mon 2026-05-11 09:30 ET",
+      "reopenPrice": 214.02,
+      "endpointTs": "Mon 2026-05-11 10:30 ET",
+      "endpointPrice": 218.06,
+      "w": null,
+      "r": null,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": false,
+      "cohortEligible": false,
+      "exclusions": [
+        "Missing 15m bar ending exactly at the decision cutoff"
+      ],
+      "priorEligibleBeforeDecision": 0,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: Only 2 completed weekend sessions before the decision",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: Only 2 completed weekend sessions before the decision",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ],
+        "SELL_POP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: Only 2 completed weekend sessions before the decision",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ],
+        "SELL_POP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-05-16",
+      "lastTradingDay": "2026-05-15",
+      "fridayRefTs": "Fri 2026-05-15 20:00 ET",
+      "fridayRef": 224.417,
+      "decisionTs": "Sun 2026-05-17 20:00 ET",
+      "decisionPrice": null,
+      "transitionTs": "Sun 2026-05-17 20:00 ET",
+      "reopenTs": "Mon 2026-05-18 09:30 ET",
+      "reopenPrice": 229.874,
+      "endpointTs": "Mon 2026-05-18 10:30 ET",
+      "endpointPrice": 222.718,
+      "w": null,
+      "r": null,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": false,
+      "cohortEligible": false,
+      "exclusions": [
+        "Missing 15m bar ending exactly at the decision cutoff"
+      ],
+      "priorEligibleBeforeDecision": 0,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09); 2026-04-25: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09); 2026-04-25: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ],
+        "SELL_POP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09); 2026-04-25: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ],
+        "SELL_POP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-05-23",
+      "lastTradingDay": "2026-05-22",
+      "fridayRefTs": "Fri 2026-05-22 20:00 ET",
+      "fridayRef": 214.28,
+      "decisionTs": "Sun 2026-05-24 20:00 ET",
+      "decisionPrice": null,
+      "transitionTs": "Mon 2026-05-25 20:00 ET",
+      "reopenTs": "Tue 2026-05-26 09:30 ET",
+      "reopenPrice": 216.64,
+      "endpointTs": "Tue 2026-05-26 10:30 ET",
+      "endpointPrice": 217.585,
+      "w": null,
+      "r": null,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 72,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": false,
+      "calendarStatus": "UNRECONCILED",
+      "priceComplete": false,
+      "cohortEligible": false,
+      "exclusions": [
+        "Nonstandard session: Next regular session is 2026-05-26; Monday 2026-05-25 is Memorial Day",
+        "Closure calendar unreconciled: NYSE holiday 2026-05-25 not listed in Bitget calendar",
+        "Missing 15m bar ending exactly at the decision cutoff"
+      ],
+      "priorEligibleBeforeDecision": 0,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Bitget closure calendar not reconciled with the NYSE calendar: NYSE holiday 2026-05-25 not listed in Bitget calendar",
+          "Nonstandard weekend (holiday or early close): Next regular session is 2026-05-26; Monday 2026-05-25 is Memorial Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+          "Session clock not verified: Historical session from the verified NYSE calendar and Bitget Reality calendar",
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Bitget closure calendar not reconciled with the NYSE calendar: NYSE holiday 2026-05-25 not listed in Bitget calendar",
+          "Nonstandard weekend (holiday or early close): Next regular session is 2026-05-26; Monday 2026-05-25 is Memorial Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+          "Session clock not verified: Historical session from the verified NYSE calendar and Bitget Reality calendar",
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ],
+        "SELL_POP": [
+          "Bitget closure calendar not reconciled with the NYSE calendar: NYSE holiday 2026-05-25 not listed in Bitget calendar",
+          "Nonstandard weekend (holiday or early close): Next regular session is 2026-05-26; Monday 2026-05-25 is Memorial Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+          "Session clock not verified: Historical session from the verified NYSE calendar and Bitget Reality calendar",
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "SESSION_NOT_VERIFIED",
+          "NONSTANDARD_WEEKEND",
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "SESSION_NOT_VERIFIED",
+          "NONSTANDARD_WEEKEND",
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ],
+        "SELL_POP": [
+          "SESSION_NOT_VERIFIED",
+          "NONSTANDARD_WEEKEND",
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-05-30",
+      "lastTradingDay": "2026-05-29",
+      "fridayRefTs": "Fri 2026-05-29 20:00 ET",
+      "fridayRef": 212.47,
+      "decisionTs": "Sun 2026-05-31 20:00 ET",
+      "decisionPrice": null,
+      "transitionTs": "Sun 2026-05-31 20:00 ET",
+      "reopenTs": "Mon 2026-06-01 09:30 ET",
+      "reopenPrice": 215.79,
+      "endpointTs": "Mon 2026-06-01 10:30 ET",
+      "endpointPrice": 221.37,
+      "w": null,
+      "r": null,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": false,
+      "cohortEligible": false,
+      "exclusions": [
+        "Missing 15m bar ending exactly at the decision cutoff"
+      ],
+      "priorEligibleBeforeDecision": 0,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ],
+        "SELL_POP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ],
+        "SELL_POP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-06-06",
+      "lastTradingDay": "2026-06-05",
+      "fridayRefTs": "Fri 2026-06-05 20:00 ET",
+      "fridayRef": 204.098,
+      "decisionTs": "Sun 2026-06-07 20:00 ET",
+      "decisionPrice": null,
+      "transitionTs": "Sun 2026-06-07 20:00 ET",
+      "reopenTs": "Mon 2026-06-08 09:30 ET",
+      "reopenPrice": 209.9,
+      "endpointTs": "Mon 2026-06-08 10:30 ET",
+      "endpointPrice": 207.837,
+      "w": null,
+      "r": null,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": false,
+      "cohortEligible": false,
+      "exclusions": [
+        "Missing 15m bar ending exactly at the decision cutoff"
+      ],
+      "priorEligibleBeforeDecision": 0,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ],
+        "SELL_POP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ],
+        "SELL_POP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-06-13",
+      "lastTradingDay": "2026-06-12",
+      "fridayRefTs": "Fri 2026-06-12 20:00 ET",
+      "fridayRef": 205.416,
+      "decisionTs": "Sun 2026-06-14 20:00 ET",
+      "decisionPrice": null,
+      "transitionTs": "Sun 2026-06-14 20:00 ET",
+      "reopenTs": "Mon 2026-06-15 09:30 ET",
+      "reopenPrice": 208.875,
+      "endpointTs": "Mon 2026-06-15 10:30 ET",
+      "endpointPrice": 209.364,
+      "w": null,
+      "r": null,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": false,
+      "cohortEligible": false,
+      "exclusions": [
+        "Missing 15m bar ending exactly at the decision cutoff"
+      ],
+      "priorEligibleBeforeDecision": 0,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ],
+        "SELL_POP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ],
+        "SELL_POP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-06-20",
+      "lastTradingDay": "2026-06-18",
+      "fridayRefTs": "Thu 2026-06-18 20:00 ET",
+      "fridayRef": 210.296,
+      "decisionTs": "Sun 2026-06-21 20:00 ET",
+      "decisionPrice": 207.02,
+      "transitionTs": "Sun 2026-06-21 20:00 ET",
+      "reopenTs": "Mon 2026-06-22 09:30 ET",
+      "reopenPrice": 211.45,
+      "endpointTs": "Mon 2026-06-22 10:30 ET",
+      "endpointPrice": 211.163,
+      "w": -0.0155780423783618,
+      "r": 0.02001255917302669,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 72,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": false,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": false,
+      "exclusions": [
+        "Nonstandard session: Last trading day before the weekend is 2026-06-18 (holiday Juneteenth National Independence Day), not Friday"
+      ],
+      "priorEligibleBeforeDecision": 0,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-06-18 (holiday Juneteenth National Independence Day), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+          "Hourly turnover denominator H_t unavailable: 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-06-18 (holiday Juneteenth National Independence Day), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+          "Hourly turnover denominator H_t unavailable: 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "SELL_POP": [
+          "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-06-18 (holiday Juneteenth National Independence Day), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+          "Hourly turnover denominator H_t unavailable: 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "NONSTANDARD_WEEKEND",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "NONSTANDARD_WEEKEND",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "SELL_POP": [
+          "NONSTANDARD_WEEKEND",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-06-27",
+      "lastTradingDay": "2026-06-26",
+      "fridayRefTs": "Fri 2026-06-26 20:00 ET",
+      "fridayRef": 192.75,
+      "decisionTs": "Sun 2026-06-28 20:00 ET",
+      "decisionPrice": 190,
+      "transitionTs": "Sun 2026-06-28 20:00 ET",
+      "reopenTs": "Mon 2026-06-29 09:30 ET",
+      "reopenPrice": 193.86,
+      "endpointTs": "Mon 2026-06-29 10:30 ET",
+      "endpointPrice": 192.735,
+      "w": -0.014267185473411104,
+      "r": 0.014394736842105349,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": true,
+      "exclusions": [],
+      "priorEligibleBeforeDecision": 0,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Hourly turnover denominator H_t unavailable: 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Hourly turnover denominator H_t unavailable: 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ],
+        "SELL_POP": [
+          "Hourly turnover denominator H_t unavailable: 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09)",
+          "Only 0 eligible prior episodes (minimum 6)"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "SELL_POP": [
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-07-04",
+      "lastTradingDay": "2026-07-02",
+      "fridayRefTs": "Thu 2026-07-02 20:00 ET",
+      "fridayRef": 194.46,
+      "decisionTs": "Sun 2026-07-05 20:00 ET",
+      "decisionPrice": 196.61,
+      "transitionTs": "Sun 2026-07-05 20:00 ET",
+      "reopenTs": "Mon 2026-07-06 09:30 ET",
+      "reopenPrice": 194.4,
+      "endpointTs": "Mon 2026-07-06 10:30 ET",
+      "endpointPrice": 196.53,
+      "w": 0.011056258356474391,
+      "r": -0.00040689690249740007,
+      "turnoverCompleteHours": 0,
+      "turnoverTotalHours": 72,
+      "turnoverEligible": false,
+      "turnoverReason": "Session predates valid Reality turnover (2026-07-09)",
+      "standard": false,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": false,
+      "exclusions": [
+        "Nonstandard session: Last trading day before the weekend is 2026-07-02 (holiday Independence Day (observed)), not Friday"
+      ],
+      "priorEligibleBeforeDecision": 1,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-07-02 (holiday Independence Day (observed)), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+          "Hourly turnover denominator H_t unavailable: 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09)",
+          "Only 1 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-07-02 (holiday Independence Day (observed)), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+          "Hourly turnover denominator H_t unavailable: 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09)",
+          "Only 1 eligible prior episodes (minimum 6)"
+        ],
+        "SELL_POP": [
+          "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-07-02 (holiday Independence Day (observed)), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+          "Hourly turnover denominator H_t unavailable: 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09)",
+          "Only 1 eligible prior episodes (minimum 6)"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "NONSTANDARD_WEEKEND",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "NONSTANDARD_WEEKEND",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "SELL_POP": [
+          "NONSTANDARD_WEEKEND",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-07-11",
+      "lastTradingDay": "2026-07-10",
+      "fridayRefTs": "Fri 2026-07-10 20:00 ET",
+      "fridayRef": 210.575,
+      "decisionTs": "Sun 2026-07-12 20:00 ET",
+      "decisionPrice": null,
+      "transitionTs": "Sun 2026-07-12 20:00 ET",
+      "reopenTs": "Mon 2026-07-13 09:30 ET",
+      "reopenPrice": 208.66,
+      "endpointTs": "Mon 2026-07-13 10:30 ET",
+      "endpointPrice": 208.58,
+      "w": null,
+      "r": null,
+      "turnoverCompleteHours": 23,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": false,
+      "cohortEligible": false,
+      "exclusions": [
+        "Missing 15m bar ending exactly at the decision cutoff"
+      ],
+      "priorEligibleBeforeDecision": 1,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09)",
+          "Only 1 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09)",
+          "Only 1 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ],
+        "SELL_POP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09)",
+          "Only 1 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ],
+        "SELL_POP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-07-18",
+      "lastTradingDay": "2026-07-17",
+      "fridayRefTs": "Fri 2026-07-17 20:00 ET",
+      "fridayRef": 202.509,
+      "decisionTs": "Sun 2026-07-19 20:00 ET",
+      "decisionPrice": 203.79,
+      "transitionTs": "Sun 2026-07-19 20:00 ET",
+      "reopenTs": "Mon 2026-07-20 09:30 ET",
+      "reopenPrice": 205.615,
+      "endpointTs": "Mon 2026-07-20 10:30 ET",
+      "endpointPrice": 205.97,
+      "w": 0.006325644786157714,
+      "r": 0.010697286422297392,
+      "turnoverCompleteHours": 18,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": true,
+      "exclusions": [],
+      "priorEligibleBeforeDecision": 1,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09)",
+          "Only 1 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09)",
+          "Only 1 eligible prior episodes (minimum 6)"
+        ],
+        "SELL_POP": [
+          "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09)",
+          "Only 1 eligible prior episodes (minimum 6)"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "SELL_POP": [
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-07-25",
+      "lastTradingDay": "2026-07-24",
+      "fridayRefTs": "Fri 2026-07-24 20:00 ET",
+      "fridayRef": 206.75,
+      "decisionTs": "Sun 2026-07-26 20:00 ET",
+      "decisionPrice": null,
+      "transitionTs": "Sun 2026-07-26 20:00 ET",
+      "reopenTs": "Mon 2026-07-27 09:30 ET",
+      "reopenPrice": 208.1,
+      "endpointTs": "Mon 2026-07-27 10:30 ET",
+      "endpointPrice": 198.91,
+      "w": null,
+      "r": null,
+      "turnoverCompleteHours": 15,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": false,
+      "cohortEligible": false,
+      "exclusions": [
+        "Missing 15m bar ending exactly at the decision cutoff"
+      ],
+      "priorEligibleBeforeDecision": 2,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": null,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09)",
+          "Only 2 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09)",
+          "Only 2 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ],
+        "SELL_POP": [
+          "Missing the 15m bar ending exactly at the decision time",
+          "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09)",
+          "Only 2 eligible prior episodes (minimum 6)",
+          "A proposed limit price is required for this intent"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ],
+        "SELL_POP": [
+          "MISSING_BOUNDARY",
+          "MISSING_TURNOVER",
+          "INADEQUATE_SAMPLE",
+          "REFERENCE_LIMIT_UNAVAILABLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-08-01",
+      "lastTradingDay": "2026-07-31",
+      "fridayRefTs": "Fri 2026-07-31 20:00 ET",
+      "fridayRef": 198.948,
+      "decisionTs": "Sun 2026-08-02 20:00 ET",
+      "decisionPrice": 199.2,
+      "transitionTs": "Sun 2026-08-02 20:00 ET",
+      "reopenTs": "Mon 2026-08-03 09:30 ET",
+      "reopenPrice": 197.67,
+      "endpointTs": "Mon 2026-08-03 10:30 ET",
+      "endpointPrice": 205.325,
+      "w": 0.0012666626455153374,
+      "r": 0.03074799196787148,
+      "turnoverCompleteHours": 15,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": true,
+      "exclusions": [],
+      "priorEligibleBeforeDecision": 2,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": 1398.7366209999998,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Only 2 eligible prior episodes (minimum 6)",
+          "Proposed clip is 35.75% of H_t (hard limit 25%)"
+        ],
+        "BUY_DIP": [
+          "Only 2 eligible prior episodes (minimum 6)",
+          "Proposed clip is 35.75% of H_t (hard limit 25%)"
+        ],
+        "SELL_POP": [
+          "Only 2 eligible prior episodes (minimum 6)",
+          "Proposed clip is 35.75% of H_t (hard limit 25%)"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "INADEQUATE_SAMPLE",
+          "SIZE_LIMIT"
+        ],
+        "BUY_DIP": [
+          "INADEQUATE_SAMPLE",
+          "SIZE_LIMIT"
+        ],
+        "SELL_POP": [
+          "INADEQUATE_SAMPLE",
+          "SIZE_LIMIT"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-08-08",
+      "lastTradingDay": "2026-08-07",
+      "fridayRefTs": "Fri 2026-08-07 20:00 ET",
+      "fridayRef": 223.8,
+      "decisionTs": "Sun 2026-08-09 20:00 ET",
+      "decisionPrice": 224.83,
+      "transitionTs": "Sun 2026-08-09 20:00 ET",
+      "reopenTs": "Mon 2026-08-10 09:30 ET",
+      "reopenPrice": 223.38,
+      "endpointTs": "Mon 2026-08-10 10:30 ET",
+      "endpointPrice": 220.41,
+      "w": 0.0046023235031278364,
+      "r": -0.019659298136369796,
+      "turnoverCompleteHours": 28,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": true,
+      "exclusions": [],
+      "priorEligibleBeforeDecision": 3,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": 1398.7366209999998,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Only 3 eligible prior episodes (minimum 6)",
+          "Proposed clip is 35.75% of H_t (hard limit 25%)"
+        ],
+        "BUY_DIP": [
+          "Only 3 eligible prior episodes (minimum 6)",
+          "Proposed clip is 35.75% of H_t (hard limit 25%)"
+        ],
+        "SELL_POP": [
+          "Only 3 eligible prior episodes (minimum 6)",
+          "Proposed clip is 35.75% of H_t (hard limit 25%)"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "INADEQUATE_SAMPLE",
+          "SIZE_LIMIT"
+        ],
+        "BUY_DIP": [
+          "INADEQUATE_SAMPLE",
+          "SIZE_LIMIT"
+        ],
+        "SELL_POP": [
+          "INADEQUATE_SAMPLE",
+          "SIZE_LIMIT"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-08-15",
+      "lastTradingDay": "2026-08-14",
+      "fridayRefTs": "Fri 2026-08-14 20:00 ET",
+      "fridayRef": 224.72,
+      "decisionTs": "Sun 2026-08-16 20:00 ET",
+      "decisionPrice": 225.39,
+      "transitionTs": "Sun 2026-08-16 20:00 ET",
+      "reopenTs": "Mon 2026-08-17 09:30 ET",
+      "reopenPrice": 225.99,
+      "endpointTs": "Mon 2026-08-17 10:30 ET",
+      "endpointPrice": 226.62,
+      "w": 0.0029814880740477445,
+      "r": 0.00545720750698786,
+      "turnoverCompleteHours": 37,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": true,
+      "exclusions": [],
+      "priorEligibleBeforeDecision": 4,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": 1766.7038390000002,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Only 4 eligible prior episodes (minimum 6)",
+          "Proposed clip is 28.30% of H_t (hard limit 25%)"
+        ],
+        "BUY_DIP": [
+          "Only 4 eligible prior episodes (minimum 6)",
+          "Proposed clip is 28.30% of H_t (hard limit 25%)"
+        ],
+        "SELL_POP": [
+          "Only 4 eligible prior episodes (minimum 6)",
+          "Proposed clip is 28.30% of H_t (hard limit 25%)"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "INADEQUATE_SAMPLE",
+          "SIZE_LIMIT"
+        ],
+        "BUY_DIP": [
+          "INADEQUATE_SAMPLE",
+          "SIZE_LIMIT"
+        ],
+        "SELL_POP": [
+          "INADEQUATE_SAMPLE",
+          "SIZE_LIMIT"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-08-22",
+      "lastTradingDay": "2026-08-21",
+      "fridayRefTs": "Fri 2026-08-21 20:00 ET",
+      "fridayRef": 215.365,
+      "decisionTs": "Sun 2026-08-23 20:00 ET",
+      "decisionPrice": 218,
+      "transitionTs": "Sun 2026-08-23 20:00 ET",
+      "reopenTs": "Mon 2026-08-24 09:30 ET",
+      "reopenPrice": 215.435,
+      "endpointTs": "Mon 2026-08-24 10:30 ET",
+      "endpointPrice": 209.36,
+      "w": 0.012235042834258136,
+      "r": -0.03963302752293574,
+      "turnoverCompleteHours": 39,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": true,
+      "exclusions": [],
+      "priorEligibleBeforeDecision": 5,
+      "evaluated": false,
+      "threshold": null,
+      "matchedExtreme": 0,
+      "signal": "INSUFFICIENT",
+      "ht": 2329.7029,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Only 5 eligible prior episodes (minimum 6)"
+        ],
+        "BUY_DIP": [
+          "Only 5 eligible prior episodes (minimum 6)"
+        ],
+        "SELL_POP": [
+          "Only 5 eligible prior episodes (minimum 6)"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "INADEQUATE_SAMPLE"
+        ],
+        "SELL_POP": [
+          "INADEQUATE_SAMPLE"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-08-29",
+      "lastTradingDay": "2026-08-28",
+      "fridayRefTs": "Fri 2026-08-28 20:00 ET",
+      "fridayRef": 217.92,
+      "decisionTs": "Sun 2026-08-30 20:00 ET",
+      "decisionPrice": 218.11,
+      "transitionTs": "Sun 2026-08-30 20:00 ET",
+      "reopenTs": "Mon 2026-08-31 09:30 ET",
+      "reopenPrice": 218.94,
+      "endpointTs": "Mon 2026-08-31 10:30 ET",
+      "endpointPrice": 220.07,
+      "w": 0.0008718795888400521,
+      "r": 0.008986291320893125,
+      "turnoverCompleteHours": 41,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": true,
+      "exclusions": [],
+      "priorEligibleBeforeDecision": 6,
+      "evaluated": true,
+      "threshold": 0.009280343810207925,
+      "matchedExtreme": 1,
+      "signal": "INSUFFICIENT",
+      "ht": 3359.970974,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Weekend move 0.09% is not beyond the historical 70th-percentile threshold 0.93%"
+        ],
+        "BUY_DIP": [
+          "Weekend move 0.09% is not beyond the historical 70th-percentile threshold 0.93%"
+        ],
+        "SELL_POP": [
+          "Weekend move 0.09% is not beyond the historical 70th-percentile threshold 0.93%"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MOVE_NOT_EXTREME"
+        ],
+        "BUY_DIP": [
+          "MOVE_NOT_EXTREME"
+        ],
+        "SELL_POP": [
+          "MOVE_NOT_EXTREME"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-09-05",
+      "lastTradingDay": "2026-09-04",
+      "fridayRefTs": "Fri 2026-09-04 20:00 ET",
+      "fridayRef": 229.5,
+      "decisionTs": "Sun 2026-09-06 20:00 ET",
+      "decisionPrice": 231.09,
+      "transitionTs": "Mon 2026-09-07 20:00 ET",
+      "reopenTs": "Tue 2026-09-08 09:30 ET",
+      "reopenPrice": 233.21,
+      "endpointTs": "Tue 2026-09-08 10:30 ET",
+      "endpointPrice": 227.9423,
+      "w": 0.006928104575163463,
+      "r": -0.013621100004327369,
+      "turnoverCompleteHours": 44,
+      "turnoverTotalHours": 72,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": false,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": false,
+      "exclusions": [
+        "Nonstandard session: Next regular session is 2026-09-08; Monday 2026-09-07 is Labor Day"
+      ],
+      "priorEligibleBeforeDecision": 7,
+      "evaluated": false,
+      "threshold": 0.007507524395777794,
+      "matchedExtreme": 1,
+      "signal": "INSUFFICIENT",
+      "ht": 5550.735056,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Nonstandard weekend (holiday or early close): Next regular session is 2026-09-08; Monday 2026-09-07 is Labor Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends"
+        ],
+        "BUY_DIP": [
+          "Nonstandard weekend (holiday or early close): Next regular session is 2026-09-08; Monday 2026-09-07 is Labor Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends"
+        ],
+        "SELL_POP": [
+          "Nonstandard weekend (holiday or early close): Next regular session is 2026-09-08; Monday 2026-09-07 is Labor Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "NONSTANDARD_WEEKEND"
+        ],
+        "BUY_DIP": [
+          "NONSTANDARD_WEEKEND"
+        ],
+        "SELL_POP": [
+          "NONSTANDARD_WEEKEND"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-09-12",
+      "lastTradingDay": "2026-09-11",
+      "fridayRefTs": "Fri 2026-09-11 20:00 ET",
+      "fridayRef": 218.241,
+      "decisionTs": "Sun 2026-09-13 20:00 ET",
+      "decisionPrice": 216.96,
+      "transitionTs": "Sun 2026-09-13 20:00 ET",
+      "reopenTs": "Mon 2026-09-14 09:30 ET",
+      "reopenPrice": 211.08,
+      "endpointTs": "Mon 2026-09-14 10:30 ET",
+      "endpointPrice": 210.455,
+      "w": -0.005869657855306798,
+      "r": -0.029982485250737434,
+      "turnoverCompleteHours": 34,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": true,
+      "exclusions": [],
+      "priorEligibleBeforeDecision": 7,
+      "evaluated": true,
+      "threshold": 0.007507524395777794,
+      "matchedExtreme": 1,
+      "signal": "INSUFFICIENT",
+      "ht": 5550.735056,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Weekend move -0.59% is not beyond the historical 70th-percentile threshold 0.75%"
+        ],
+        "BUY_DIP": [
+          "Weekend move -0.59% is not beyond the historical 70th-percentile threshold 0.75%"
+        ],
+        "SELL_POP": [
+          "Weekend move -0.59% is not beyond the historical 70th-percentile threshold 0.75%"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MOVE_NOT_EXTREME"
+        ],
+        "BUY_DIP": [
+          "MOVE_NOT_EXTREME"
+        ],
+        "SELL_POP": [
+          "MOVE_NOT_EXTREME"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-09-19",
+      "lastTradingDay": "2026-09-18",
+      "fridayRefTs": "Fri 2026-09-18 20:00 ET",
+      "fridayRef": 222.53,
+      "decisionTs": "Sun 2026-09-20 20:00 ET",
+      "decisionPrice": 222.33,
+      "transitionTs": "Sun 2026-09-20 20:00 ET",
+      "reopenTs": "Mon 2026-09-21 09:30 ET",
+      "reopenPrice": 222.935,
+      "endpointTs": "Mon 2026-09-21 10:30 ET",
+      "endpointPrice": 223.64,
+      "w": -0.0008987552240147245,
+      "r": 0.005892142310979009,
+      "turnoverCompleteHours": 36,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": true,
+      "exclusions": [],
+      "priorEligibleBeforeDecision": 8,
+      "evaluated": true,
+      "threshold": 0.006280046093072622,
+      "matchedExtreme": 1,
+      "signal": "INSUFFICIENT",
+      "ht": 9367.1656645,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Weekend move -0.09% is not beyond the historical 70th-percentile threshold 0.63%"
+        ],
+        "BUY_DIP": [
+          "Weekend move -0.09% is not beyond the historical 70th-percentile threshold 0.63%"
+        ],
+        "SELL_POP": [
+          "Weekend move -0.09% is not beyond the historical 70th-percentile threshold 0.63%"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "MOVE_NOT_EXTREME"
+        ],
+        "BUY_DIP": [
+          "MOVE_NOT_EXTREME"
+        ],
+        "SELL_POP": [
+          "MOVE_NOT_EXTREME"
+        ]
+      }
+    },
+    {
+      "weekend": "2026-09-26",
+      "lastTradingDay": "2026-09-25",
+      "fridayRefTs": "Fri 2026-09-25 20:00 ET",
+      "fridayRef": 225,
+      "decisionTs": "Sun 2026-09-27 20:00 ET",
+      "decisionPrice": 223.55,
+      "transitionTs": "Sun 2026-09-27 20:00 ET",
+      "reopenTs": "Mon 2026-09-28 09:30 ET",
+      "reopenPrice": 229.56,
+      "endpointTs": "Mon 2026-09-28 10:30 ET",
+      "endpointPrice": 231.27,
+      "w": -0.006444444444444364,
+      "r": 0.0345336613732945,
+      "turnoverCompleteHours": 13,
+      "turnoverTotalHours": 48,
+      "turnoverEligible": true,
+      "turnoverReason": null,
+      "standard": true,
+      "calendarStatus": "RECONCILED",
+      "priceComplete": true,
+      "cohortEligible": true,
+      "exclusions": [],
+      "priorEligibleBeforeDecision": 9,
+      "evaluated": true,
+      "threshold": 0.006143250013817347,
+      "matchedExtreme": 1,
+      "signal": "INSUFFICIENT",
+      "ht": 4473.9182175000005,
+      "actions": {
+        "HOLD": "STAND_DOWN",
+        "BUY_DIP": "STAND_DOWN",
+        "SELL_POP": "STAND_DOWN"
+      },
+      "standDownReasons": {
+        "HOLD": [
+          "Only 1 matched same-direction extreme episodes (minimum 3)"
+        ],
+        "BUY_DIP": [
+          "Only 1 matched same-direction extreme episodes (minimum 3)"
+        ],
+        "SELL_POP": [
+          "Only 1 matched same-direction extreme episodes (minimum 3)"
+        ]
+      },
+      "causes": {
+        "HOLD": [
+          "INADEQUATE_SAMPLE"
+        ],
+        "BUY_DIP": [
+          "INADEQUATE_SAMPLE"
+        ],
+        "SELL_POP": [
+          "INADEQUATE_SAMPLE"
+        ]
+      }
+    }
+  ]
+}
