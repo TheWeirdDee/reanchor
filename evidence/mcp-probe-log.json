@@ -1,0 +1,387 @@
+{
+  "attempts": [
+    {
+      "at": "2026-10-06T04:31:04.878Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T04:32:40.136Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T04:34:13.977Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T04:35:47.328Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T04:37:11.709Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T04:42:26.331Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T04:47:40.558Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T04:52:54.417Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T04:58:08.489Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T05:03:21.541Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T05:08:34.691Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T05:13:48.891Z",
+      "connected": false,
+      "error": "fetch failed"
+    },
+    {
+      "at": "2026-10-06T05:19:17.988Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T05:20:44.434Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T05:22:21.262Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T05:23:55.625Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T05:25:30.041Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T05:29:43.206Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T08:55:57.998Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T08:57:32.866Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T08:59:06.433Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T09:00:40.493Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T10:13:49.019Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T10:15:34.893Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T10:17:26.457Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T21:11:05.175Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-06T23:42:46.063Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    },
+    {
+      "at": "2026-10-07T00:13:39.580Z",
+      "connected": true,
+      "tools": [
+        "guide",
+        "do_query"
+      ],
+      "guide": "OK (5 categories)",
+      "doQuery": {
+        "outcome": "ERROR",
+        "statusCode": 503,
+        "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+      }
+    }
+  ]
+}
