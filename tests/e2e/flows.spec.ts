@@ -7,6 +7,21 @@ mkdirSync(SHOTS, { recursive: true });
 
 const PUBLIC_ROUTES = ["/", "/how-it-works", "/method", "/about", "/desk"];
 
+/**
+ * Evidence screenshot. Chromium occasionally fails a full-page capture under heavy CPU load
+ * ("Unable to capture screenshot"); retry only that failure, so real test failures still fail.
+ */
+async function snap(page: Page, options: Parameters<Page["screenshot"]>[0]) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await page.screenshot(options);
+    } catch (e) {
+      if (attempt >= 3 || !/captureScreenshot|Unable to capture screenshot/i.test(String(e))) throw e;
+      await page.waitForTimeout(500 * attempt);
+    }
+  }
+}
+
 async function noHorizontalOverflow(page: Page) {
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   expect(overflow, "page-wide horizontal overflow").toBeLessThanOrEqual(1);
@@ -60,7 +75,7 @@ test("every public page renders without console errors, overflow or broken inter
     await expect(page.getByRole("contentinfo")).toContainText(`${new Date().getFullYear()} Reanchor`);
     await noHorizontalOverflow(page);
     const slug = path === "/" ? "landing" : path.slice(1);
-    await page.screenshot({ path: `${SHOTS}/${slug}-${info.project.name}.png`, fullPage: true });
+    await snap(page, { path: `${SHOTS}/${slug}-${info.project.name}.png`, fullPage: true });
     for (const h of await page.locator("a[href^='/'], a[href^='#']").evaluateAll((as) => as.map((a) => (a as HTMLAnchorElement).getAttribute("href") ?? ""))) {
       hrefs.add(h.startsWith("#") ? `${path}${h}` : h);
     }
@@ -176,7 +191,7 @@ test("structured replay flow produces one card, history, scenario and sources", 
   await expect(card.getByRole("heading", { name: /STAND DOWN|TRIM/ })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Sources and timestamps" })).toBeVisible();
   await noHorizontalOverflow(page);
-  await page.screenshot({ path: `${SHOTS}/desk-result-${info.project.name}.png`, fullPage: true });
+  await snap(page, { path: `${SHOTS}/desk-result-${info.project.name}.png`, fullPage: true });
 
   await page.getByLabel("Weekend to replay").selectOption("2026-09-19");
   await page.getByRole("button", { name: "Stress-test my decision" }).click();
@@ -298,7 +313,7 @@ test("natural-language flow: extract, confirm, research and grounded explanation
     await expect(caseBox).toContainText("not verified");
     await expect(caseBox).toContainText("Model: gemini");
   }
-  await page.screenshot({ path: `${SHOTS}/desk-nl-${info.project.name}.png`, fullPage: true });
+  await snap(page, { path: `${SHOTS}/desk-nl-${info.project.name}.png`, fullPage: true });
 });
 
 test("missing limit and ambiguous inputs block confirmation with clear messages", async ({ page }) => {
@@ -428,7 +443,7 @@ test("desk at 1440/1280/1024/768/390: decision lands in view after a run, no ove
         .map(({ el, r }) => `${el.tagName} "${(el.textContent ?? "").trim().slice(0, 30)}" ${Math.round(r.height)}px`),
     );
     expect(small, `${width}px: controls under 44px`).toEqual([]);
-    await page.screenshot({ path: `${SHOTS}/desk-after-run-${width}.png` });
+    await snap(page, { path: `${SHOTS}/desk-after-run-${width}.png` });
     await ctx.close();
   }
 });
@@ -449,4 +464,15 @@ test("the decision card renders the computed action, not a fixed STAND DOWN", as
   await expect(card.getByRole("heading", { level: 2 })).toContainText("TRIM");
   await expect(card).not.toContainText("Why the desk stands down");
   await expect(card).toContainText("200.00 USDT");
+});
+
+test("an unknown replay date is rejected as a request error with the correct key suggested", async ({ request }, info) => {
+  test.skip(info.project.name !== "desktop", "API check; one project is enough");
+  const res = await request.post("/api/research", {
+    data: { mode: "replay", replayKey: "2026-09-25", intention: { symbol: "RNVDAUSDT", intent: "HOLD", holdingUsdt: 2000, tradeUsdt: null, limitPrice: null } },
+  });
+  expect(res.status()).toBe(400);
+  const body = await res.json();
+  expect(body.error).toContain("did you mean 2026-09-26?");
+  expect(body.error).not.toContain("provider");
 });
