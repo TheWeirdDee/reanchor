@@ -3,6 +3,7 @@ import type { Card } from "@/domain/decision";
 import { INTENT_LABEL } from "@/domain/intent";
 import { ACTION_LABEL, fmtEtOrNa, fmtNum, fmtPct, fmtUsdt } from "@/lib/format";
 import { Badge, Fact, Notice } from "../ui";
+import { ChronologyStrip, WhyGrid } from "./DecisionWhy";
 
 function ActionIcon({ action, side }: { action: Card["action"]; side: Card["side"] }) {
   if (action === "STAND_DOWN") return <CircleSlash aria-hidden className="h-6 w-6" />;
@@ -40,7 +41,13 @@ export function DecisionCard({ card }: { card: Card }) {
               </h2>
               <p className="mt-2 max-w-xl text-[15px] leading-relaxed text-mist-2">
                 {standDown ? (
-                  "No trade is proposed. The evidence does not support acting this weekend; any existing holding stays exposed to the reopening."
+                  card.hardFailures.length ? (
+                    "A required check failed, so no trade is proposed. Any existing holding stays exposed to the reopening."
+                  ) : (
+                    <>
+                      <strong className="font-semibold text-mist">Not because the market is safe.</strong> The evidence does not meet the rule for acting, so no trade is proposed. Any existing holding stays exposed to the reopening.
+                    </>
+                  )
                 ) : (
                   <>
                     Model {card.action === "TRIM" ? "selling" : card.side === "BUY" ? "buying" : "selling"} up to <strong className="num text-mist">{fmtUsdt(s.modeledClipUsdt)}</strong> (
@@ -58,9 +65,16 @@ export function DecisionCard({ card }: { card: Card }) {
       </header>
 
       <div className="space-y-6 px-5 py-6 sm:px-7">
-        {standDown && card.standDownReasons.length > 0 && (
+        <section aria-label="Why this decision">
+          <h3 className="mb-3 text-sm font-semibold text-ink">{standDown ? "Why the desk stands down" : "Why this action"}</h3>
+          <WhyGrid card={card} />
+        </section>
+
+        {card.mode === "REPLAY" && <ChronologyStrip card={card} />}
+
+        {standDown && card.standDownReasons.length > 1 && (
           <div>
-            <h3 className="text-sm font-semibold text-ink">Why the desk stands down</h3>
+            <h3 className="text-sm font-semibold text-ink">All reasons</h3>
             <ul className="mt-2 space-y-1.5 text-[15px] text-ink-2">
               {card.standDownReasons.map((r) => (
                 <li key={r} className="flex gap-2.5">
