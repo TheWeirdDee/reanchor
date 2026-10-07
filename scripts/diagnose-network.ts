@@ -118,7 +118,8 @@ function proxyConfig() {
     winhttp: run("netsh winhttp show proxy"),
     wininetProxyEnable: run('reg query "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyEnable'),
     wininetProxyServer: run('reg query "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyServer'),
-    defaultGateway: run("powershell -NoProfile -Command \"(Get-NetIPConfiguration | Where-Object {$_.IPv4DefaultGateway}).IPv4DefaultGateway.NextHop\""),
+    // Only whether a default gateway exists; its address identifies the local network and is not recorded.
+    defaultGatewayPresent: run("powershell -NoProfile -Command \"(Get-NetIPConfiguration | Where-Object {$_.IPv4DefaultGateway}).IPv4DefaultGateway.NextHop\"") ? true : false,
   };
 }
 
