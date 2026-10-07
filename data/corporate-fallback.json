@@ -1,0 +1,1759 @@
+{
+  "source": "Bitget /api/v3/market/split-records + Nasdaq.com dividend history",
+  "retrievedAt": "2026-10-06T05:27:24.015Z",
+  "splitRecords": {
+    "status": "OK",
+    "receipt": {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/market/split-records",
+      "params": {},
+      "retrievedAt": "2026-10-06T05:27:26.487Z",
+      "httpStatus": 200,
+      "apiCode": "00000",
+      "rows": 6
+    },
+    "error": null,
+    "records": [
+      {
+        "symbol": "KIOXIAUSDT",
+        "type": "split",
+        "status": "completed",
+        "adjustmentRatio": "3",
+        "exDividendDate": "20260929",
+        "exDividendDateTimezone": "ET",
+        "exDate": "2026-09-29"
+      },
+      {
+        "symbol": "KORUUSDT",
+        "type": "split",
+        "status": "completed",
+        "adjustmentRatio": "20",
+        "exDividendDate": "20260715",
+        "exDividendDateTimezone": "ET",
+        "exDate": "2026-07-15"
+      },
+      {
+        "symbol": "MSTUUSDT",
+        "type": "reverse_split",
+        "status": "completed",
+        "adjustmentRatio": "0.1",
+        "exDividendDate": "20260824",
+        "exDividendDateTimezone": "ET",
+        "exDate": "2026-08-24"
+      },
+      {
+        "symbol": "MUUUSDT",
+        "type": "split",
+        "status": "completed",
+        "adjustmentRatio": "20",
+        "exDividendDate": "20260715",
+        "exDividendDateTimezone": "ET",
+        "exDate": "2026-07-15"
+      },
+      {
+        "symbol": "SOXSUSDT",
+        "type": "reverse_split",
+        "status": "completed",
+        "adjustmentRatio": "0.1",
+        "exDividendDate": "20260715",
+        "exDividendDateTimezone": "ET",
+        "exDate": "2026-07-15"
+      },
+      {
+        "symbol": "TOKYOELUSDT",
+        "type": "split",
+        "status": "completed",
+        "adjustmentRatio": "5",
+        "exDividendDate": "20260929",
+        "exDividendDateTimezone": "ET",
+        "exDate": "2026-09-29"
+      }
+    ]
+  },
+  "byUnderlying": {
+    "NVDA": {
+      "status": "OK",
+      "symbol": "RNVDAUSDT",
+      "splits": [],
+      "dividends": [
+        {
+          "exDate": "2026-09-10",
+          "type": "Cash",
+          "amount": "$0.25",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-06-04",
+          "type": "Cash",
+          "amount": "$0.25",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-03-11",
+          "type": "Cash",
+          "amount": "$0.01",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-12-04",
+          "type": "Cash",
+          "amount": "$0.01",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-09-11",
+          "type": "Cash",
+          "amount": "$0.01",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-06-11",
+          "type": "Cash",
+          "amount": "$0.01",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-03-12",
+          "type": "Cash",
+          "amount": "$0.01",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-12-05",
+          "type": "Cash",
+          "amount": "$0.01",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-09-12",
+          "type": "Cash",
+          "amount": "$0.01",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-06-11",
+          "type": "Cash",
+          "amount": "$0.01",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-03-05",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-12-05",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-09-06",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-06-07",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-03-07",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-11-30",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-09-07",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-06-08",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-03-02",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-12-01",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-08-31",
+          "type": "Cash",
+          "amount": "$0.04",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-06-09",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-03-09",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-12-03",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-09-01",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-06-04",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-02-27",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-11-27",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-08-28",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-05-30",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-02-28",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-11-29",
+          "type": "Cash",
+          "amount": "$0.16",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-08-29",
+          "type": "Cash",
+          "amount": "$0.15",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-05-23",
+          "type": "Cash",
+          "amount": "$0.15",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-02-22",
+          "type": "Cash",
+          "amount": "$0.15",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-11-22",
+          "type": "Cash",
+          "amount": "$0.15",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-08-22",
+          "type": "Cash",
+          "amount": "$0.14",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-05-19",
+          "type": "Cash",
+          "amount": "$0.14",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-02-22",
+          "type": "Cash",
+          "amount": "$0.14",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-11-23",
+          "type": "Cash",
+          "amount": "$0.14",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-08-23",
+          "type": "Cash",
+          "amount": "$0.115",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-05-24",
+          "type": "Cash",
+          "amount": "$0.115",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-02-29",
+          "type": "Cash",
+          "amount": "$0.115",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-11-18",
+          "type": "Cash",
+          "amount": "$0.115",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-08-18",
+          "type": "Cash",
+          "amount": "$0.0975",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-05-19",
+          "type": "Cash",
+          "amount": "$0.0975",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-02-24",
+          "type": "Cash",
+          "amount": "$0.085",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-11-19",
+          "type": "Cash",
+          "amount": "$0.085",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-08-19",
+          "type": "Cash",
+          "amount": "$0.085",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-05-20",
+          "type": "Cash",
+          "amount": "$0.085",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-02-25",
+          "type": "Cash",
+          "amount": "$0.085",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-11-19",
+          "type": "Cash",
+          "amount": "$0.085",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-08-20",
+          "type": "Cash",
+          "amount": "$0.075",
+          "currency": "USD"
+        }
+      ],
+      "receipt": {
+        "source": "Nasdaq.com dividend history",
+        "endpoint": "/api/quote/NVDA/dividends",
+        "params": {
+          "assetclass": "stocks"
+        },
+        "retrievedAt": "2026-10-06T05:27:27.304Z",
+        "httpStatus": 200,
+        "rows": 53
+      },
+      "error": null
+    },
+    "TSLA": {
+      "status": "OK",
+      "symbol": "RTSLAUSDT",
+      "splits": [],
+      "dividends": [],
+      "receipt": {
+        "source": "Nasdaq.com dividend history",
+        "endpoint": "/api/quote/TSLA/dividends",
+        "params": {
+          "assetclass": "stocks"
+        },
+        "retrievedAt": "2026-10-06T05:27:27.781Z",
+        "httpStatus": 200,
+        "rows": 0
+      },
+      "error": null
+    },
+    "AAPL": {
+      "status": "OK",
+      "symbol": "RAAPLUSDT",
+      "splits": [],
+      "dividends": [
+        {
+          "exDate": "2026-08-10",
+          "type": "Cash",
+          "amount": "$0.27",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-05-11",
+          "type": "Cash",
+          "amount": "$0.27",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-02-09",
+          "type": "Cash",
+          "amount": "$0.26",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-11-10",
+          "type": "Cash",
+          "amount": "$0.26",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-08-11",
+          "type": "Cash",
+          "amount": "$0.26",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-05-12",
+          "type": "Cash",
+          "amount": "$0.26",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-02-10",
+          "type": "Cash",
+          "amount": "$0.25",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-11-08",
+          "type": "Cash",
+          "amount": "$0.25",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-08-12",
+          "type": "Cash",
+          "amount": "$0.25",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-05-10",
+          "type": "Cash",
+          "amount": "$0.25",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-02-09",
+          "type": "Cash",
+          "amount": "$0.24",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-11-10",
+          "type": "Cash",
+          "amount": "$0.24",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-08-11",
+          "type": "Cash",
+          "amount": "$0.24",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-05-12",
+          "type": "Cash",
+          "amount": "$0.24",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-02-10",
+          "type": "Cash",
+          "amount": "$0.23",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-11-04",
+          "type": "Cash",
+          "amount": "$0.23",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-08-05",
+          "type": "Cash",
+          "amount": "$0.23",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-05-06",
+          "type": "Cash",
+          "amount": "$0.23",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-02-04",
+          "type": "Cash",
+          "amount": "$0.22",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-11-05",
+          "type": "Cash",
+          "amount": "$0.22",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-08-06",
+          "type": "Cash",
+          "amount": "$0.22",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-05-07",
+          "type": "Cash",
+          "amount": "$0.22",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-02-05",
+          "type": "Cash",
+          "amount": "$0.205",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-11-06",
+          "type": "Cash",
+          "amount": "$0.205",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-08-07",
+          "type": "Cash",
+          "amount": "$0.82",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-05-08",
+          "type": "Cash",
+          "amount": "$0.82",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-02-07",
+          "type": "Cash",
+          "amount": "$0.77",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-11-07",
+          "type": "Cash",
+          "amount": "$0.77",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-08-09",
+          "type": "Cash",
+          "amount": "$0.77",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-05-10",
+          "type": "Cash",
+          "amount": "$0.77",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-02-08",
+          "type": "Cash",
+          "amount": "$0.73",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-11-08",
+          "type": "Cash",
+          "amount": "$0.73",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-08-10",
+          "type": "Cash",
+          "amount": "$0.73",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-05-11",
+          "type": "Cash",
+          "amount": "$0.73",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-02-09",
+          "type": "Cash",
+          "amount": "$0.63",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-11-10",
+          "type": "Cash",
+          "amount": "$0.63",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-08-10",
+          "type": "Cash",
+          "amount": "$0.63",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-05-11",
+          "type": "Cash",
+          "amount": "$0.63",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-02-09",
+          "type": "Cash",
+          "amount": "$0.57",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-11-03",
+          "type": "Cash",
+          "amount": "$0.57",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-08-04",
+          "type": "Cash",
+          "amount": "$0.57",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-05-05",
+          "type": "Cash",
+          "amount": "$0.57",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-02-04",
+          "type": "Cash",
+          "amount": "$0.52",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-11-05",
+          "type": "Cash",
+          "amount": "$0.52",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-08-06",
+          "type": "Cash",
+          "amount": "$0.52",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-05-07",
+          "type": "Cash",
+          "amount": "$0.52",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-02-05",
+          "type": "Cash",
+          "amount": "$0.47",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-11-06",
+          "type": "Cash",
+          "amount": "$0.47",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-08-07",
+          "type": "Cash",
+          "amount": "$0.47",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-05-08",
+          "type": "Cash",
+          "amount": "$3.29",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-02-06",
+          "type": "Cash",
+          "amount": "$3.05",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-11-06",
+          "type": "Cash",
+          "amount": "$3.05",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-08-08",
+          "type": "Cash",
+          "amount": "$3.05",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-02-07",
+          "type": "Cash",
+          "amount": "$2.65",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1995-11-21",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1995-08-16",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1995-05-26",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1995-02-13",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1994-11-18",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1994-08-15",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1994-05-27",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1994-02-07",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1993-11-19",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1993-08-16",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1993-05-28",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1993-02-12",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1992-11-30",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1992-08-17",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1992-06-01",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1992-02-14",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1991-11-18",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1991-08-19",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1991-05-20",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1991-02-15",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1990-11-16",
+          "type": "Cash",
+          "amount": "$0.12",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1990-08-20",
+          "type": "Cash",
+          "amount": "$0.11",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1990-05-21",
+          "type": "Cash",
+          "amount": "$0.11",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1990-02-16",
+          "type": "Cash",
+          "amount": "$0.11",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1989-11-17",
+          "type": "Cash",
+          "amount": "$0.11",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1989-08-21",
+          "type": "Cash",
+          "amount": "$0.10",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1989-05-22",
+          "type": "Cash",
+          "amount": "$0.10",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1989-02-17",
+          "type": "Cash",
+          "amount": "$0.10",
+          "currency": "USD"
+        },
+        {
+          "exDate": "1988-11-21",
+          "type": "Cash",
+          "amount": "$0.10",
+          "currency": "USD"
+        }
+      ],
+      "receipt": {
+        "source": "Nasdaq.com dividend history",
+        "endpoint": "/api/quote/AAPL/dividends",
+        "params": {
+          "assetclass": "stocks"
+        },
+        "retrievedAt": "2026-10-06T05:27:28.051Z",
+        "httpStatus": 200,
+        "rows": 83
+      },
+      "error": null
+    },
+    "MSFT": {
+      "status": "OK",
+      "symbol": "RMSFTUSDT",
+      "splits": [],
+      "dividends": [
+        {
+          "exDate": "2026-11-19",
+          "type": "Cash",
+          "amount": "$0.98",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-08-20",
+          "type": "Cash",
+          "amount": "$0.91",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-05-21",
+          "type": "Cash",
+          "amount": "$0.91",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-02-19",
+          "type": "Cash",
+          "amount": "$0.91",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-11-20",
+          "type": "Cash",
+          "amount": "$0.91",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-08-21",
+          "type": "Cash",
+          "amount": "$0.83",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-05-15",
+          "type": "Cash",
+          "amount": "$0.83",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-02-20",
+          "type": "Cash",
+          "amount": "$0.83",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-11-21",
+          "type": "Cash",
+          "amount": "$0.83",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-08-15",
+          "type": "Cash",
+          "amount": "$0.75",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-05-15",
+          "type": "Cash",
+          "amount": "$0.75",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-02-14",
+          "type": "Cash",
+          "amount": "$0.75",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-11-15",
+          "type": "Cash",
+          "amount": "$0.75",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-08-16",
+          "type": "Cash",
+          "amount": "$0.68",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-05-17",
+          "type": "Cash",
+          "amount": "$0.68",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-02-15",
+          "type": "Cash",
+          "amount": "$0.68",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-11-16",
+          "type": "Cash",
+          "amount": "$0.68",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-08-17",
+          "type": "Cash",
+          "amount": "$0.62",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-05-18",
+          "type": "Cash",
+          "amount": "$0.62",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-02-16",
+          "type": "Cash",
+          "amount": "$0.62",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-11-17",
+          "type": "Cash",
+          "amount": "$0.62",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-08-18",
+          "type": "Cash",
+          "amount": "$0.56",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-05-19",
+          "type": "Cash",
+          "amount": "$0.56",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-02-17",
+          "type": "Cash",
+          "amount": "$0.56",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-11-18",
+          "type": "Cash",
+          "amount": "$0.56",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-08-19",
+          "type": "Cash",
+          "amount": "$0.51",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-05-20",
+          "type": "Cash",
+          "amount": "$0.51",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-02-19",
+          "type": "Cash",
+          "amount": "$0.51",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-11-20",
+          "type": "Cash",
+          "amount": "$0.51",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-08-14",
+          "type": "Cash",
+          "amount": "$0.46",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-05-15",
+          "type": "Cash",
+          "amount": "$0.46",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-02-20",
+          "type": "Cash",
+          "amount": "$0.46",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-11-14",
+          "type": "Cash",
+          "amount": "$0.46",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-08-15",
+          "type": "Cash",
+          "amount": "$0.42",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-05-16",
+          "type": "Cash",
+          "amount": "$0.42",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-02-14",
+          "type": "Cash",
+          "amount": "$0.42",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-11-15",
+          "type": "Cash",
+          "amount": "$0.42",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-08-15",
+          "type": "Cash",
+          "amount": "$0.39",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-05-16",
+          "type": "Cash",
+          "amount": "$0.39",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-02-14",
+          "type": "Cash",
+          "amount": "$0.39",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-11-15",
+          "type": "Cash",
+          "amount": "$0.39",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-08-16",
+          "type": "Cash",
+          "amount": "$0.36",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-05-17",
+          "type": "Cash",
+          "amount": "$0.36",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-02-16",
+          "type": "Cash",
+          "amount": "$0.36",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-11-17",
+          "type": "Cash",
+          "amount": "$0.36",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-08-18",
+          "type": "Cash",
+          "amount": "$0.31",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-05-19",
+          "type": "Cash",
+          "amount": "$0.31",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-02-17",
+          "type": "Cash",
+          "amount": "$0.31",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-11-18",
+          "type": "Cash",
+          "amount": "$0.31",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-08-19",
+          "type": "Cash",
+          "amount": "$0.28",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-05-13",
+          "type": "Cash",
+          "amount": "$0.28",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-02-18",
+          "type": "Cash",
+          "amount": "$0.28",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-11-19",
+          "type": "Cash",
+          "amount": "$0.28",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-08-13",
+          "type": "Cash",
+          "amount": "$0.23",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2003-02-19",
+          "type": "Cash",
+          "amount": "$0.08",
+          "currency": "USD"
+        }
+      ],
+      "receipt": {
+        "source": "Nasdaq.com dividend history",
+        "endpoint": "/api/quote/MSFT/dividends",
+        "params": {
+          "assetclass": "stocks"
+        },
+        "retrievedAt": "2026-10-06T05:27:28.309Z",
+        "httpStatus": 200,
+        "rows": 55
+      },
+      "error": null
+    },
+    "AMZN": {
+      "status": "OK",
+      "symbol": "RAMZNUSDT",
+      "splits": [],
+      "dividends": [],
+      "receipt": {
+        "source": "Nasdaq.com dividend history",
+        "endpoint": "/api/quote/AMZN/dividends",
+        "params": {
+          "assetclass": "stocks"
+        },
+        "retrievedAt": "2026-10-06T05:27:28.507Z",
+        "httpStatus": 200,
+        "rows": 0
+      },
+      "error": null
+    },
+    "META": {
+      "status": "OK",
+      "symbol": "RMETAUSDT",
+      "splits": [],
+      "dividends": [
+        {
+          "exDate": "2026-09-21",
+          "type": "Cash",
+          "amount": "$0.525",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-06-15",
+          "type": "Cash",
+          "amount": "$0.525",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-03-16",
+          "type": "Cash",
+          "amount": "$0.525",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-12-15",
+          "type": "Cash",
+          "amount": "$0.525",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-09-22",
+          "type": "Cash",
+          "amount": "$0.525",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-06-16",
+          "type": "Cash",
+          "amount": "$0.525",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-03-14",
+          "type": "Cash",
+          "amount": "$0.525",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-12-16",
+          "type": "Cash",
+          "amount": "$0.50",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-09-16",
+          "type": "Cash",
+          "amount": "$0.50",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-06-14",
+          "type": "Cash",
+          "amount": "$0.50",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-02-21",
+          "type": "Cash",
+          "amount": "$0.50",
+          "currency": "USD"
+        }
+      ],
+      "receipt": {
+        "source": "Nasdaq.com dividend history",
+        "endpoint": "/api/quote/META/dividends",
+        "params": {
+          "assetclass": "stocks"
+        },
+        "retrievedAt": "2026-10-06T05:27:28.693Z",
+        "httpStatus": 200,
+        "rows": 11
+      },
+      "error": null
+    },
+    "QQQ": {
+      "status": "OK",
+      "symbol": "RQQQUSDT",
+      "splits": [],
+      "dividends": [
+        {
+          "exDate": "2026-09-21",
+          "type": "Cash",
+          "amount": "$0.75143",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-06-22",
+          "type": "Cash",
+          "amount": "$0.81349",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2026-03-23",
+          "type": "Cash",
+          "amount": "$0.73282",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-12-22",
+          "type": "Cash",
+          "amount": "$0.79408",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-09-22",
+          "type": "Cash",
+          "amount": "$0.69395",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-06-23",
+          "type": "Cash",
+          "amount": "$0.59111",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2025-03-24",
+          "type": "Cash",
+          "amount": "$0.71571",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-12-23",
+          "type": "Cash",
+          "amount": "$0.83466",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-09-23",
+          "type": "Cash",
+          "amount": "$0.67686",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-06-24",
+          "type": "Cash",
+          "amount": "$0.7615",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2024-03-18",
+          "type": "Cash",
+          "amount": "$0.57345",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-12-27",
+          "type": "Cash",
+          "amount": "$0.21584",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-12-18",
+          "type": "Cash",
+          "amount": "$0.80826",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-09-18",
+          "type": "Cash",
+          "amount": "$0.53555",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-06-20",
+          "type": "Cash",
+          "amount": "$0.50395",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2023-03-20",
+          "type": "Cash",
+          "amount": "$0.47223",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-12-19",
+          "type": "Cash",
+          "amount": "$0.65541",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-09-19",
+          "type": "Cash",
+          "amount": "$0.51856",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-06-21",
+          "type": "Cash",
+          "amount": "$0.5274",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2022-03-21",
+          "type": "Cash",
+          "amount": "$0.43369",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-12-20",
+          "type": "Cash",
+          "amount": "$0.49141",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-09-20",
+          "type": "Cash",
+          "amount": "$0.41391",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-06-21",
+          "type": "Cash",
+          "amount": "$0.39679",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2021-03-22",
+          "type": "Cash",
+          "amount": "$0.39468",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-12-21",
+          "type": "Cash",
+          "amount": "$0.56133",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-09-21",
+          "type": "Cash",
+          "amount": "$0.38824",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-06-22",
+          "type": "Cash",
+          "amount": "$0.42426",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2020-03-23",
+          "type": "Cash",
+          "amount": "$0.36269",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-12-23",
+          "type": "Cash",
+          "amount": "$0.45765",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-09-23",
+          "type": "Cash",
+          "amount": "$0.38415",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-06-24",
+          "type": "Cash",
+          "amount": "$0.41558",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2019-03-18",
+          "type": "Cash",
+          "amount": "$0.32421",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-12-24",
+          "type": "Cash",
+          "amount": "$0.42061",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-09-24",
+          "type": "Cash",
+          "amount": "$0.32975",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-06-18",
+          "type": "Cash",
+          "amount": "$0.37837",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2018-03-19",
+          "type": "Cash",
+          "amount": "$0.27655",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-12-18",
+          "type": "Cash",
+          "amount": "$0.32941",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-09-18",
+          "type": "Cash",
+          "amount": "$0.31938",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-06-16",
+          "type": "Cash",
+          "amount": "$0.37842",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2017-03-17",
+          "type": "Cash",
+          "amount": "$0.27415",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-12-16",
+          "type": "Cash",
+          "amount": "$0.35494",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-09-16",
+          "type": "Cash",
+          "amount": "$0.29387",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-06-17",
+          "type": "Cash",
+          "amount": "$0.28665",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2016-03-18",
+          "type": "Cash",
+          "amount": "$0.3178",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-12-18",
+          "type": "Cash",
+          "amount": "$0.34233",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-09-18",
+          "type": "Cash",
+          "amount": "$0.26002",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-06-19",
+          "type": "Cash",
+          "amount": "$0.25416",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2015-03-20",
+          "type": "Cash",
+          "amount": "$0.24806",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-12-19",
+          "type": "Cash",
+          "amount": "$0.38681",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-09-19",
+          "type": "Cash",
+          "amount": "$0.2378",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-06-20",
+          "type": "Cash",
+          "amount": "$0.2491",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-03-21",
+          "type": "Cash",
+          "amount": "$0.20606",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2014-02-27",
+          "type": "Cash",
+          "amount": "$0.37313",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-12-20",
+          "type": "Cash",
+          "amount": "$0.27241",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-09-20",
+          "type": "Cash",
+          "amount": "$0.23771",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-06-21",
+          "type": "Cash",
+          "amount": "$0.22361",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2013-03-15",
+          "type": "Cash",
+          "amount": "$0.15931",
+          "currency": "USD"
+        },
+        {
+          "exDate": "2012-06-15",
+          "type": "Cash",
+          "amount": "$0.14312",
+          "currency": "USD"
+        }
+      ],
+      "receipt": {
+        "source": "Nasdaq.com dividend history",
+        "endpoint": "/api/quote/QQQ/dividends",
+        "params": {
+          "assetclass": "etf"
+        },
+        "retrievedAt": "2026-10-06T05:27:28.907Z",
+        "httpStatus": 200,
+        "rows": 58
+      },
+      "error": null
+    }
+  }
+}
