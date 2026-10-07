@@ -38,3 +38,39 @@ Each user-facing claim maps to its source and calculation. Categories: **O** obs
 | Anywhere | Usability results | U | **None collected.** See `VALIDATION.md` |
 
 Every saved weekend row and evaluation row is recomputed by `npm run evidence:verify` (23/23 and 69/69 reproduce at build time).
+
+## Decision explanation elements (added 2026-10-07)
+
+| Where | Claim | Category | Source / calculation |
+| --- | --- | --- | --- |
+| Card | "You asked" | User input | The confirmed intention (`intentSummary`, `src/components/desk/DecisionWhy.tsx`) |
+| Card | "Compared against N prior weekends" | H | `card.signal.eligibleCount` and `excludedCount`; only weekends completed before the decision |
+| Card | "Evidence found" | H | First unmet rule, in engine order: eligible count vs `MIN_ELIGIBLE_EPISODES`, move vs threshold, matched count vs `MIN_MATCHED_EPISODES` |
+| Card | "Rule applied" | Rule | First hard failure, else the first stand-down reason, else the action mapping; all from `computeCard` |
+| Card | Threshold meter "X found · 3 required" | H | `card.signal.matchedCount` against `MIN_MATCHED_EPISODES`; shown only when the move is extreme |
+| Card | "Not because the market is safe." | Statement | Shown only when the action is STAND DOWN and no hard check failed |
+| Card | Information boundary strip | O | Friday reference bar end, decision time `card.t`, reopening and first-hour end from `card.session`; the right side is never used by the rules |
+| History | Examined, eligible, matched, excluded counts | H | Counts of `card.history` rows by status |
+| Replay outcome | "Decision made ... Everything below happened afterwards." | O | `card.t`; outcome values from `card.realized` |
+| Desk step 1 | "You said" and "Gemini extracted" | Model + user | The submitted sentence and the extraction fields returned by `/api/parse`; nothing runs until confirmation |
+
+## Demo video v2 claims (2026-10-07, `reanchor-demo-v2.mp4`, 1:38)
+
+Every caption below was checked against the frame where it appears.
+
+| Time | Claim | Value | Class | Visible proof |
+| --- | --- | --- | --- | --- |
+| 0:11 | Gemini only extracts fields; it does not choose the trade | rNVDA, Hold, 2,000 USDT | LIVE (model) | "You said" / "Gemini extracted" panel and the authority panel |
+| 0:19 | Nothing runs until confirmation | | LIVE | Run button enabled only after "Confirm intention" |
+| 0:28 | Decision STAND DOWN, not because the market is safe | STAND DOWN | H, computed | Card header |
+| 0:28 | Compared against 9 prior weekends finished before the decision | 9 eligible, 13 excluded | H | "Compared against" cell |
+| 0:28 | 1 comparable extreme found, 3 required | 1 / 3 | H | Threshold meter and "Evidence found" cell |
+| 0:42 | Decision at Sunday 20:00 ET; reopening and first hour later | Sun 2026-09-27 20:00 ET; Mon 09:30 and 10:30 ET | O | Information boundary strip |
+| 0:48 | 22 examined, 9 eligible, 1 matched, 13 excluded | 22 / 9 / 1 / 13 | H | History counts |
+| 0:54 | Reopened +2.69% after the decision; not used | +2.69% | O, revealed after | "What happened after this replay decision" |
+| 1:05 | Live candles from Bitget Agent Hub MCP with time and content hash | 999 bars, sha256 | O, live at recording | Sources row "Bitget Agent Hub MCP market.candles" |
+| 1:05 | Outside the weekend session the live desk stands down | | LIVE | Live card reason "Not inside a verified weekend session" |
+| 1:19 | Bitget AI data MCP returns HTTP 503; labeled fallback used | 503 | O (probe log) | Integration status card |
+| 1:24 | Integration calls saved as public receipts | | O | `data/agent-tool-receipts.json` on GitHub |
+
+Recorded against the production build of this tree (local `next start`), with live Bitget and Gemini calls; no response was mocked.
