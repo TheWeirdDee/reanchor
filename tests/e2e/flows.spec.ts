@@ -153,6 +153,14 @@ test("structured replay flow produces one card, history, scenario and sources", 
   await expect(card.getByText("Observed weekend-to-overnight transition", { exact: true }).locator("xpath=following-sibling::dd[1]")).toHaveText("Sun 2026-09-27 20:00 ET");
   await expect(card.getByText("Regular US cash-market open", { exact: true }).locator("xpath=following-sibling::dd[1]")).toHaveText("Mon 2026-09-28 09:30 ET");
   await expect(card.getByText("Only 1 matched same-direction extreme episodes (minimum 3)")).toBeVisible();
+  // The reason is answered at a glance from the computed card: asked, compared, found, rule.
+  await expect(card).toContainText("Not because the market is safe.");
+  await expect(card.getByRole("img", { name: "1 matched comparable extreme weekends; 3 required" })).toBeVisible();
+  await expect(card).toContainText("1 found · 3 required · threshold not met");
+  await expect(card).toContainText("Hold: check whether to trim · rNVDA · holding 3,000 USDT");
+  await expect(card).toContainText("Decision here");
+  await expect(page.locator("#history")).toContainText("Prior weekends examined");
+  await expect(page.locator("#realized")).toContainText("Everything below happened afterwards.");
   await expect(page.getByRole("heading", { name: "Stress test against prior reopenings" })).toBeVisible();
   await expect(page.getByRole("region", { name: "Historical weekends" }).getByRole("row")).not.toHaveCount(1);
   await expect(page.getByRole("heading", { name: "What happened after this replay decision" })).toBeVisible();
@@ -277,6 +285,8 @@ test("natural-language flow: extract, confirm, research and grounded explanation
   await expect(page.getByLabel("Proposed sale size (USDT)")).toHaveValue("500");
   await expect(page.getByLabel("Proposed limit price (USDT per token)")).toHaveValue("240");
   await expect(page.getByText("From your text").first()).toBeVisible();
+  await expect(page.getByText("You said", { exact: true })).toBeVisible();
+  await expect(page.getByText("Gemini extracted", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "Stress-test my decision" })).toBeDisabled();
   await page.getByRole("button", { name: "Confirm intention" }).click();
   await runReplay(page);
