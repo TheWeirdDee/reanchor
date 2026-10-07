@@ -14,6 +14,13 @@ import type { FieldSource, FormState, MetaResponse, ResearchResult } from "./typ
 
 const EXAMPLE = "I hold $3,000 of rNVDA and want to check whether to trim";
 
+/** Draft value for the intention preview: formatted when it is a valid number, shown as typed otherwise. */
+function fmtDraft(raw: string, unit: string): string {
+  if (!raw.trim()) return "not entered";
+  const n = toNum(raw);
+  return n !== null && !Number.isNaN(n) ? `${n.toLocaleString("en-US", { maximumFractionDigits: 8 })}${unit}` : `${raw}${unit}`;
+}
+
 function toNum(s: string): number | null {
   const t = s.replace(/[,\s$]/g, "");
   if (t === "") return null;
@@ -434,8 +441,20 @@ export function Desk() {
           </Section>
         </div>
 
-        <div ref={resultsRef} tabIndex={-1} aria-live="polite" className="min-w-0 space-y-5 outline-none">
-          {!result && !running && <EmptyResult />}
+        <div ref={resultsRef} tabIndex={-1} aria-live="polite" className={`min-w-0 space-y-5 outline-none ${!result ? "xl:self-stretch" : ""}`}>
+          {!result && !running && (
+            <EmptyResult
+              draft={[
+                { label: "Instrument", value: instrument ? `${instrument.baseCoin} (${instrument.symbol})` : "not chosen" },
+                { label: "Intent", value: INTENT_PREVIEW[form.intent] },
+                ...(needsHolding ? [{ label: "Holding", value: fmtDraft(form.holding, " USDT") }] : []),
+                ...(needsTrade ? [{ label: form.intent === "BUY_DIP" ? "Buy size" : "Sale size", value: fmtDraft(form.trade, " USDT") }] : []),
+                ...(needsTrade ? [{ label: "Limit price", value: fmtDraft(form.limit, " USDT") }] : []),
+              ]}
+              status={confirmed ? "Confirmed: ready to stress-test" : canConfirm ? "Not confirmed yet" : `${fieldErrors.length} field${fieldErrors.length > 1 ? "s" : ""} need attention`}
+              confirmed={confirmed}
+            />
+          )}
           {running && !result && (
             <div className="rounded-[22px] border border-line bg-surface p-8">
               <Spinner label="Computing from source data" />
@@ -463,6 +482,7 @@ export function Desk() {
   );
 }
 
+const INTENT_PREVIEW: Record<Intent, string> = { HOLD: "Hold, checking a trim", BUY_DIP: "Buy the dip, as a spot buy", SELL_POP: "Sell into a pop, from my holding" };
 const INTENT_NAME: Record<Intent, string> = { HOLD: "Hold", BUY_DIP: "Buy the dip", SELL_POP: "Sell into a pop" };
 const INTENT_HINT: Record<Intent, string> = {
   HOLD: "I hold it and want to know whether to trim before the reopening",
@@ -488,12 +508,23 @@ function AuthorityBoundary({ modelName }: { modelName: string | null }) {
   );
 }
 
-function EmptyResult() {
+/** Placeholder beside the form: stays in view while the form is filled, and mirrors the intention being built. */
+function EmptyResult({ draft, status, confirmed }: { draft: { label: string; value: string }[]; status: string; confirmed: boolean }) {
   return (
-    <div className="texture-grid-light relative overflow-hidden rounded-[22px] border border-dashed border-line-strong bg-surface/70 px-6 py-12 sm:px-10">
-      <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-3">Result</p>
-      <p className="mt-3 max-w-md text-lg font-semibold tracking-tight text-ink">Your decision card appears here.</p>
-      <ol className="mt-4 max-w-md space-y-2 text-sm text-ink-2">
+    <div className="texture-grid-light relative overflow-hidden rounded-[22px] border border-dashed border-line-strong bg-surface/70 px-6 py-10 sm:px-10 xl:sticky xl:top-[calc(var(--header-h)+16px)]">
+      <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-ink-3">Your intention</p>
+      <dl className="mt-3 grid max-w-lg grid-cols-[auto_1fr] gap-x-5 gap-y-1.5 text-[15px]">
+        {draft.map((d) => (
+          <div key={d.label} className="contents">
+            <dt className="text-ink-3">{d.label}</dt>
+            <dd className={`font-semibold ${/^not /.test(d.value) ? "text-ink-3" : "text-ink"}`}>{d.value}</dd>
+          </div>
+        ))}
+      </dl>
+      <p className={`mt-3 inline-flex rounded-full px-3 py-1 text-xs font-semibold ${confirmed ? "bg-ok-soft text-ok" : "bg-sunken text-ink-2"}`}>{status}</p>
+      <p className="mt-8 font-mono text-[11px] uppercase tracking-[0.16em] text-ink-3">Result</p>
+      <p className="mt-2 max-w-md text-lg font-semibold tracking-tight text-ink">Your decision card appears here.</p>
+      <ol className="mt-3 max-w-md space-y-2 text-sm text-ink-2">
         <li>One action: TRIM, FADE or STAND DOWN, with the reason.</li>
         <li>Prior reopenings it was tested against, including excluded weekends.</li>
         <li>Modeled size, Bitget&apos;s weekend order rule, scenario and sources.</li>
