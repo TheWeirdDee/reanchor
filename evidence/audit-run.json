@@ -1,0 +1,143 @@
+{
+  "startedAt": "2026-10-07T00:13:18.200Z",
+  "finishedAt": "2026-10-07T00:15:18.514Z",
+  "offline": false,
+  "results": [
+    {
+      "gate": "G1",
+      "name": "Typecheck",
+      "command": "npm run typecheck",
+      "network": false,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 3561,
+      "tail": "> reanchor@1.0.0 typecheck\n> tsc --noEmit"
+    },
+    {
+      "gate": "G1",
+      "name": "Lint",
+      "command": "npm run lint",
+      "network": false,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 8378,
+      "tail": "> reanchor@1.0.0 lint\n> eslint"
+    },
+    {
+      "gate": "G1/G3/G4/G6",
+      "name": "Unit and adapter tests",
+      "command": "npm test",
+      "network": false,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 3481,
+      "tail": "      Tests  84 passed (84)\n   Start at  01:13:31\n   Duration  2.28s (tests 39%, import 38%, transform 22%, worker 1%)\n\u001b[33m(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:\n  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `\"type\": \"module\"` in the closest package.json\nSet `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.\u001b[39m"
+    },
+    {
+      "gate": "G5",
+      "name": "Bitget Agent Hub MCP real calls and cross-check",
+      "command": "npm run agent:crosscheck",
+      "network": true,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 4960,
+      "tail": "[2026-10-07T00:13:38.517Z] PASS boundary Friday reference (bar ending weekend start): Fri 2026-09-25 19:45 ET close: agent 225 vs dataset 225\n[2026-10-07T00:13:38.518Z] PASS boundary Sunday decision (bar ending transition): Sun 2026-09-27 19:45 ET close: agent 223.55 vs dataset 223.55\n[2026-10-07T00:13:38.518Z] PASS boundary Reopening (bar starting 09:30 ET): Mon 2026-09-28 09:30 ET open: agent 229.56 vs dataset 229.56\n[2026-10-07T00:13:38.518Z] PASS boundary First-hour endpoint (bar ending 10:30 ET): Mon 2026-09-28 10:15 ET close: agent 231.27 vs dataset 231.27\n[2026-10-07T00:13:38.518Z] PASS recent-candles: 8 rows; latest bar start 2026-10-07T00:00:00.000Z\n[2026-10-07T00:13:38.524Z] Wrote data/agent-tool-receipts.json (6/6 calls OK)"
+    },
+    {
+      "gate": "G5 (disclosure)",
+      "name": "Bitget AI data-MCP availability probe (single attempt)",
+      "command": "npm run mcp:probe",
+      "network": true,
+      "env": {
+        "PROBE_ATTEMPTS": "1",
+        "PROBE_GAP_MS": "0"
+      },
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 5736,
+      "tail": "> reanchor@1.0.0 mcp:probe\n> tsx scripts/mcp-probe.ts\n[2026-10-07T00:13:44.222Z] attempt 1: connected; guide OK (5 categories); do_query ERROR 503"
+    },
+    {
+      "gate": "G6",
+      "name": "Gemini model verification and one real call",
+      "command": "npm run model:check",
+      "network": true,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 2455,
+      "tail": "> reanchor@1.0.0 model:check\n> tsx --env-file-if-exists=.env.local scripts/model-check.ts\n[2026-10-07T00:13:46.719Z] provider=gemini model=gemini-3.5-flash-lite credential=present verification=VERIFIED (Gemini models endpoint returned models/gemini-3.5-flash-lite) realCall=OK answer=7 in 827 ms"
+    },
+    {
+      "gate": "G2",
+      "name": "Dataset validation and manifest",
+      "command": "npm run data:validate",
+      "network": false,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1241,
+      "tail": "[2026-10-07T00:13:47.875Z] rAAPL: weekends=18 boundaryComplete=1 primary=1 corporateUnknown=0 turnoverSessions=1 -> UNSUPPORTED: 1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 1 turnover-eligible weekend sessions (need 3)\n[2026-10-07T00:13:47.880Z] rMSFT: weekends=18 boundaryComplete=1 primary=1 corporateUnknown=0 turnoverSessions=0 -> UNSUPPORTED: 1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 0 turnover-eligible weekend sessions (need 3)\n[2026-10-07T00:13:47.884Z] rAMZN: weekends=18 boundaryComplete=1 primary=1 corporateUnknown=0 turnoverSessions=0 -> UNSUPPORTED: 1 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 0 turnover-eligible weekend sessions (need 3)\n[2026-10-07T00:13:47.891Z] rMETA: weekends=18 boundaryComplete=5 primary=4 corporateUnknown=0 turnoverSessions=1 -> UNSUPPORTED: 5 weekends with complete Friday, Sunday 20:00, reopening and first-hour boundaries (need 7 to evaluate at least one); 1 turnover-eligible weekend sessions (need 3)\n[2026-10-07T00:13:47.896Z] rQQQ: weekends=18 boundaryComplete=7 primary=7 corporateUnknown=0 turnoverSessions=1 -> UNSUPPORTED: 1 turnover-eligible weekend sessions (need 3)\n[2026-10-07T00:13:47.916Z] Supported: RNVDAUSDT"
+    },
+    {
+      "gate": "G4/G8",
+      "name": "Chronological replay",
+      "command": "npm run data:replay",
+      "network": false,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1450,
+      "tail": "> reanchor@1.0.0 data:replay\n> tsx scripts/build-replay.ts\n[2026-10-07T00:13:49.389Z] rNVDA: 23 weekends replayed\n[2026-10-07T00:13:49.403Z] Replay generation complete."
+    },
+    {
+      "gate": "G2/G3",
+      "name": "G2/G3 episode audit and sensitivity",
+      "command": "npm run audit:g2g3",
+      "network": false,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 4292,
+      "tail": "> reanchor@1.0.0 audit:g2g3\n> tsx scripts/audit-g2-g3.ts\n[2026-10-07T00:13:53.695Z] Audit written: 23 episodes, 7 coverage sessions, 10 sensitivity cases"
+    },
+    {
+      "gate": "G1/G7",
+      "name": "Production build",
+      "command": "npm run build",
+      "network": false,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 10973,
+      "tail": "├ ƒ /method\n├ ○ /robots.txt\n├ ○ /sitemap.xml\n└ ƒ /social-card\n○  (Static)   prerendered as static content\nƒ  (Dynamic)  server-rendered on demand"
+    },
+    {
+      "gate": "G9",
+      "name": "Evidence verification",
+      "command": "npm run evidence:verify",
+      "network": false,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1928,
+      "tail": "[2026-10-07T00:14:06.371Z] PASS synthetic-isolation: data files clean (12), src imports clean (65)\n[2026-10-07T00:14:06.379Z] PASS no-emoji: 90 files clean\n[2026-10-07T00:14:06.556Z] PASS no-secrets-in-project: no credential patterns found\n[2026-10-07T00:14:06.556Z] PASS env-local-ignored: .env.local exists and is excluded by .gitignore\n[2026-10-07T00:14:06.568Z] PASS client-bundle-clean: 17 client bundles contain no secrets or server adapters\n[2026-10-07T00:14:06.571Z] Evidence verification passed."
+    },
+    {
+      "gate": "G7",
+      "name": "Browser flows at 1280, 768, 390 px",
+      "command": "npm run test:e2e",
+      "network": true,
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 71857,
+      "tail": "  ok 54 [mobile] › tests\\e2e\\flows.spec.ts:362:5 › method page shows coverage for all candidates and every anchored section (354ms)\n  ok 55 [mobile] › tests\\e2e\\flows.spec.ts:374:5 › metadata: title, description, social tags, icon and theme color on every public page; no localhost URLs (998ms)\n  -  56 [mobile] › tests\\e2e\\flows.spec.ts:395:5 › desk at 1440/1280/1024/768/390: decision lands in view after a run, no overflow, 44px targets\n  -  57 [mobile] › tests\\e2e\\flows.spec.ts:426:5 › the decision card renders the computed action, not a fixed STAND DOWN\n  6 skipped\n  51 passed (1.2m)"
+    }
+  ],
+  "dataMcp": {
+    "note": "Disclosure only. G5 passes on the Bitget Agent Hub MCP; the data MCP is the corporate-action source and is reported separately.",
+    "lastProbeAt": "2026-10-07T00:13:39.580Z",
+    "connected": true,
+    "catalogCall": "OK (5 categories)",
+    "researchQuery": {
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporar"
+    },
+    "researchWorking": false
+  }
+}
