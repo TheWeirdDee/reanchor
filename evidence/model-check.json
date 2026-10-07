@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-07T00:13:46.704Z",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "credentialPresent": true,
+  "configReason": null,
+  "verification": {
+    "status": "VERIFIED",
+    "detail": "Gemini models endpoint returned models/gemini-3.5-flash-lite",
+    "checkedAt": "2026-10-07T00:13:45.127Z"
+  },
+  "realCall": {
+    "ok": true,
+    "model": "gemini-3.5-flash-lite",
+    "detail": "answer=7 in 827 ms",
+    "at": "2026-10-07T00:13:46.704Z"
+  },
+  "documentation": {
+    "models": "https://ai.google.dev/gemini-api/docs/models (read 2026-10-06): gemini-3.5-flash-lite listed as stable",
+    "pricing": "https://ai.google.dev/gemini-api/docs/pricing (read 2026-10-06): gemini-3.5-flash-lite free of charge on the free tier",
+    "billing": "Billing was not enabled by this build. Whether the key's project has billing is not visible to the API response."
+  }
+}
