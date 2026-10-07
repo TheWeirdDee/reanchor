@@ -1,0 +1,526 @@
+{
+  "generatedAt": "2026-10-07T00:13:53.693Z",
+  "note": "Sensitivity runs only; canonical results are unchanged.",
+  "grid": [
+    {
+      "minCompleteHours": 1,
+      "agreementMin": 0.6666666666666666,
+      "canonical": false,
+      "perIntent": {
+        "HOLD": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "BUY_DIP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "SELL_POP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        }
+      }
+    },
+    {
+      "minCompleteHours": 1,
+      "agreementMin": 0,
+      "canonical": false,
+      "perIntent": {
+        "HOLD": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "BUY_DIP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "SELL_POP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        }
+      }
+    },
+    {
+      "minCompleteHours": 3,
+      "agreementMin": 0.6666666666666666,
+      "canonical": false,
+      "perIntent": {
+        "HOLD": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "BUY_DIP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "SELL_POP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        }
+      }
+    },
+    {
+      "minCompleteHours": 3,
+      "agreementMin": 0,
+      "canonical": false,
+      "perIntent": {
+        "HOLD": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "BUY_DIP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "SELL_POP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        }
+      }
+    },
+    {
+      "minCompleteHours": 6,
+      "agreementMin": 0.6666666666666666,
+      "canonical": true,
+      "perIntent": {
+        "HOLD": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "BUY_DIP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "SELL_POP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        }
+      }
+    },
+    {
+      "minCompleteHours": 6,
+      "agreementMin": 0,
+      "canonical": false,
+      "perIntent": {
+        "HOLD": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "BUY_DIP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "SELL_POP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        }
+      }
+    },
+    {
+      "minCompleteHours": 12,
+      "agreementMin": 0.6666666666666666,
+      "canonical": false,
+      "perIntent": {
+        "HOLD": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "BUY_DIP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "SELL_POP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        }
+      }
+    },
+    {
+      "minCompleteHours": 12,
+      "agreementMin": 0,
+      "canonical": false,
+      "perIntent": {
+        "HOLD": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "BUY_DIP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "SELL_POP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        }
+      }
+    },
+    {
+      "minCompleteHours": 24,
+      "agreementMin": 0.6666666666666666,
+      "canonical": false,
+      "perIntent": {
+        "HOLD": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "BUY_DIP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "SELL_POP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        }
+      }
+    },
+    {
+      "minCompleteHours": 24,
+      "agreementMin": 0,
+      "canonical": false,
+      "perIntent": {
+        "HOLD": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "BUY_DIP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        },
+        "SELL_POP": {
+          "evaluated": 4,
+          "withHt": 4,
+          "actions": [],
+          "signals": [
+            "2026-08-29:INSUFFICIENT",
+            "2026-09-12:INSUFFICIENT",
+            "2026-09-19:INSUFFICIENT",
+            "2026-09-26:INSUFFICIENT"
+          ],
+          "causeCount": {
+            "MOVE_NOT_EXTREME": 3,
+            "INADEQUATE_SAMPLE": 1
+          }
+        }
+      }
+    }
+  ]
+}
