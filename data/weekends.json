@@ -1,0 +1,983 @@
+{
+  "generatedAt": "2026-10-07T00:13:49.390Z",
+  "canonicalDecision": "Sunday 20:00 ET",
+  "weekends": {
+    "RNVDAUSDT": [
+      {
+        "key": "2026-04-25",
+        "lastTradingDay": "2026-04-24",
+        "nextTradingDay": "2026-04-27",
+        "startMs": 1777075200000,
+        "transitionMs": 1777248000000,
+        "reopenMs": 1777296600000,
+        "endpointMs": 1777300200000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 208.102,
+        "decisionPrice": null,
+        "reopenPrice": 209.44,
+        "endpointPrice": 208.712,
+        "w": null,
+        "g": null,
+        "r": null,
+        "underlying": {
+          "fridayClose": 208.27,
+          "fridayCloseDate": "2026-04-24",
+          "reopenOpen": 209.645,
+          "reopenOpenDate": "2026-04-27",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 48,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [
+          "Missing 15m bar ending exactly at the decision cutoff"
+        ],
+        "fallback": null
+      },
+      {
+        "key": "2026-05-02",
+        "lastTradingDay": "2026-05-01",
+        "nextTradingDay": "2026-05-04",
+        "startMs": 1777680000000,
+        "transitionMs": 1777852800000,
+        "reopenMs": 1777901400000,
+        "endpointMs": 1777905000000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 198.098,
+        "decisionPrice": null,
+        "reopenPrice": 199.484,
+        "endpointPrice": 197.414,
+        "w": null,
+        "g": null,
+        "r": null,
+        "underlying": {
+          "fridayClose": 198.45,
+          "fridayCloseDate": "2026-05-01",
+          "reopenOpen": 199.5,
+          "reopenOpenDate": "2026-05-04",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 48,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [
+          "Missing 15m bar ending exactly at the decision cutoff"
+        ],
+        "fallback": {
+          "price": 198.086,
+          "barEndMs": 1777680900000
+        }
+      },
+      {
+        "key": "2026-05-09",
+        "lastTradingDay": "2026-05-08",
+        "nextTradingDay": "2026-05-11",
+        "startMs": 1778284800000,
+        "transitionMs": 1778457600000,
+        "reopenMs": 1778506200000,
+        "endpointMs": 1778509800000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 215.038,
+        "decisionPrice": null,
+        "reopenPrice": 214.02,
+        "endpointPrice": 218.06,
+        "w": null,
+        "g": null,
+        "r": null,
+        "underlying": {
+          "fridayClose": 215.2,
+          "fridayCloseDate": "2026-05-08",
+          "reopenOpen": 214.035,
+          "reopenOpenDate": "2026-05-11",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 48,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [
+          "Missing 15m bar ending exactly at the decision cutoff"
+        ],
+        "fallback": {
+          "price": 215.039,
+          "barEndMs": 1778285700000
+        }
+      },
+      {
+        "key": "2026-05-16",
+        "lastTradingDay": "2026-05-15",
+        "nextTradingDay": "2026-05-18",
+        "startMs": 1778889600000,
+        "transitionMs": 1779062400000,
+        "reopenMs": 1779111000000,
+        "endpointMs": 1779114600000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 224.417,
+        "decisionPrice": null,
+        "reopenPrice": 229.874,
+        "endpointPrice": 222.718,
+        "w": null,
+        "g": null,
+        "r": null,
+        "underlying": {
+          "fridayClose": 225.32,
+          "fridayCloseDate": "2026-05-15",
+          "reopenOpen": 229.87,
+          "reopenOpenDate": "2026-05-18",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 48,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [
+          "Missing 15m bar ending exactly at the decision cutoff"
+        ],
+        "fallback": {
+          "price": 224.424,
+          "barEndMs": 1778890500000
+        }
+      },
+      {
+        "key": "2026-05-23",
+        "lastTradingDay": "2026-05-22",
+        "nextTradingDay": "2026-05-26",
+        "startMs": 1779494400000,
+        "transitionMs": 1779753600000,
+        "reopenMs": 1779802200000,
+        "endpointMs": 1779805800000,
+        "standard": false,
+        "calendarStatus": "UNRECONCILED",
+        "fridayRef": 214.28,
+        "decisionPrice": null,
+        "reopenPrice": 216.64,
+        "endpointPrice": 217.585,
+        "w": null,
+        "g": null,
+        "r": null,
+        "underlying": {
+          "fridayClose": 215.33,
+          "fridayCloseDate": "2026-05-22",
+          "reopenOpen": 216.54,
+          "reopenOpenDate": "2026-05-26",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 72,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [
+          "Nonstandard session: Next regular session is 2026-05-26; Monday 2026-05-25 is Memorial Day",
+          "Closure calendar unreconciled: NYSE holiday 2026-05-25 not listed in Bitget calendar",
+          "Missing 15m bar ending exactly at the decision cutoff"
+        ],
+        "fallback": {
+          "price": 214.283,
+          "barEndMs": 1779495300000
+        }
+      },
+      {
+        "key": "2026-05-30",
+        "lastTradingDay": "2026-05-29",
+        "nextTradingDay": "2026-06-01",
+        "startMs": 1780099200000,
+        "transitionMs": 1780272000000,
+        "reopenMs": 1780320600000,
+        "endpointMs": 1780324200000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 212.47,
+        "decisionPrice": null,
+        "reopenPrice": 215.79,
+        "endpointPrice": 221.37,
+        "w": null,
+        "g": null,
+        "r": null,
+        "underlying": {
+          "fridayClose": 211.14,
+          "fridayCloseDate": "2026-05-29",
+          "reopenOpen": 215.73,
+          "reopenOpenDate": "2026-06-01",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 48,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [
+          "Missing 15m bar ending exactly at the decision cutoff"
+        ],
+        "fallback": {
+          "price": 212.488,
+          "barEndMs": 1780100100000
+        }
+      },
+      {
+        "key": "2026-06-06",
+        "lastTradingDay": "2026-06-05",
+        "nextTradingDay": "2026-06-08",
+        "startMs": 1780704000000,
+        "transitionMs": 1780876800000,
+        "reopenMs": 1780925400000,
+        "endpointMs": 1780929000000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 204.098,
+        "decisionPrice": null,
+        "reopenPrice": 209.9,
+        "endpointPrice": 207.837,
+        "w": null,
+        "g": null,
+        "r": null,
+        "underlying": {
+          "fridayClose": 205.1,
+          "fridayCloseDate": "2026-06-05",
+          "reopenOpen": 210.18,
+          "reopenOpenDate": "2026-06-08",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 48,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [
+          "Missing 15m bar ending exactly at the decision cutoff"
+        ],
+        "fallback": {
+          "price": 204.066,
+          "barEndMs": 1780704900000
+        }
+      },
+      {
+        "key": "2026-06-13",
+        "lastTradingDay": "2026-06-12",
+        "nextTradingDay": "2026-06-15",
+        "startMs": 1781308800000,
+        "transitionMs": 1781481600000,
+        "reopenMs": 1781530200000,
+        "endpointMs": 1781533800000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 205.416,
+        "decisionPrice": null,
+        "reopenPrice": 208.875,
+        "endpointPrice": 209.364,
+        "w": null,
+        "g": null,
+        "r": null,
+        "underlying": {
+          "fridayClose": 205.19,
+          "fridayCloseDate": "2026-06-12",
+          "reopenOpen": 208.92,
+          "reopenOpenDate": "2026-06-15",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 48,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [
+          "Missing 15m bar ending exactly at the decision cutoff"
+        ],
+        "fallback": {
+          "price": 205.63,
+          "barEndMs": 1781442900000
+        }
+      },
+      {
+        "key": "2026-06-20",
+        "lastTradingDay": "2026-06-18",
+        "nextTradingDay": "2026-06-22",
+        "startMs": 1781827200000,
+        "transitionMs": 1782086400000,
+        "reopenMs": 1782135000000,
+        "endpointMs": 1782138600000,
+        "standard": false,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 210.296,
+        "decisionPrice": 207.02,
+        "reopenPrice": 211.45,
+        "endpointPrice": 211.163,
+        "w": -0.0155780423783618,
+        "g": 0.021398898657134513,
+        "r": 0.02001255917302669,
+        "underlying": {
+          "fridayClose": 210.69,
+          "fridayCloseDate": "2026-06-18",
+          "reopenOpen": 211.44,
+          "reopenOpenDate": "2026-06-22",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 72,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [
+          "Nonstandard session: Last trading day before the weekend is 2026-06-18 (holiday Juneteenth National Independence Day), not Friday"
+        ],
+        "fallback": null
+      },
+      {
+        "key": "2026-06-27",
+        "lastTradingDay": "2026-06-26",
+        "nextTradingDay": "2026-06-29",
+        "startMs": 1782518400000,
+        "transitionMs": 1782691200000,
+        "reopenMs": 1782739800000,
+        "endpointMs": 1782743400000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 192.75,
+        "decisionPrice": 190,
+        "reopenPrice": 193.86,
+        "endpointPrice": 192.735,
+        "w": -0.014267185473411104,
+        "g": 0.020315789473684287,
+        "r": 0.014394736842105349,
+        "underlying": {
+          "fridayClose": 192.53,
+          "fridayCloseDate": "2026-06-26",
+          "reopenOpen": 193.85,
+          "reopenOpenDate": "2026-06-29",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 48,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [],
+        "fallback": null
+      },
+      {
+        "key": "2026-07-04",
+        "lastTradingDay": "2026-07-02",
+        "nextTradingDay": "2026-07-06",
+        "startMs": 1783036800000,
+        "transitionMs": 1783296000000,
+        "reopenMs": 1783344600000,
+        "endpointMs": 1783348200000,
+        "standard": false,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 194.46,
+        "decisionPrice": 196.61,
+        "reopenPrice": 194.4,
+        "endpointPrice": 196.53,
+        "w": 0.011056258356474391,
+        "g": -0.011240526931488803,
+        "r": -0.00040689690249740007,
+        "underlying": {
+          "fridayClose": 194.83,
+          "fridayCloseDate": "2026-07-02",
+          "reopenOpen": 194.42,
+          "reopenOpenDate": "2026-07-06",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 0,
+          "totalHours": 72,
+          "medianHourlyUsdt": null,
+          "eligible": false,
+          "reason": "Session predates valid Reality turnover (2026-07-09)"
+        },
+        "exclusions": [
+          "Nonstandard session: Last trading day before the weekend is 2026-07-02 (holiday Independence Day (observed)), not Friday"
+        ],
+        "fallback": null
+      },
+      {
+        "key": "2026-07-11",
+        "lastTradingDay": "2026-07-10",
+        "nextTradingDay": "2026-07-13",
+        "startMs": 1783728000000,
+        "transitionMs": 1783900800000,
+        "reopenMs": 1783949400000,
+        "endpointMs": 1783953000000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 210.575,
+        "decisionPrice": null,
+        "reopenPrice": 208.66,
+        "endpointPrice": 208.58,
+        "w": null,
+        "g": null,
+        "r": null,
+        "underlying": {
+          "fridayClose": 210.96,
+          "fridayCloseDate": "2026-07-10",
+          "reopenOpen": 208.54,
+          "reopenOpenDate": "2026-07-13",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 23,
+          "totalHours": 48,
+          "medianHourlyUsdt": 24400.431085,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [
+          "Missing 15m bar ending exactly at the decision cutoff"
+        ],
+        "fallback": {
+          "price": 212.37,
+          "barEndMs": 1783891800000
+        }
+      },
+      {
+        "key": "2026-07-18",
+        "lastTradingDay": "2026-07-17",
+        "nextTradingDay": "2026-07-20",
+        "startMs": 1784332800000,
+        "transitionMs": 1784505600000,
+        "reopenMs": 1784554200000,
+        "endpointMs": 1784557800000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 202.509,
+        "decisionPrice": 203.79,
+        "reopenPrice": 205.615,
+        "endpointPrice": 205.97,
+        "w": 0.006325644786157714,
+        "g": 0.008955297119583872,
+        "r": 0.010697286422297392,
+        "underlying": {
+          "fridayClose": 202.81,
+          "fridayCloseDate": "2026-07-17",
+          "reopenOpen": 205.87,
+          "reopenOpenDate": "2026-07-20",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 18,
+          "totalHours": 48,
+          "medianHourlyUsdt": 1266.9044395,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [],
+        "fallback": null
+      },
+      {
+        "key": "2026-07-25",
+        "lastTradingDay": "2026-07-24",
+        "nextTradingDay": "2026-07-27",
+        "startMs": 1784937600000,
+        "transitionMs": 1785110400000,
+        "reopenMs": 1785159000000,
+        "endpointMs": 1785162600000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 206.75,
+        "decisionPrice": null,
+        "reopenPrice": 208.1,
+        "endpointPrice": 198.91,
+        "w": null,
+        "g": null,
+        "r": null,
+        "underlying": {
+          "fridayClose": 206.84,
+          "fridayCloseDate": "2026-07-24",
+          "reopenOpen": 208.2,
+          "reopenOpenDate": "2026-07-27",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 15,
+          "totalHours": 48,
+          "medianHourlyUsdt": 1398.7366209999998,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [
+          "Missing 15m bar ending exactly at the decision cutoff"
+        ],
+        "fallback": {
+          "price": 207,
+          "barEndMs": 1785109500000
+        }
+      },
+      {
+        "key": "2026-08-01",
+        "lastTradingDay": "2026-07-31",
+        "nextTradingDay": "2026-08-03",
+        "startMs": 1785542400000,
+        "transitionMs": 1785715200000,
+        "reopenMs": 1785763800000,
+        "endpointMs": 1785767400000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 198.948,
+        "decisionPrice": 199.2,
+        "reopenPrice": 197.67,
+        "endpointPrice": 205.325,
+        "w": 0.0012666626455153374,
+        "g": -0.007680722891566294,
+        "r": 0.03074799196787148,
+        "underlying": {
+          "fridayClose": 200.75,
+          "fridayCloseDate": "2026-07-31",
+          "reopenOpen": 197.69,
+          "reopenOpenDate": "2026-08-03",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 15,
+          "totalHours": 48,
+          "medianHourlyUsdt": 1766.7038390000002,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [],
+        "fallback": null
+      },
+      {
+        "key": "2026-08-08",
+        "lastTradingDay": "2026-08-07",
+        "nextTradingDay": "2026-08-10",
+        "startMs": 1786147200000,
+        "transitionMs": 1786320000000,
+        "reopenMs": 1786368600000,
+        "endpointMs": 1786372200000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 223.8,
+        "decisionPrice": 224.83,
+        "reopenPrice": 223.38,
+        "endpointPrice": 220.41,
+        "w": 0.0046023235031278364,
+        "g": -0.00644931726193132,
+        "r": -0.019659298136369796,
+        "underlying": {
+          "fridayClose": 223.96,
+          "fridayCloseDate": "2026-08-07",
+          "reopenOpen": 223.4,
+          "reopenOpenDate": "2026-08-10",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 28,
+          "totalHours": 48,
+          "medianHourlyUsdt": 2329.7029,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [],
+        "fallback": null
+      },
+      {
+        "key": "2026-08-15",
+        "lastTradingDay": "2026-08-14",
+        "nextTradingDay": "2026-08-17",
+        "startMs": 1786752000000,
+        "transitionMs": 1786924800000,
+        "reopenMs": 1786973400000,
+        "endpointMs": 1786977000000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 224.72,
+        "decisionPrice": 225.39,
+        "reopenPrice": 225.99,
+        "endpointPrice": 226.62,
+        "w": 0.0029814880740477445,
+        "g": 0.002662052442433227,
+        "r": 0.00545720750698786,
+        "underlying": {
+          "fridayClose": 225.16,
+          "fridayCloseDate": "2026-08-14",
+          "reopenOpen": 225.98,
+          "reopenOpenDate": "2026-08-17",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 37,
+          "totalHours": 48,
+          "medianHourlyUsdt": 3359.970974,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [],
+        "fallback": null
+      },
+      {
+        "key": "2026-08-22",
+        "lastTradingDay": "2026-08-21",
+        "nextTradingDay": "2026-08-24",
+        "startMs": 1787356800000,
+        "transitionMs": 1787529600000,
+        "reopenMs": 1787578200000,
+        "endpointMs": 1787581800000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 215.365,
+        "decisionPrice": 218,
+        "reopenPrice": 215.435,
+        "endpointPrice": 209.36,
+        "w": 0.012235042834258136,
+        "g": -0.011766055045871582,
+        "r": -0.03963302752293574,
+        "underlying": {
+          "fridayClose": 214.72,
+          "fridayCloseDate": "2026-08-21",
+          "reopenOpen": 215.53,
+          "reopenOpenDate": "2026-08-24",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 39,
+          "totalHours": 48,
+          "medianHourlyUsdt": 5550.735056,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [],
+        "fallback": null
+      },
+      {
+        "key": "2026-08-29",
+        "lastTradingDay": "2026-08-28",
+        "nextTradingDay": "2026-08-31",
+        "startMs": 1787961600000,
+        "transitionMs": 1788134400000,
+        "reopenMs": 1788183000000,
+        "endpointMs": 1788186600000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 217.92,
+        "decisionPrice": 218.11,
+        "reopenPrice": 218.94,
+        "endpointPrice": 220.07,
+        "w": 0.0008718795888400521,
+        "g": 0.0038054192838474776,
+        "r": 0.008986291320893125,
+        "underlying": {
+          "fridayClose": 217.55,
+          "fridayCloseDate": "2026-08-28",
+          "reopenOpen": 218.87,
+          "reopenOpenDate": "2026-08-31",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 41,
+          "totalHours": 48,
+          "medianHourlyUsdt": 10677.866193,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [],
+        "fallback": null
+      },
+      {
+        "key": "2026-09-05",
+        "lastTradingDay": "2026-09-04",
+        "nextTradingDay": "2026-09-08",
+        "startMs": 1788566400000,
+        "transitionMs": 1788825600000,
+        "reopenMs": 1788874200000,
+        "endpointMs": 1788877800000,
+        "standard": false,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 229.5,
+        "decisionPrice": 231.09,
+        "reopenPrice": 233.21,
+        "endpointPrice": 227.9423,
+        "w": 0.006928104575163463,
+        "g": 0.009173914924921034,
+        "r": -0.013621100004327369,
+        "underlying": {
+          "fridayClose": 230.36,
+          "fridayCloseDate": "2026-09-04",
+          "reopenOpen": 233.11,
+          "reopenOpenDate": "2026-09-08",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 44,
+          "totalHours": 72,
+          "medianHourlyUsdt": 4473.9182175000005,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [
+          "Nonstandard session: Next regular session is 2026-09-08; Monday 2026-09-07 is Labor Day"
+        ],
+        "fallback": null
+      },
+      {
+        "key": "2026-09-12",
+        "lastTradingDay": "2026-09-11",
+        "nextTradingDay": "2026-09-14",
+        "startMs": 1789171200000,
+        "transitionMs": 1789344000000,
+        "reopenMs": 1789392600000,
+        "endpointMs": 1789396200000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 218.241,
+        "decisionPrice": 216.96,
+        "reopenPrice": 211.08,
+        "endpointPrice": 210.455,
+        "w": -0.005869657855306798,
+        "g": -0.02710176991150437,
+        "r": -0.029982485250737434,
+        "underlying": {
+          "fridayClose": 218.29,
+          "fridayCloseDate": "2026-09-11",
+          "reopenOpen": 211.24,
+          "reopenOpenDate": "2026-09-14",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 34,
+          "totalHours": 48,
+          "medianHourlyUsdt": 9367.1656645,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [],
+        "fallback": null
+      },
+      {
+        "key": "2026-09-19",
+        "lastTradingDay": "2026-09-18",
+        "nextTradingDay": "2026-09-21",
+        "startMs": 1789776000000,
+        "transitionMs": 1789948800000,
+        "reopenMs": 1789997400000,
+        "endpointMs": 1790001000000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 222.53,
+        "decisionPrice": 222.33,
+        "reopenPrice": 222.935,
+        "endpointPrice": 223.64,
+        "w": -0.0008987552240147245,
+        "g": 0.0027211802275894925,
+        "r": 0.005892142310979009,
+        "underlying": {
+          "fridayClose": 222.27,
+          "fridayCloseDate": "2026-09-18",
+          "reopenOpen": 222.935,
+          "reopenOpenDate": "2026-09-21",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 36,
+          "totalHours": 48,
+          "medianHourlyUsdt": 3926.816052,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [],
+        "fallback": null
+      },
+      {
+        "key": "2026-09-26",
+        "lastTradingDay": "2026-09-25",
+        "nextTradingDay": "2026-09-28",
+        "startMs": 1790380800000,
+        "transitionMs": 1790553600000,
+        "reopenMs": 1790602200000,
+        "endpointMs": 1790605800000,
+        "standard": true,
+        "calendarStatus": "RECONCILED",
+        "fridayRef": 225,
+        "decisionPrice": 223.55,
+        "reopenPrice": 229.56,
+        "endpointPrice": 231.27,
+        "w": -0.006444444444444364,
+        "g": 0.02688436591366572,
+        "r": 0.0345336613732945,
+        "underlying": {
+          "fridayClose": 225.07,
+          "fridayCloseDate": "2026-09-25",
+          "reopenOpen": 229.75,
+          "reopenOpenDate": "2026-09-28",
+          "source": "Nasdaq.com historical quotes (official daily open/close)",
+          "status": "VERIFIED",
+          "note": "Official regular-session close in USD; kept separate from token prices"
+        },
+        "corporateAction": {
+          "status": "CLEAR",
+          "detail": "No split or ex-dividend date between the last close and the reopening [Bitget split records + Nasdaq dividend history]. Bitget AI MCP unavailable; fallback sources used."
+        },
+        "turnover": {
+          "completeHours": 13,
+          "totalHours": 48,
+          "medianHourlyUsdt": 1484.9078020000002,
+          "eligible": true,
+          "reason": null
+        },
+        "exclusions": [],
+        "fallback": null
+      }
+    ]
+  }
+}
