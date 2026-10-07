@@ -8,6 +8,13 @@ export function HistoryTable({ card }: { card: Card }) {
   const pp = card.instrument.pricePrecision;
   const rows = card.history;
   const included = rows.filter((r) => r.status !== "EXCLUDED");
+  const matched = rows.filter((r) => r.status === "MATCHED").length;
+  const counts = [
+    { label: "Prior weekends examined", value: rows.length },
+    { label: "Eligible", value: included.length },
+    { label: "Matched extremes", value: matched },
+    { label: "Excluded, with reasons", value: rows.length - included.length },
+  ];
   const kind = card.intention.intent === "BUY_DIP" ? "buy budget" : "holding";
   return (
     <Section
@@ -15,6 +22,14 @@ export function HistoryTable({ card }: { card: Card }) {
       title="Stress test against prior reopenings"
       description={`Your ${card.intention.intent === "HOLD" ? "25% trim" : "intended trade"} replayed on each prior weekend at observed quotes. Total return runs from the decision price to the end of the first regular-session hour and includes the reopening gap.`}
     >
+      <dl className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+        {counts.map((c) => (
+          <div key={c.label} className="rounded-xl border border-line bg-paper/60 px-3.5 py-2.5">
+            <dt className="text-xs text-ink-3">{c.label}</dt>
+            <dd className="num mt-0.5 text-xl font-semibold text-ink">{c.value}</dd>
+          </div>
+        ))}
+      </dl>
       {included.length === 0 ? (
         <Notice tone="warn" title="No eligible prior weekends">
           No completed weekend before this decision met the boundary, session and corporate-action checks. See excluded rows below.
@@ -126,6 +141,9 @@ export function RealizedOutcome({ card }: { card: Card }) {
   const rz = card.realized;
   return (
     <Section id="realized" title="What happened after this replay decision" description="Revealed after the decision time and never used by it. Hypothetical fills at observed quotes.">
+      <p className="mb-3 rounded-xl border border-line bg-paper/60 px-3.5 py-2.5 text-sm text-ink-2">
+        Decision made <strong className="num text-ink">{fmtEtOrNa(card.t)}</strong>. Everything below happened afterwards. It does not show the decision was right or wrong.
+      </p>
       <dl className="mb-4 grid grid-cols-2 gap-2.5 text-sm sm:grid-cols-4">
         <div>
           <dt className="text-xs text-ink-3">Reopen price</dt>
