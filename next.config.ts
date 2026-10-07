@@ -38,10 +38,10 @@ const nextConfig: NextConfig = {
     "/*": RUNTIME_FILES,
     "/api/**": [...RUNTIME_FILES, ...AGENT_HUB_FILES],
   },
-  // The evidence directory is resolved dynamically, so the tracer pulls in all of it; screenshots are never read at runtime.
+  // The evidence directory is resolved dynamically, so the tracer pulls in all of it; screenshots and the demo video are never read at runtime.
   outputFileTracingExcludes: {
-    "/*": ["./evidence/screenshots/**"],
-    "/api/**": ["./evidence/screenshots/**"],
+    "/*": ["./evidence/screenshots/**", "./evidence/demo/**"],
+    "/api/**": ["./evidence/screenshots/**", "./evidence/demo/**"],
   },
   poweredByHeader: false,
 };
