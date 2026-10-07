@@ -49,6 +49,17 @@ export async function runResearch(req: ResearchRequest, now = Date.now()): Promi
   ];
   if (req.mode === "replay") {
     if (!req.replayKey) throw new UserFacingError("Choose a weekend to replay");
+    // Replay keys are the Saturday of a completed weekend. An unknown key is a request error, not a provider failure.
+    const keys = replayOptions(ds, req.intention.symbol).map((o) => o.key);
+    if (!keys.includes(req.replayKey)) {
+      const day = Date.parse(`${req.replayKey}T00:00:00Z`);
+      const near = keys.find((k) => Math.abs(Date.parse(`${k}T00:00:00Z`) - day) <= 3 * 86_400_000);
+      throw new UserFacingError(
+        `Unknown replay weekend ${req.replayKey}. Replay keys are the Saturday of a completed weekend${near ? `; did you mean ${near}?` : "."}`,
+        400,
+        [{ field: "replayKey", message: near ? `Use ${near}` : "Choose a completed weekend" }],
+      );
+    }
     const { card, basis } = replayCard(ds, req.intention, req.replayKey);
     return { card, basis, provenance: baseProv, snapshot };
   }
