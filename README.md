@@ -12,6 +12,10 @@ Built for the Bitget AI Base Camp Hackathon S2, track AI Trading Desk, sub-theme
 | Desk | [reanchor-nine.vercel.app/desk](https://reanchor-nine.vercel.app/desk) |
 | Method and evidence | [reanchor-nine.vercel.app/method](https://reanchor-nine.vercel.app/method) |
 
+## Demo
+
+[Watch the 98-second walkthrough](evidence/demo/reanchor-demo.mp4) (1920x1080, narrated with captions). It starts from a fresh intention and shows, on the real product: extraction, confirmation, the historical stress test, the deterministic action and why it was taken, the decision-time boundary and the later outcome, sources, live Bitget data through the Agent Hub MCP, and the disclosed data MCP outage. Nothing in it is mocked.
+
 ## How it works
 
 **AI understands language. Data establishes what happened. Deterministic rules decide what the evidence permits. Provenance shows where each number came from. You decide whether to trade.**
@@ -22,6 +26,41 @@ Built for the Bitget AI Base Camp Hackathon S2, track AI Trading Desk, sub-theme
 4. **Decide.** One action, TRIM, FADE or STAND DOWN, with the answer to four questions: what you asked, what was compared, what was found, and which rule decided.
 
 The model never chooses the action, the size or the evidence. Without it, the form and every computed result still work.
+
+```text
+Your sentence
+     |
+     v
+AI extraction (Gemini) ------> fields only: instrument, intent, holding, trade size, limit
+     |
+     v
+Your confirmation (editable; nothing runs before it)
+     |
+     v
++---------------------------------------------------------------+
+| Deterministic engine (src/domain)                             |
+| saved and live Bitget candles -> prior weekends before the    |
+| decision -> weekend move vs 70th percentile -> matched count  |
+| vs 3 required -> intent mapping -> sizing vs turnover -> costs |
++---------------------------------------------------------------+
+     |
+     v
+Decision card: action, reason, sources and timestamps
+     |
+     v
+AI explanation (checked against the card; discarded if any number or the action differs)
+     |
+     v
+Your decision. No order is sent.
+```
+
+| The AI does | The AI does not |
+| --- | --- |
+| Understand your sentence | Choose the action |
+| Extract instrument, intent, holding, trade size and limit price | Select the prior weekends compared |
+| List ambiguities and unsupported requests | Calculate moves, thresholds or sizes |
+| Explain the already computed card in plain words | Supply or alter any price or data |
+| | Place, route or execute any order |
 
 ## A real example
 
@@ -36,6 +75,23 @@ Replay of the weekend after Friday 25 September 2026 (rNVDA, Hold, 2,000 USDT ho
 | Revealed afterwards, never used | Reopened 229.56 USDT (+2.69%); first-hour end 231.27 USDT (+3.45%) |
 
 One weekend is not a track record, and the reveal does not show that standing down was right.
+
+## Evidence policy
+
+Reanchor does not fabricate market data, historical observations, fills, user-study results, model usage, credentials, performance or traction. Missing evidence is shown as UNKNOWN, unavailable, or a STAND DOWN with the reason. Historical snapshots are labeled as replays and never presented as live data. A failed source is shown as failed, and a fallback is always labeled as one. Every saved weekend and evaluation row is recomputed from the raw bars by `npm run evidence:verify`.
+
+## Current status (7 October 2026)
+
+| Area | Status |
+| --- | --- |
+| Deterministic engine and historical replay | Working; 93 unit tests and 52 browser checks pass |
+| Evidence verification and full audit | Passing; `audit:all` 12 of 12 steps |
+| Live Bitget market data (Agent Hub MCP) | Working; verified on the deployed site |
+| Bitget AI data MCP (corporate actions, earnings) | Degraded on Bitget's side: HTTP 503; labeled fallback in use |
+| Natural-language extraction and explanation (Gemini) | Working; optional, the form works without it |
+| Live decision inside an open weekend session | Not yet observed |
+| User study | Not yet run |
+| Order placement and live trading | Intentionally unsupported |
 
 ## Evidence so far
 
