@@ -1,0 +1,265 @@
+{
+  "startedAt": "2026-10-02T21:11:36.943Z",
+  "finishedAt": "2026-10-02T21:24:26.423Z",
+  "ok": true,
+  "dataMode": "SNAPSHOT",
+  "sessionPhaseAtPull": "WEEKDAY",
+  "instruments": [
+    "RNVDAUSDT",
+    "RTSLAUSDT",
+    "RAAPLUSDT",
+    "RMSFTUSDT",
+    "RAMZNUSDT",
+    "RMETAUSDT",
+    "RQQQUSDT"
+  ],
+  "coverage": {
+    "RNVDAUSDT": {
+      "earliestClosedBarStart": "2026-04-23T03:15:00.000Z",
+      "latestClosedBarStart": "2026-10-02T20:30:00.000Z",
+      "barsReceived": 12758,
+      "intervalsInSpan": 15622,
+      "missingIntervals": 2864,
+      "firstPositiveTurnoverBar": "2026-04-23T03:15:00.000Z",
+      "barsWithNullTurnover": 0,
+      "barsWithZeroTurnover": 13,
+      "identicalDuplicates": 0,
+      "issues": {},
+      "weekendWindowBarsKept": 4590
+    },
+    "RTSLAUSDT": {
+      "earliestClosedBarStart": "2026-06-01T14:15:00.000Z",
+      "latestClosedBarStart": "2026-10-02T20:30:00.000Z",
+      "barsReceived": 9677,
+      "intervalsInSpan": 11834,
+      "missingIntervals": 2157,
+      "firstPositiveTurnoverBar": "2026-06-01T14:15:00.000Z",
+      "barsWithNullTurnover": 0,
+      "barsWithZeroTurnover": 4,
+      "identicalDuplicates": 0,
+      "issues": {},
+      "weekendWindowBarsKept": 3154
+    },
+    "RAAPLUSDT": {
+      "earliestClosedBarStart": "2026-06-01T14:00:00.000Z",
+      "latestClosedBarStart": "2026-10-02T20:30:00.000Z",
+      "barsReceived": 9135,
+      "intervalsInSpan": 11835,
+      "missingIntervals": 2700,
+      "firstPositiveTurnoverBar": "2026-06-01T14:00:00.000Z",
+      "barsWithNullTurnover": 0,
+      "barsWithZeroTurnover": 4,
+      "identicalDuplicates": 0,
+      "issues": {},
+      "weekendWindowBarsKept": 2613
+    },
+    "RMSFTUSDT": {
+      "earliestClosedBarStart": "2026-06-01T14:00:00.000Z",
+      "latestClosedBarStart": "2026-10-02T20:30:00.000Z",
+      "barsReceived": 8761,
+      "intervalsInSpan": 11835,
+      "missingIntervals": 3074,
+      "firstPositiveTurnoverBar": "2026-06-01T14:00:00.000Z",
+      "barsWithNullTurnover": 0,
+      "barsWithZeroTurnover": 4,
+      "identicalDuplicates": 0,
+      "issues": {},
+      "weekendWindowBarsKept": 2239
+    },
+    "RAMZNUSDT": {
+      "earliestClosedBarStart": "2026-06-01T14:00:00.000Z",
+      "latestClosedBarStart": "2026-10-02T20:30:00.000Z",
+      "barsReceived": 8576,
+      "intervalsInSpan": 11835,
+      "missingIntervals": 3259,
+      "firstPositiveTurnoverBar": "2026-06-01T14:00:00.000Z",
+      "barsWithNullTurnover": 0,
+      "barsWithZeroTurnover": 4,
+      "identicalDuplicates": 0,
+      "issues": {},
+      "weekendWindowBarsKept": 2054
+    },
+    "RMETAUSDT": {
+      "earliestClosedBarStart": "2026-06-01T14:00:00.000Z",
+      "latestClosedBarStart": "2026-10-02T20:30:00.000Z",
+      "barsReceived": 8831,
+      "intervalsInSpan": 11835,
+      "missingIntervals": 3004,
+      "firstPositiveTurnoverBar": "2026-06-01T14:00:00.000Z",
+      "barsWithNullTurnover": 0,
+      "barsWithZeroTurnover": 4,
+      "identicalDuplicates": 0,
+      "issues": {},
+      "weekendWindowBarsKept": 2309
+    },
+    "RQQQUSDT": {
+      "earliestClosedBarStart": "2026-06-01T14:00:00.000Z",
+      "latestClosedBarStart": "2026-10-02T20:30:00.000Z",
+      "barsReceived": 9433,
+      "intervalsInSpan": 11835,
+      "missingIntervals": 2402,
+      "firstPositiveTurnoverBar": "2026-06-01T14:00:00.000Z",
+      "barsWithNullTurnover": 0,
+      "barsWithZeroTurnover": 7,
+      "identicalDuplicates": 0,
+      "issues": {},
+      "weekendWindowBarsKept": 2911
+    }
+  },
+  "httpReceipts": [
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/market/history-candles",
+      "symbol": "RNVDAUSDT",
+      "pages": 157,
+      "firstRetrievedAt": "2026-10-02T21:11:38.314Z",
+      "lastRetrievedAt": "2026-10-02T21:12:53.143Z"
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/market/history-candles",
+      "symbol": "RTSLAUSDT",
+      "pages": 119,
+      "firstRetrievedAt": "2026-10-02T21:12:54.015Z",
+      "lastRetrievedAt": "2026-10-02T21:13:51.715Z"
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/market/history-candles",
+      "symbol": "RAAPLUSDT",
+      "pages": 119,
+      "firstRetrievedAt": "2026-10-02T21:13:52.355Z",
+      "lastRetrievedAt": "2026-10-02T21:14:56.531Z"
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/market/history-candles",
+      "symbol": "RMSFTUSDT",
+      "pages": 119,
+      "firstRetrievedAt": "2026-10-02T21:14:58.071Z",
+      "lastRetrievedAt": "2026-10-02T21:17:05.559Z"
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/market/history-candles",
+      "symbol": "RAMZNUSDT",
+      "pages": 119,
+      "firstRetrievedAt": "2026-10-02T21:17:07.090Z",
+      "lastRetrievedAt": "2026-10-02T21:19:25.123Z"
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/market/history-candles",
+      "symbol": "RMETAUSDT",
+      "pages": 119,
+      "firstRetrievedAt": "2026-10-02T21:19:25.983Z",
+      "lastRetrievedAt": "2026-10-02T21:21:31.607Z"
+    },
+    {
+      "source": "Bitget public market data (v3)",
+      "endpoint": "/api/v3/market/history-candles",
+      "symbol": "RQQQUSDT",
+      "pages": 119,
+      "firstRetrievedAt": "2026-10-02T21:21:33.034Z",
+      "lastRetrievedAt": "2026-10-02T21:24:09.065Z"
+    },
+    {
+      "source": "Nasdaq.com historical quotes",
+      "endpoint": "/api/quote/NVDA/historical",
+      "params": {
+        "assetclass": "stocks",
+        "fromdate": "2026-04-13",
+        "todate": "2026-10-02",
+        "limit": "400"
+      },
+      "retrievedAt": "2026-10-02T21:24:11.463Z",
+      "httpStatus": 200,
+      "rows": 120
+    },
+    {
+      "source": "Nasdaq.com historical quotes",
+      "endpoint": "/api/quote/TSLA/historical",
+      "params": {
+        "assetclass": "stocks",
+        "fromdate": "2026-05-22",
+        "todate": "2026-10-02",
+        "limit": "400"
+      },
+      "retrievedAt": "2026-10-02T21:24:11.851Z",
+      "httpStatus": 200,
+      "rows": 91
+    },
+    {
+      "source": "Nasdaq.com historical quotes",
+      "endpoint": "/api/quote/AAPL/historical",
+      "params": {
+        "assetclass": "stocks",
+        "fromdate": "2026-05-22",
+        "todate": "2026-10-02",
+        "limit": "400"
+      },
+      "retrievedAt": "2026-10-02T21:24:13.386Z",
+      "httpStatus": 200,
+      "rows": 91
+    },
+    {
+      "source": "Nasdaq.com historical quotes",
+      "endpoint": "/api/quote/MSFT/historical",
+      "params": {
+        "assetclass": "stocks",
+        "fromdate": "2026-05-22",
+        "todate": "2026-10-02",
+        "limit": "400"
+      },
+      "retrievedAt": "2026-10-02T21:24:13.739Z",
+      "httpStatus": 200,
+      "rows": 91
+    },
+    {
+      "source": "Nasdaq.com historical quotes",
+      "endpoint": "/api/quote/AMZN/historical",
+      "params": {
+        "assetclass": "stocks",
+        "fromdate": "2026-05-22",
+        "todate": "2026-10-02",
+        "limit": "400"
+      },
+      "retrievedAt": "2026-10-02T21:24:15.221Z",
+      "httpStatus": 200,
+      "rows": 91
+    },
+    {
+      "source": "Nasdaq.com historical quotes",
+      "endpoint": "/api/quote/META/historical",
+      "params": {
+        "assetclass": "stocks",
+        "fromdate": "2026-05-22",
+        "todate": "2026-10-02",
+        "limit": "400"
+      },
+      "retrievedAt": "2026-10-02T21:24:15.780Z",
+      "httpStatus": 200,
+      "rows": 91
+    },
+    {
+      "source": "Nasdaq.com historical quotes",
+      "endpoint": "/api/quote/QQQ/historical",
+      "params": {
+        "assetclass": "etf",
+        "fromdate": "2026-05-22",
+        "todate": "2026-10-02",
+        "limit": "400"
+      },
+      "retrievedAt": "2026-10-02T21:24:16.185Z",
+      "httpStatus": 200,
+      "rows": 91
+    }
+  ],
+  "mcp": {
+    "attemptedAt": "2026-10-06T05:27:06.445Z",
+    "connected": true,
+    "error": null,
+    "allOk": false,
+    "calls": 23
+  }
+}
