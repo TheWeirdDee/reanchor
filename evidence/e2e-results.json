@@ -81,6 +81,12 @@
         {
           "outputFile": "evidence/e2e-results.json"
         }
+      ],
+      [
+        "<project>\\tests\\e2e\\redact-paths-reporter.ts",
+        {
+          "file": "evidence/e2e-results.json"
+        }
       ]
     ],
     "reportSlowTests": {
@@ -123,12 +129,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6249,
+                  "duration": 6512,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:38:09.471Z",
+                  "startTime": "2026-10-07T10:08:58.343Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -157,12 +163,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 779,
+                  "duration": 776,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:38:17.589Z",
+                  "startTime": "2026-10-07T10:09:05.173Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -191,12 +197,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 723,
+                  "duration": 717,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:38:18.397Z",
+                  "startTime": "2026-10-07T10:09:05.977Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -225,12 +231,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 587,
+                  "duration": 856,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:38:19.137Z",
+                  "startTime": "2026-10-07T10:09:06.712Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -259,12 +265,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 22145,
+                  "duration": 3505,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:38:19.739Z",
+                  "startTime": "2026-10-07T10:09:07.582Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -293,12 +299,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 679,
+                  "duration": 1200,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:38:41.899Z",
+                  "startTime": "2026-10-07T10:09:11.107Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -308,7 +314,7 @@
           ],
           "id": "86d6a544053f1eb9f224-a0eae17743921e7a67c3",
           "file": "flows.spec.ts",
-          "line": 178,
+          "line": 186,
           "column": 5
         },
         {
@@ -327,12 +333,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 708,
+                  "duration": 902,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:38:42.593Z",
+                  "startTime": "2026-10-07T10:09:12.326Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -342,7 +348,7 @@
           ],
           "id": "86d6a544053f1eb9f224-b611e00ec0b2f42224f6",
           "file": "flows.spec.ts",
-          "line": 197,
+          "line": 205,
           "column": 5
         },
         {
@@ -361,12 +367,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 813,
+                  "duration": 623,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:38:43.317Z",
+                  "startTime": "2026-10-07T10:09:13.247Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -376,11 +382,351 @@
           ],
           "id": "86d6a544053f1eb9f224-3a6f1259a4cb1c4293d9",
           "file": "flows.spec.ts",
-          "line": 209,
+          "line": 217,
           "column": 5
         },
         {
           "title": "stale observation is labeled stale with its age",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 649,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T10:09:13.889Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "86d6a544053f1eb9f224-0b14b2b7f159991fcfbc",
+          "file": "flows.spec.ts",
+          "line": 229,
+          "column": 5
+        },
+        {
+          "title": "model unavailable: parsing disabled with a reason, structured form and explanation fallback still work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 720,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T10:09:14.550Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "86d6a544053f1eb9f224-1e6d8681873c94a39522",
+          "file": "flows.spec.ts",
+          "line": 239,
+          "column": 5
+        },
+        {
+          "title": "form confirmation: research stays blocked until confirmed, and any edit clears the confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 445,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T10:09:15.284Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "86d6a544053f1eb9f224-5a6371eadd22d9d0de08",
+          "file": "flows.spec.ts",
+          "line": 259,
+          "column": 5
+        },
+        {
+          "title": "natural-language flow: extract, confirm, research and grounded explanation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T10:09:15.739Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "86d6a544053f1eb9f224-c649430c2e35ad7c641c",
+          "file": "flows.spec.ts",
+          "line": 274,
+          "column": 5
+        },
+        {
+          "title": "missing limit and ambiguous inputs block confirmation with clear messages",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 665,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T10:09:20.560Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "86d6a544053f1eb9f224-49e3575a14f350e0afad",
+          "file": "flows.spec.ts",
+          "line": 304,
+          "column": 5
+        },
+        {
+          "title": "provider failure and live outside-session states are explained",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T10:09:21.241Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "86d6a544053f1eb9f224-2452e97f49ee61e34cb5",
+          "file": "flows.spec.ts",
+          "line": 322,
+          "column": 5
+        },
+        {
+          "title": "keyboard: skip link, CTA focus ring, and desk controls reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1127,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T10:09:27.536Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "86d6a544053f1eb9f224-46f2dead3eb0a8a15f02",
+          "file": "flows.spec.ts",
+          "line": 339,
+          "column": 5
+        },
+        {
+          "title": "method page shows coverage for all candidates and every anchored section",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 432,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T10:09:28.680Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "86d6a544053f1eb9f224-7fe45a2322e2431e1aef",
+          "file": "flows.spec.ts",
+          "line": 372,
+          "column": 5
+        },
+        {
+          "title": "metadata: title, description, social tags, icon and theme color on every public page; no localhost URLs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1477,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T10:09:29.125Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "86d6a544053f1eb9f224-dfeeabd1768e96906b4c",
+          "file": "flows.spec.ts",
+          "line": 384,
+          "column": 5
+        },
+        {
+          "title": "desk at 1440/1280/1024/768/390: decision lands in view after a run, no overflow, 44px targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4291,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T10:09:30.613Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "86d6a544053f1eb9f224-38d8e7921f2ee95f3b75",
+          "file": "flows.spec.ts",
+          "line": 405,
+          "column": 5
+        },
+        {
+          "title": "the decision card renders the computed action, not a fixed STAND DOWN",
           "ok": true,
           "tags": [],
           "tests": [
@@ -400,347 +746,7 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:38:44.146Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "86d6a544053f1eb9f224-0b14b2b7f159991fcfbc",
-          "file": "flows.spec.ts",
-          "line": 221,
-          "column": 5
-        },
-        {
-          "title": "model unavailable: parsing disabled with a reason, structured form and explanation fallback still work",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 705,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-07T00:38:44.838Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "86d6a544053f1eb9f224-1e6d8681873c94a39522",
-          "file": "flows.spec.ts",
-          "line": 231,
-          "column": 5
-        },
-        {
-          "title": "form confirmation: research stays blocked until confirmed, and any edit clears the confirmation",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 497,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-07T00:38:45.557Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "86d6a544053f1eb9f224-5a6371eadd22d9d0de08",
-          "file": "flows.spec.ts",
-          "line": 251,
-          "column": 5
-        },
-        {
-          "title": "natural-language flow: extract, confirm, research and grounded explanation",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 49346,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-07T00:38:46.066Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "86d6a544053f1eb9f224-c649430c2e35ad7c641c",
-          "file": "flows.spec.ts",
-          "line": 266,
-          "column": 5
-        },
-        {
-          "title": "missing limit and ambiguous inputs block confirmation with clear messages",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 553,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-07T00:39:35.428Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "86d6a544053f1eb9f224-49e3575a14f350e0afad",
-          "file": "flows.spec.ts",
-          "line": 294,
-          "column": 5
-        },
-        {
-          "title": "provider failure and live outside-session states are explained",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 4662,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-07T00:39:36.003Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "86d6a544053f1eb9f224-2452e97f49ee61e34cb5",
-          "file": "flows.spec.ts",
-          "line": 312,
-          "column": 5
-        },
-        {
-          "title": "keyboard: skip link, CTA focus ring, and desk controls reachable",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 646,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-07T00:39:40.676Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "86d6a544053f1eb9f224-46f2dead3eb0a8a15f02",
-          "file": "flows.spec.ts",
-          "line": 329,
-          "column": 5
-        },
-        {
-          "title": "method page shows coverage for all candidates and every anchored section",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 372,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-07T00:39:41.333Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "86d6a544053f1eb9f224-7fe45a2322e2431e1aef",
-          "file": "flows.spec.ts",
-          "line": 362,
-          "column": 5
-        },
-        {
-          "title": "metadata: title, description, social tags, icon and theme color on every public page; no localhost URLs",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1408,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-07T00:39:41.716Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "86d6a544053f1eb9f224-dfeeabd1768e96906b4c",
-          "file": "flows.spec.ts",
-          "line": 374,
-          "column": 5
-        },
-        {
-          "title": "desk at 1440/1280/1024/768/390: decision lands in view after a run, no overflow, 44px targets",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3965,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-07T00:39:43.136Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "86d6a544053f1eb9f224-38d8e7921f2ee95f3b75",
-          "file": "flows.spec.ts",
-          "line": 395,
-          "column": 5
-        },
-        {
-          "title": "the decision card renders the computed action, not a fixed STAND DOWN",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 90000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "desktop",
-              "projectName": "desktop",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 602,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-07T00:39:47.112Z",
+                  "startTime": "2026-10-07T10:09:34.914Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -750,7 +756,7 @@
           ],
           "id": "86d6a544053f1eb9f224-027bebd005bce2afed2f",
           "file": "flows.spec.ts",
-          "line": 426,
+          "line": 436,
           "column": 5
         },
         {
@@ -769,12 +775,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4088,
+                  "duration": 4509,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:48.320Z",
+                  "startTime": "2026-10-07T10:09:36.206Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -803,12 +809,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 612,
+                  "duration": 664,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:52.541Z",
+                  "startTime": "2026-10-07T10:09:40.842Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -837,12 +843,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 639,
+                  "duration": 707,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:53.165Z",
+                  "startTime": "2026-10-07T10:09:41.518Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -871,12 +877,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 499,
+                  "duration": 565,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:53.819Z",
+                  "startTime": "2026-10-07T10:09:42.239Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -905,12 +911,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1468,
+                  "duration": 1898,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:54.330Z",
+                  "startTime": "2026-10-07T10:09:42.816Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -939,12 +945,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 623,
+                  "duration": 764,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:55.811Z",
+                  "startTime": "2026-10-07T10:09:44.729Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -954,7 +960,7 @@
           ],
           "id": "86d6a544053f1eb9f224-ca6ac315f9f47c4d69f3",
           "file": "flows.spec.ts",
-          "line": 178,
+          "line": 186,
           "column": 5
         },
         {
@@ -973,12 +979,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 646,
+                  "duration": 831,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:56.446Z",
+                  "startTime": "2026-10-07T10:09:45.512Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -988,7 +994,7 @@
           ],
           "id": "86d6a544053f1eb9f224-172538cfab8501445c12",
           "file": "flows.spec.ts",
-          "line": 197,
+          "line": 205,
           "column": 5
         },
         {
@@ -1007,12 +1013,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 570,
+                  "duration": 768,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:57.105Z",
+                  "startTime": "2026-10-07T10:09:46.356Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1022,7 +1028,7 @@
           ],
           "id": "86d6a544053f1eb9f224-3edb36775f9f46dbd7d8",
           "file": "flows.spec.ts",
-          "line": 209,
+          "line": 217,
           "column": 5
         },
         {
@@ -1041,12 +1047,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 596,
+                  "duration": 695,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:57.696Z",
+                  "startTime": "2026-10-07T10:09:47.138Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1056,7 +1062,7 @@
           ],
           "id": "86d6a544053f1eb9f224-d4edf6a7a86428041c66",
           "file": "flows.spec.ts",
-          "line": 221,
+          "line": 229,
           "column": 5
         },
         {
@@ -1075,12 +1081,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 602,
+                  "duration": 664,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:58.302Z",
+                  "startTime": "2026-10-07T10:09:47.847Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1090,7 +1096,7 @@
           ],
           "id": "86d6a544053f1eb9f224-c53b9ee3a4c230a8fe6c",
           "file": "flows.spec.ts",
-          "line": 231,
+          "line": 239,
           "column": 5
         },
         {
@@ -1109,12 +1115,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 420,
+                  "duration": 579,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:58.916Z",
+                  "startTime": "2026-10-07T10:09:48.525Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1124,7 +1130,7 @@
           ],
           "id": "86d6a544053f1eb9f224-df43e8945a9cff8c4d07",
           "file": "flows.spec.ts",
-          "line": 251,
+          "line": 259,
           "column": 5
         },
         {
@@ -1140,7 +1146,7 @@
                   "description": "Model calls limited to one width to respect free-tier quota; explanations are cached server-side",
                   "location": {
                     "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                    "line": 269,
+                    "line": 277,
                     "column": 8
                   }
                 }
@@ -1153,19 +1159,19 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "skipped",
-                  "duration": 76,
+                  "duration": 98,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:59.347Z",
+                  "startTime": "2026-10-07T10:09:49.117Z",
                   "annotations": [
                     {
                       "type": "skip",
                       "description": "Model calls limited to one width to respect free-tier quota; explanations are cached server-side",
                       "location": {
                         "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                        "line": 269,
+                        "line": 277,
                         "column": 8
                       }
                     }
@@ -1178,7 +1184,7 @@
           ],
           "id": "86d6a544053f1eb9f224-6e9d981a5b4fceaab8d5",
           "file": "flows.spec.ts",
-          "line": 266,
+          "line": 274,
           "column": 5
         },
         {
@@ -1197,12 +1203,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 487,
+                  "duration": 544,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:59.433Z",
+                  "startTime": "2026-10-07T10:09:49.227Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1212,7 +1218,7 @@
           ],
           "id": "86d6a544053f1eb9f224-7d76cae4572bb76f9a0b",
           "file": "flows.spec.ts",
-          "line": 294,
+          "line": 304,
           "column": 5
         },
         {
@@ -1231,12 +1237,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 688,
+                  "duration": 772,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:39:59.930Z",
+                  "startTime": "2026-10-07T10:09:49.783Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1246,7 +1252,7 @@
           ],
           "id": "86d6a544053f1eb9f224-1b04f24650a05d14cad2",
           "file": "flows.spec.ts",
-          "line": 312,
+          "line": 322,
           "column": 5
         },
         {
@@ -1265,12 +1271,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 615,
+                  "duration": 618,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:00.631Z",
+                  "startTime": "2026-10-07T10:09:50.565Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1280,7 +1286,7 @@
           ],
           "id": "86d6a544053f1eb9f224-462a169a4e46e68c98bb",
           "file": "flows.spec.ts",
-          "line": 329,
+          "line": 339,
           "column": 5
         },
         {
@@ -1299,12 +1305,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 365,
+                  "duration": 387,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:01.256Z",
+                  "startTime": "2026-10-07T10:09:51.196Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1314,7 +1320,7 @@
           ],
           "id": "86d6a544053f1eb9f224-4dbcd5ffdadd865b4359",
           "file": "flows.spec.ts",
-          "line": 362,
+          "line": 372,
           "column": 5
         },
         {
@@ -1333,12 +1339,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1150,
+                  "duration": 1111,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:01.633Z",
+                  "startTime": "2026-10-07T10:09:51.595Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1348,7 +1354,7 @@
           ],
           "id": "86d6a544053f1eb9f224-d74be6987dd8cf913321",
           "file": "flows.spec.ts",
-          "line": 374,
+          "line": 384,
           "column": 5
         },
         {
@@ -1364,7 +1370,7 @@
                   "description": "Iterates all five widths itself",
                   "location": {
                     "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                    "line": 396,
+                    "line": 406,
                     "column": 8
                   }
                 }
@@ -1377,19 +1383,19 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "skipped",
-                  "duration": 1,
+                  "duration": 0,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:02.795Z",
+                  "startTime": "2026-10-07T10:09:52.717Z",
                   "annotations": [
                     {
                       "type": "skip",
                       "description": "Iterates all five widths itself",
                       "location": {
                         "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                        "line": 396,
+                        "line": 406,
                         "column": 8
                       }
                     }
@@ -1402,7 +1408,7 @@
           ],
           "id": "86d6a544053f1eb9f224-0d2f0680b5a7dd1862c4",
           "file": "flows.spec.ts",
-          "line": 395,
+          "line": 405,
           "column": 5
         },
         {
@@ -1418,7 +1424,7 @@
                   "description": "Rendering check; one width is enough",
                   "location": {
                     "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                    "line": 427,
+                    "line": 437,
                     "column": 8
                   }
                 }
@@ -1431,19 +1437,19 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "skipped",
-                  "duration": 66,
+                  "duration": 67,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:02.806Z",
+                  "startTime": "2026-10-07T10:09:52.726Z",
                   "annotations": [
                     {
                       "type": "skip",
                       "description": "Rendering check; one width is enough",
                       "location": {
                         "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                        "line": 427,
+                        "line": 437,
                         "column": 8
                       }
                     }
@@ -1456,7 +1462,7 @@
           ],
           "id": "86d6a544053f1eb9f224-d740a2b7b19f335aadfc",
           "file": "flows.spec.ts",
-          "line": 426,
+          "line": 436,
           "column": 5
         },
         {
@@ -1475,12 +1481,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3228,
+                  "duration": 3775,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:03.466Z",
+                  "startTime": "2026-10-07T10:09:53.372Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1509,12 +1515,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 607,
+                  "duration": 625,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:06.811Z",
+                  "startTime": "2026-10-07T10:09:57.273Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1543,12 +1549,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1093,
+                  "duration": 1153,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:07.430Z",
+                  "startTime": "2026-10-07T10:09:57.911Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1577,12 +1583,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 539,
+                  "duration": 766,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:08.536Z",
+                  "startTime": "2026-10-07T10:09:59.076Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1611,12 +1617,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1583,
+                  "duration": 1551,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:09.088Z",
+                  "startTime": "2026-10-07T10:09:59.856Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1645,12 +1651,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 788,
+                  "duration": 718,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:10.685Z",
+                  "startTime": "2026-10-07T10:10:01.425Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1660,7 +1666,7 @@
           ],
           "id": "86d6a544053f1eb9f224-6b283137edd821934a8d",
           "file": "flows.spec.ts",
-          "line": 178,
+          "line": 186,
           "column": 5
         },
         {
@@ -1679,12 +1685,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 746,
+                  "duration": 609,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:11.487Z",
+                  "startTime": "2026-10-07T10:10:02.155Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1694,7 +1700,7 @@
           ],
           "id": "86d6a544053f1eb9f224-752f3508ebad792c126e",
           "file": "flows.spec.ts",
-          "line": 197,
+          "line": 205,
           "column": 5
         },
         {
@@ -1713,12 +1719,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 630,
+                  "duration": 620,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:12.245Z",
+                  "startTime": "2026-10-07T10:10:02.776Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1728,7 +1734,7 @@
           ],
           "id": "86d6a544053f1eb9f224-a209d813dc0a3d298ee7",
           "file": "flows.spec.ts",
-          "line": 209,
+          "line": 217,
           "column": 5
         },
         {
@@ -1747,12 +1753,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 635,
+                  "duration": 570,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:12.885Z",
+                  "startTime": "2026-10-07T10:10:03.408Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1762,7 +1768,7 @@
           ],
           "id": "86d6a544053f1eb9f224-ec19a193844284923132",
           "file": "flows.spec.ts",
-          "line": 221,
+          "line": 229,
           "column": 5
         },
         {
@@ -1781,12 +1787,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 789,
+                  "duration": 617,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:13.530Z",
+                  "startTime": "2026-10-07T10:10:03.989Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1796,7 +1802,7 @@
           ],
           "id": "86d6a544053f1eb9f224-71dc9893372a9ebb8fa3",
           "file": "flows.spec.ts",
-          "line": 231,
+          "line": 239,
           "column": 5
         },
         {
@@ -1815,12 +1821,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 458,
+                  "duration": 622,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:14.330Z",
+                  "startTime": "2026-10-07T10:10:04.617Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1830,7 +1836,7 @@
           ],
           "id": "86d6a544053f1eb9f224-0f18b676c9448c750ad0",
           "file": "flows.spec.ts",
-          "line": 251,
+          "line": 259,
           "column": 5
         },
         {
@@ -1846,7 +1852,7 @@
                   "description": "Model calls limited to one width to respect free-tier quota; explanations are cached server-side",
                   "location": {
                     "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                    "line": 269,
+                    "line": 277,
                     "column": 8
                   }
                 }
@@ -1859,19 +1865,19 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "skipped",
-                  "duration": 77,
+                  "duration": 91,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:14.800Z",
+                  "startTime": "2026-10-07T10:10:05.252Z",
                   "annotations": [
                     {
                       "type": "skip",
                       "description": "Model calls limited to one width to respect free-tier quota; explanations are cached server-side",
                       "location": {
                         "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                        "line": 269,
+                        "line": 277,
                         "column": 8
                       }
                     }
@@ -1884,7 +1890,7 @@
           ],
           "id": "86d6a544053f1eb9f224-eb46f2765033c0dd0086",
           "file": "flows.spec.ts",
-          "line": 266,
+          "line": 274,
           "column": 5
         },
         {
@@ -1903,12 +1909,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 494,
+                  "duration": 480,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:14.886Z",
+                  "startTime": "2026-10-07T10:10:05.355Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1918,7 +1924,7 @@
           ],
           "id": "86d6a544053f1eb9f224-bb37c2306cfacea63a0e",
           "file": "flows.spec.ts",
-          "line": 294,
+          "line": 304,
           "column": 5
         },
         {
@@ -1937,12 +1943,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 727,
+                  "duration": 693,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:15.389Z",
+                  "startTime": "2026-10-07T10:10:05.846Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1952,7 +1958,7 @@
           ],
           "id": "86d6a544053f1eb9f224-7cc8d2162775f8c4d95e",
           "file": "flows.spec.ts",
-          "line": 312,
+          "line": 322,
           "column": 5
         },
         {
@@ -1971,12 +1977,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 598,
+                  "duration": 578,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:16.126Z",
+                  "startTime": "2026-10-07T10:10:06.549Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -1986,7 +1992,7 @@
           ],
           "id": "86d6a544053f1eb9f224-3a0936682a2da42bd678",
           "file": "flows.spec.ts",
-          "line": 329,
+          "line": 339,
           "column": 5
         },
         {
@@ -2005,12 +2011,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 393,
+                  "duration": 364,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:16.734Z",
+                  "startTime": "2026-10-07T10:10:07.138Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2020,7 +2026,7 @@
           ],
           "id": "86d6a544053f1eb9f224-da5b522212f2e84a3d0b",
           "file": "flows.spec.ts",
-          "line": 362,
+          "line": 372,
           "column": 5
         },
         {
@@ -2039,12 +2045,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1071,
+                  "duration": 1019,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:17.137Z",
+                  "startTime": "2026-10-07T10:10:07.513Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -2054,7 +2060,7 @@
           ],
           "id": "86d6a544053f1eb9f224-97f05e992e85ffccad82",
           "file": "flows.spec.ts",
-          "line": 374,
+          "line": 384,
           "column": 5
         },
         {
@@ -2070,7 +2076,7 @@
                   "description": "Iterates all five widths itself",
                   "location": {
                     "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                    "line": 396,
+                    "line": 406,
                     "column": 8
                   }
                 }
@@ -2088,14 +2094,14 @@
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:18.221Z",
+                  "startTime": "2026-10-07T10:10:08.542Z",
                   "annotations": [
                     {
                       "type": "skip",
                       "description": "Iterates all five widths itself",
                       "location": {
                         "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                        "line": 396,
+                        "line": 406,
                         "column": 8
                       }
                     }
@@ -2108,7 +2114,7 @@
           ],
           "id": "86d6a544053f1eb9f224-38686fb01a35a9edc6ad",
           "file": "flows.spec.ts",
-          "line": 395,
+          "line": 405,
           "column": 5
         },
         {
@@ -2124,7 +2130,7 @@
                   "description": "Rendering check; one width is enough",
                   "location": {
                     "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                    "line": 427,
+                    "line": 437,
                     "column": 8
                   }
                 }
@@ -2137,19 +2143,19 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "skipped",
-                  "duration": 78,
+                  "duration": 79,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-07T00:40:18.230Z",
+                  "startTime": "2026-10-07T10:10:08.551Z",
                   "annotations": [
                     {
                       "type": "skip",
                       "description": "Rendering check; one width is enough",
                       "location": {
                         "file": "<project>\\tests\\e2e\\flows.spec.ts",
-                        "line": 427,
+                        "line": 437,
                         "column": 8
                       }
                     }
@@ -2162,7 +2168,7 @@
           ],
           "id": "86d6a544053f1eb9f224-560249b8113f9c06c511",
           "file": "flows.spec.ts",
-          "line": 426,
+          "line": 436,
           "column": 5
         }
       ]
@@ -2170,8 +2176,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-07T00:38:06.802Z",
-    "duration": 131795.403,
+    "startTime": "2026-10-07T10:08:55.409Z",
+    "duration": 73650.496,
     "expected": 51,
     "skipped": 6,
     "unexpected": 0,
