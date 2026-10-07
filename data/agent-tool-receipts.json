@@ -1,0 +1,1209 @@
+{
+  "generatedAt": "2026-10-07T00:13:38.519Z",
+  "note": "Bitget Agent Hub MCP (official, read-only, no credentials). Public SPOT market operations only; this catalog has no corporate-action or underlying-stock operations.",
+  "allOk": true,
+  "checks": [
+    {
+      "name": "instrument-metadata",
+      "ok": true,
+      "detail": "isReality=yes symbolType=stock; 6 sizing fields match"
+    },
+    {
+      "name": "boundary Friday reference (bar ending weekend start)",
+      "ok": true,
+      "detail": "Fri 2026-09-25 19:45 ET close: agent 225 vs dataset 225"
+    },
+    {
+      "name": "boundary Sunday decision (bar ending transition)",
+      "ok": true,
+      "detail": "Sun 2026-09-27 19:45 ET close: agent 223.55 vs dataset 223.55"
+    },
+    {
+      "name": "boundary Reopening (bar starting 09:30 ET)",
+      "ok": true,
+      "detail": "Mon 2026-09-28 09:30 ET open: agent 229.56 vs dataset 229.56"
+    },
+    {
+      "name": "boundary First-hour endpoint (bar ending 10:30 ET)",
+      "ok": true,
+      "detail": "Mon 2026-09-28 10:15 ET close: agent 231.27 vs dataset 231.27"
+    },
+    {
+      "name": "recent-candles",
+      "ok": true,
+      "detail": "8 rows; latest bar start 2026-10-07T00:00:00.000Z"
+    }
+  ],
+  "receipts": [
+    {
+      "tool": "market",
+      "server": {
+        "name": "bitget-agent-mcp",
+        "version": "3.3.1",
+        "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+        "mode": "read-only",
+        "credentials": "none"
+      },
+      "arguments": {
+        "action": "instruments",
+        "category": "SPOT",
+        "symbol": "RNVDAUSDT",
+        "view": "full"
+      },
+      "calledAt": "2026-10-07T00:13:35.047Z",
+      "usedFor": "Instrument precision, minimum notional and limit-price ratio for the sizing and band checks",
+      "durationMs": 1146,
+      "outcome": "OK",
+      "error": null,
+      "contentSha256": "68c39bc8a8c2a9b03b69a738de84bb1f5397e419abac8c066cd6f5011a6c1678",
+      "endpoint": "GET /api/v3/market/instruments",
+      "rows": 1
+    },
+    {
+      "tool": "market",
+      "server": {
+        "name": "bitget-agent-mcp",
+        "version": "3.3.1",
+        "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+        "mode": "read-only",
+        "credentials": "none"
+      },
+      "arguments": {
+        "action": "candlesHistory",
+        "category": "SPOT",
+        "symbol": "RNVDAUSDT",
+        "interval": "15m",
+        "type": "market",
+        "endTime": "1790380800000",
+        "limit": "3",
+        "view": "full"
+      },
+      "calledAt": "2026-10-07T00:13:36.193Z",
+      "usedFor": "Cross-check of the Friday reference (bar ending weekend start) for the 2026-09-26 weekend",
+      "durationMs": 458,
+      "outcome": "OK",
+      "error": null,
+      "contentSha256": "c85b718ac4c39e7fa57dd292d040cb24344075dcc69b2fd8589cf23a520b00c3",
+      "endpoint": "GET /api/v3/market/history-candles",
+      "rows": 3
+    },
+    {
+      "tool": "market",
+      "server": {
+        "name": "bitget-agent-mcp",
+        "version": "3.3.1",
+        "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+        "mode": "read-only",
+        "credentials": "none"
+      },
+      "arguments": {
+        "action": "candlesHistory",
+        "category": "SPOT",
+        "symbol": "RNVDAUSDT",
+        "interval": "15m",
+        "type": "market",
+        "endTime": "1790553600000",
+        "limit": "3",
+        "view": "full"
+      },
+      "calledAt": "2026-10-07T00:13:36.652Z",
+      "usedFor": "Cross-check of the Sunday decision (bar ending transition) for the 2026-09-26 weekend",
+      "durationMs": 437,
+      "outcome": "OK",
+      "error": null,
+      "contentSha256": "1110f91f0166289726cc9295429300ce08bb2b859f53308583c89c52d42d1c87",
+      "endpoint": "GET /api/v3/market/history-candles",
+      "rows": 3
+    },
+    {
+      "tool": "market",
+      "server": {
+        "name": "bitget-agent-mcp",
+        "version": "3.3.1",
+        "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+        "mode": "read-only",
+        "credentials": "none"
+      },
+      "arguments": {
+        "action": "candlesHistory",
+        "category": "SPOT",
+        "symbol": "RNVDAUSDT",
+        "interval": "15m",
+        "type": "market",
+        "endTime": "1790603100000",
+        "limit": "3",
+        "view": "full"
+      },
+      "calledAt": "2026-10-07T00:13:37.089Z",
+      "usedFor": "Cross-check of the Reopening (bar starting 09:30 ET) for the 2026-09-26 weekend",
+      "durationMs": 439,
+      "outcome": "OK",
+      "error": null,
+      "contentSha256": "2d73696214ab8e61877c57530bd1f1a0c5bf80bf7f6402215e60f5547f198c77",
+      "endpoint": "GET /api/v3/market/history-candles",
+      "rows": 3
+    },
+    {
+      "tool": "market",
+      "server": {
+        "name": "bitget-agent-mcp",
+        "version": "3.3.1",
+        "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+        "mode": "read-only",
+        "credentials": "none"
+      },
+      "arguments": {
+        "action": "candlesHistory",
+        "category": "SPOT",
+        "symbol": "RNVDAUSDT",
+        "interval": "15m",
+        "type": "market",
+        "endTime": "1790605800000",
+        "limit": "3",
+        "view": "full"
+      },
+      "calledAt": "2026-10-07T00:13:37.529Z",
+      "usedFor": "Cross-check of the First-hour endpoint (bar ending 10:30 ET) for the 2026-09-26 weekend",
+      "durationMs": 454,
+      "outcome": "OK",
+      "error": null,
+      "contentSha256": "45086f83e5298138e422bde303f6f2bd91c3bebd3cfd7f9a83931d799475d1f1",
+      "endpoint": "GET /api/v3/market/history-candles",
+      "rows": 3
+    },
+    {
+      "tool": "market",
+      "server": {
+        "name": "bitget-agent-mcp",
+        "version": "3.3.1",
+        "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+        "mode": "read-only",
+        "credentials": "none"
+      },
+      "arguments": {
+        "action": "candles",
+        "category": "SPOT",
+        "symbol": "RNVDAUSDT",
+        "interval": "15m",
+        "type": "market",
+        "limit": "8",
+        "view": "full"
+      },
+      "calledAt": "2026-10-07T00:13:37.983Z",
+      "usedFor": "Recent closed 15m bars for the live decision price",
+      "durationMs": 509,
+      "outcome": "OK",
+      "error": null,
+      "contentSha256": "4f66fd1398c34b5f37a21f33e3654b8e69e1cf7baebf521194dc7165b5df051b",
+      "endpoint": "GET /api/v3/market/candles",
+      "rows": 8
+    }
+  ],
+  "history": [
+    {
+      "generatedAt": "2026-10-06T10:17:25.334Z",
+      "allOk": true,
+      "checks": [
+        {
+          "name": "instrument-metadata",
+          "ok": true,
+          "detail": "isReality=yes symbolType=stock; 6 sizing fields match"
+        },
+        {
+          "name": "boundary Friday reference (bar ending weekend start)",
+          "ok": true,
+          "detail": "Fri 2026-09-25 19:45 ET close: agent 225 vs dataset 225"
+        },
+        {
+          "name": "boundary Sunday decision (bar ending transition)",
+          "ok": true,
+          "detail": "Sun 2026-09-27 19:45 ET close: agent 223.55 vs dataset 223.55"
+        },
+        {
+          "name": "boundary Reopening (bar starting 09:30 ET)",
+          "ok": true,
+          "detail": "Mon 2026-09-28 09:30 ET open: agent 229.56 vs dataset 229.56"
+        },
+        {
+          "name": "boundary First-hour endpoint (bar ending 10:30 ET)",
+          "ok": true,
+          "detail": "Mon 2026-09-28 10:15 ET close: agent 231.27 vs dataset 231.27"
+        },
+        {
+          "name": "recent-candles",
+          "ok": true,
+          "detail": "8 rows; latest bar start 2026-10-06T10:15:00.000Z"
+        }
+      ],
+      "receipts": [
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "instruments",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:17:21.875Z",
+          "usedFor": "Instrument precision, minimum notional and limit-price ratio for the sizing and band checks",
+          "durationMs": 890,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "5b0df8e62b56ead900807e2946c226fe17e3a141e8392484e1b9ba781525baaf",
+          "endpoint": "GET /api/v3/market/instruments",
+          "rows": 1
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790380800000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:17:22.766Z",
+          "usedFor": "Cross-check of the Friday reference (bar ending weekend start) for the 2026-09-26 weekend",
+          "durationMs": 575,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "3ccb4aa6de2502f1cbaf85da8d922a02756afb7d7f2beae626699df2fbe46997",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790553600000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:17:23.342Z",
+          "usedFor": "Cross-check of the Sunday decision (bar ending transition) for the 2026-09-26 weekend",
+          "durationMs": 486,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "093b722db8885ddd8c9955fc01c4989d71652727ab0745e6427e756aebc227e9",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790603100000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:17:23.828Z",
+          "usedFor": "Cross-check of the Reopening (bar starting 09:30 ET) for the 2026-09-26 weekend",
+          "durationMs": 474,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "e7da613557101888348ac93a5bda4b7202407bf36b682ad75294bc4c932c4418",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790605800000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:17:24.303Z",
+          "usedFor": "Cross-check of the First-hour endpoint (bar ending 10:30 ET) for the 2026-09-26 weekend",
+          "durationMs": 501,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "cbd752c00c440d8c46f32e809f48b2498ea68c2a36b75b808e030163f9d33845",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candles",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "limit": "8",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:17:24.805Z",
+          "usedFor": "Recent closed 15m bars for the live decision price",
+          "durationMs": 485,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "db42e81ee6e5a820c031524984eb0767528d9b2ed33d115899d254d2448c84dd",
+          "endpoint": "GET /api/v3/market/candles",
+          "rows": 8
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-10-06T10:19:06.289Z",
+      "allOk": true,
+      "checks": [
+        {
+          "name": "instrument-metadata",
+          "ok": true,
+          "detail": "isReality=yes symbolType=stock; 6 sizing fields match"
+        },
+        {
+          "name": "boundary Friday reference (bar ending weekend start)",
+          "ok": true,
+          "detail": "Fri 2026-09-25 19:45 ET close: agent 225 vs dataset 225"
+        },
+        {
+          "name": "boundary Sunday decision (bar ending transition)",
+          "ok": true,
+          "detail": "Sun 2026-09-27 19:45 ET close: agent 223.55 vs dataset 223.55"
+        },
+        {
+          "name": "boundary Reopening (bar starting 09:30 ET)",
+          "ok": true,
+          "detail": "Mon 2026-09-28 09:30 ET open: agent 229.56 vs dataset 229.56"
+        },
+        {
+          "name": "boundary First-hour endpoint (bar ending 10:30 ET)",
+          "ok": true,
+          "detail": "Mon 2026-09-28 10:15 ET close: agent 231.27 vs dataset 231.27"
+        },
+        {
+          "name": "recent-candles",
+          "ok": true,
+          "detail": "8 rows; latest bar start 2026-10-06T10:15:00.000Z"
+        }
+      ],
+      "receipts": [
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "instruments",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:19:01.398Z",
+          "usedFor": "Instrument precision, minimum notional and limit-price ratio for the sizing and band checks",
+          "durationMs": 1813,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "96647d67cbc94be1ef4ec92c7c794c406a026ecc677e28752ff043064283deda",
+          "endpoint": "GET /api/v3/market/instruments",
+          "rows": 1
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790380800000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:19:03.211Z",
+          "usedFor": "Cross-check of the Friday reference (bar ending weekend start) for the 2026-09-26 weekend",
+          "durationMs": 604,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "d330b50fcfbe71e77474a050938ed927434e82b543114d848c686d27d1814d7f",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790553600000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:19:03.816Z",
+          "usedFor": "Cross-check of the Sunday decision (bar ending transition) for the 2026-09-26 weekend",
+          "durationMs": 574,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "6a5bf3c93f5dedc885c58788d2c4c2fa1a8d2500ecf18480a119768be19d44f2",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790603100000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:19:04.390Z",
+          "usedFor": "Cross-check of the Reopening (bar starting 09:30 ET) for the 2026-09-26 weekend",
+          "durationMs": 636,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "f87b475213bb2492e7e4209051537b7d6c47617cd6b66065b579adf4e6120000",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790605800000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:19:05.026Z",
+          "usedFor": "Cross-check of the First-hour endpoint (bar ending 10:30 ET) for the 2026-09-26 weekend",
+          "durationMs": 651,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "a9313ddb2965ef2c56184d837abb520721219b3c4160e9a6442b479e558fd4c8",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candles",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "limit": "8",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T10:19:05.677Z",
+          "usedFor": "Recent closed 15m bars for the live decision price",
+          "durationMs": 583,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "d24167cb6c537f5ea3f997a73ec02e24d10a02ffdc8f3f56b0b5b857fe73152a",
+          "endpoint": "GET /api/v3/market/candles",
+          "rows": 8
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-10-06T21:11:04.110Z",
+      "allOk": false,
+      "checks": [
+        {
+          "name": "instrument-metadata",
+          "ok": false,
+          "detail": "symbol not returned"
+        },
+        {
+          "name": "boundary Friday reference (bar ending weekend start)",
+          "ok": false,
+          "detail": "Fri 2026-09-25 19:45 ET close: agent missing vs dataset 225"
+        },
+        {
+          "name": "boundary Sunday decision (bar ending transition)",
+          "ok": false,
+          "detail": "Sun 2026-09-27 19:45 ET close: agent missing vs dataset 223.55"
+        },
+        {
+          "name": "boundary Reopening (bar starting 09:30 ET)",
+          "ok": false,
+          "detail": "Mon 2026-09-28 09:30 ET open: agent missing vs dataset 229.56"
+        },
+        {
+          "name": "boundary First-hour endpoint (bar ending 10:30 ET)",
+          "ok": false,
+          "detail": "Mon 2026-09-28 10:15 ET close: agent missing vs dataset 231.27"
+        },
+        {
+          "name": "recent-candles",
+          "ok": false,
+          "detail": "0 rows; latest bar start n/a"
+        }
+      ],
+      "receipts": [
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "instruments",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:10:58.625Z",
+          "usedFor": "Instrument precision, minimum notional and limit-price ratio for the sizing and band checks",
+          "durationMs": 998,
+          "outcome": "ERROR",
+          "error": "{\"ok\":false,\"error\":{\"type\":\"NetworkError\",\"category\":\"network\",\"message\":\"Failed to call Bitget endpoint GET /api/v3/market/instruments.\",\"suggestion\":\"Please check network connectivity and retry the request in a few seconds.\",\"retryable\":true,\"endpoint\":\"GET /api/v3/market/instruments\"},\"timestamp",
+          "contentSha256": "dd6cc5896d0cbf4ff57a87471b05c5cf82e4c8611b7e2f9ae827fc9ea89e4d04",
+          "endpoint": null,
+          "rows": null
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790380800000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:10:59.623Z",
+          "usedFor": "Cross-check of the Friday reference (bar ending weekend start) for the 2026-09-26 weekend",
+          "durationMs": 861,
+          "outcome": "ERROR",
+          "error": "{\"ok\":false,\"error\":{\"type\":\"NetworkError\",\"category\":\"network\",\"message\":\"Failed to call Bitget endpoint GET /api/v3/market/history-candles.\",\"suggestion\":\"Please check network connectivity and retry the request in a few seconds.\",\"retryable\":true,\"endpoint\":\"GET /api/v3/market/history-candles\"},\"t",
+          "contentSha256": "eb255a51f9cb17b1371c0a9468e3d51657fa4fec7fcc6243d8b7e661490df913",
+          "endpoint": null,
+          "rows": null
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790553600000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:11:00.485Z",
+          "usedFor": "Cross-check of the Sunday decision (bar ending transition) for the 2026-09-26 weekend",
+          "durationMs": 902,
+          "outcome": "ERROR",
+          "error": "{\"ok\":false,\"error\":{\"type\":\"NetworkError\",\"category\":\"network\",\"message\":\"Failed to call Bitget endpoint GET /api/v3/market/history-candles.\",\"suggestion\":\"Please check network connectivity and retry the request in a few seconds.\",\"retryable\":true,\"endpoint\":\"GET /api/v3/market/history-candles\"},\"t",
+          "contentSha256": "f0966b65b529bf747ec57a9a92efb893fbd2b253d349ccad3c7005241295d2ce",
+          "endpoint": null,
+          "rows": null
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790603100000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:11:01.387Z",
+          "usedFor": "Cross-check of the Reopening (bar starting 09:30 ET) for the 2026-09-26 weekend",
+          "durationMs": 864,
+          "outcome": "ERROR",
+          "error": "{\"ok\":false,\"error\":{\"type\":\"NetworkError\",\"category\":\"network\",\"message\":\"Failed to call Bitget endpoint GET /api/v3/market/history-candles.\",\"suggestion\":\"Please check network connectivity and retry the request in a few seconds.\",\"retryable\":true,\"endpoint\":\"GET /api/v3/market/history-candles\"},\"t",
+          "contentSha256": "a94400edb832392de2c029974c5abe04f2f8db075beba1be2daebcb873a7adba",
+          "endpoint": null,
+          "rows": null
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790605800000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:11:02.251Z",
+          "usedFor": "Cross-check of the First-hour endpoint (bar ending 10:30 ET) for the 2026-09-26 weekend",
+          "durationMs": 912,
+          "outcome": "ERROR",
+          "error": "{\"ok\":false,\"error\":{\"type\":\"NetworkError\",\"category\":\"network\",\"message\":\"Failed to call Bitget endpoint GET /api/v3/market/history-candles.\",\"suggestion\":\"Please check network connectivity and retry the request in a few seconds.\",\"retryable\":true,\"endpoint\":\"GET /api/v3/market/history-candles\"},\"t",
+          "contentSha256": "f10604325e567a6dc310863d6d77554647901e51cb09f3097731646284b3de08",
+          "endpoint": null,
+          "rows": null
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candles",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "limit": "8",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:11:03.163Z",
+          "usedFor": "Recent closed 15m bars for the live decision price",
+          "durationMs": 898,
+          "outcome": "ERROR",
+          "error": "{\"ok\":false,\"error\":{\"type\":\"NetworkError\",\"category\":\"network\",\"message\":\"Failed to call Bitget endpoint GET /api/v3/market/candles.\",\"suggestion\":\"Please check network connectivity and retry the request in a few seconds.\",\"retryable\":true,\"endpoint\":\"GET /api/v3/market/candles\"},\"timestamp\":\"2026-",
+          "contentSha256": "f101ebd79cc543cc7037398ca69038f11b3fd91d12932dcd06be0a1f07f043bd",
+          "endpoint": null,
+          "rows": null
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-10-06T21:13:39.906Z",
+      "allOk": true,
+      "checks": [
+        {
+          "name": "instrument-metadata",
+          "ok": true,
+          "detail": "isReality=yes symbolType=stock; 6 sizing fields match"
+        },
+        {
+          "name": "boundary Friday reference (bar ending weekend start)",
+          "ok": true,
+          "detail": "Fri 2026-09-25 19:45 ET close: agent 225 vs dataset 225"
+        },
+        {
+          "name": "boundary Sunday decision (bar ending transition)",
+          "ok": true,
+          "detail": "Sun 2026-09-27 19:45 ET close: agent 223.55 vs dataset 223.55"
+        },
+        {
+          "name": "boundary Reopening (bar starting 09:30 ET)",
+          "ok": true,
+          "detail": "Mon 2026-09-28 09:30 ET open: agent 229.56 vs dataset 229.56"
+        },
+        {
+          "name": "boundary First-hour endpoint (bar ending 10:30 ET)",
+          "ok": true,
+          "detail": "Mon 2026-09-28 10:15 ET close: agent 231.27 vs dataset 231.27"
+        },
+        {
+          "name": "recent-candles",
+          "ok": true,
+          "detail": "8 rows; latest bar start 2026-10-06T21:00:00.000Z"
+        }
+      ],
+      "receipts": [
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "instruments",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:13:35.691Z",
+          "usedFor": "Instrument precision, minimum notional and limit-price ratio for the sizing and band checks",
+          "durationMs": 963,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "a4d0ee9f80a4657c36f59fec1ea7654a6f9d610eecb64aa0664ac80105200ecc",
+          "endpoint": "GET /api/v3/market/instruments",
+          "rows": 1
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790380800000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:13:36.654Z",
+          "usedFor": "Cross-check of the Friday reference (bar ending weekend start) for the 2026-09-26 weekend",
+          "durationMs": 1093,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "e5df10847eca0a5844e2ce637f046074989b1614e88fc5a67c3a781b429141b7",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790553600000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:13:37.748Z",
+          "usedFor": "Cross-check of the Sunday decision (bar ending transition) for the 2026-09-26 weekend",
+          "durationMs": 708,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "e7df2a8454f6d5a4544bab268c134aa9805b606502167634dad68f65fcd45b91",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790603100000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:13:38.456Z",
+          "usedFor": "Cross-check of the Reopening (bar starting 09:30 ET) for the 2026-09-26 weekend",
+          "durationMs": 480,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "7b6fcc2e1790455e4dd2c6111d8051d9eed06e6df1403d7f4b0c61a852c3b7ef",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790605800000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:13:38.937Z",
+          "usedFor": "Cross-check of the First-hour endpoint (bar ending 10:30 ET) for the 2026-09-26 weekend",
+          "durationMs": 449,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "9198a3206f95cf9ac375f9890d014b0ca16ae1a6534d16ffea5e0a053cd3e74f",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candles",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "limit": "8",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T21:13:39.386Z",
+          "usedFor": "Recent closed 15m bars for the live decision price",
+          "durationMs": 480,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "e4ab622a322af69ba07909975f3f40df226f0648dc759f7744cd63f6ada6eaed",
+          "endpoint": "GET /api/v3/market/candles",
+          "rows": 8
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-10-06T23:42:45.011Z",
+      "allOk": true,
+      "checks": [
+        {
+          "name": "instrument-metadata",
+          "ok": true,
+          "detail": "isReality=yes symbolType=stock; 6 sizing fields match"
+        },
+        {
+          "name": "boundary Friday reference (bar ending weekend start)",
+          "ok": true,
+          "detail": "Fri 2026-09-25 19:45 ET close: agent 225 vs dataset 225"
+        },
+        {
+          "name": "boundary Sunday decision (bar ending transition)",
+          "ok": true,
+          "detail": "Sun 2026-09-27 19:45 ET close: agent 223.55 vs dataset 223.55"
+        },
+        {
+          "name": "boundary Reopening (bar starting 09:30 ET)",
+          "ok": true,
+          "detail": "Mon 2026-09-28 09:30 ET open: agent 229.56 vs dataset 229.56"
+        },
+        {
+          "name": "boundary First-hour endpoint (bar ending 10:30 ET)",
+          "ok": true,
+          "detail": "Mon 2026-09-28 10:15 ET close: agent 231.27 vs dataset 231.27"
+        },
+        {
+          "name": "recent-candles",
+          "ok": true,
+          "detail": "8 rows; latest bar start 2026-10-06T23:30:00.000Z"
+        }
+      ],
+      "receipts": [
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "instruments",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T23:42:40.524Z",
+          "usedFor": "Instrument precision, minimum notional and limit-price ratio for the sizing and band checks",
+          "durationMs": 1315,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "99cd12cfdaf829e224c0f7955b1428c75c16fbf43c94d0ccb3480887309e8b3a",
+          "endpoint": "GET /api/v3/market/instruments",
+          "rows": 1
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790380800000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T23:42:41.839Z",
+          "usedFor": "Cross-check of the Friday reference (bar ending weekend start) for the 2026-09-26 weekend",
+          "durationMs": 1216,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "0e87a72183b8caf65086d2a02020e4550b2c5185feb27599b4759db9a20ec46d",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790553600000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T23:42:43.057Z",
+          "usedFor": "Cross-check of the Sunday decision (bar ending transition) for the 2026-09-26 weekend",
+          "durationMs": 430,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "83a93dd19ff818aa80f3958a7bfb28e9ccda19825dafbac7dd93b477f7e8db35",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790603100000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T23:42:43.487Z",
+          "usedFor": "Cross-check of the Reopening (bar starting 09:30 ET) for the 2026-09-26 weekend",
+          "durationMs": 469,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "6299a1160d2df077b978b246f95e75b0b488c48a406277230e2e85198c27b9d0",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candlesHistory",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "endTime": "1790605800000",
+            "limit": "3",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T23:42:43.956Z",
+          "usedFor": "Cross-check of the First-hour endpoint (bar ending 10:30 ET) for the 2026-09-26 weekend",
+          "durationMs": 518,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "bed1e61ff3590863c191202aa0d383732592cf32949eca561df8795dc9c4c015",
+          "endpoint": "GET /api/v3/market/history-candles",
+          "rows": 3
+        },
+        {
+          "tool": "market",
+          "server": {
+            "name": "bitget-agent-mcp",
+            "version": "3.3.1",
+            "package": "@bitget-ai/bitget-agent-mcp@3.3.1",
+            "mode": "read-only",
+            "credentials": "none"
+          },
+          "arguments": {
+            "action": "candles",
+            "category": "SPOT",
+            "symbol": "RNVDAUSDT",
+            "interval": "15m",
+            "type": "market",
+            "limit": "8",
+            "view": "full"
+          },
+          "calledAt": "2026-10-06T23:42:44.474Z",
+          "usedFor": "Recent closed 15m bars for the live decision price",
+          "durationMs": 490,
+          "outcome": "OK",
+          "error": null,
+          "contentSha256": "9a405de5b36bd7db3c44a7a9a83544867f4dc58774245b170c9a74fde94593fa",
+          "endpoint": "GET /api/v3/market/candles",
+          "rows": 8
+        }
+      ]
+    }
+  ]
+}
