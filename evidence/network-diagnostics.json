@@ -1,0 +1,292 @@
+{
+  "at": "2026-10-06T05:17:33.847Z",
+  "timeoutMs": 8000,
+  "proxy": {
+    "env": {
+      "HTTP_PROXY": null,
+      "HTTPS_PROXY": null,
+      "ALL_PROXY": null,
+      "NO_PROXY": null,
+      "http_proxy": null,
+      "https_proxy": null
+    },
+    "npmProxy": "null",
+    "npmHttpsProxy": "null",
+    "winhttp": "Current WinHTTP proxy settings:\r\n\r\n    Direct access (no proxy server).",
+    "wininetProxyEnable": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\r\n    ProxyEnable    REG_DWORD    0x0",
+    "wininetProxyServer": null,
+    "defaultGateway": "172.20.10.1"
+  },
+  "hosts": {
+    "agent.bitget.com": {
+      "failedStage": null,
+      "systemDns": {
+        "ok": false,
+        "error": {
+          "code": null,
+          "message": "system dns timeout after 8000 ms"
+        }
+      },
+      "publicDns": {
+        "a": [
+          "104.18.8.145",
+          "104.18.9.145"
+        ],
+        "aaaa": [
+          "2606:4700::6812:891",
+          "2606:4700::6812:991"
+        ],
+        "error": null
+      },
+      "tcp": [
+        {
+          "address": "104.18.8.145",
+          "ok": true,
+          "ms": 156
+        },
+        {
+          "address": "104.18.9.145",
+          "ok": true,
+          "ms": 175
+        },
+        {
+          "address": "2606:4700::6812:891",
+          "ok": false,
+          "ms": 4,
+          "error": {
+            "code": "ENETUNREACH",
+            "message": "connect ENETUNREACH 2606:4700::6812:891:443"
+          }
+        }
+      ],
+      "tls": {
+        "ok": true,
+        "protocol": "TLSv1.3",
+        "subject": "*.bitget.com"
+      },
+      "http": {
+        "ok": true,
+        "status": 200,
+        "snippet": "125\r\nevent: message\r\ndata: {\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"protocolVersion\":\"2025-06-18\",\"capabilities\":{\"logging\":{},\"prompts\":{\"listChanged\":true},\"resources\":{\"subscribe\":false,\"listChanged\":true},\"tools\":{\"listChanged\":true}},\"serverInfo\":{\"name\":\"bitget-mcp-server\",\"version\":\"4.0.5\"}}}"
+      }
+    },
+    "www.bitget.com": {
+      "failedStage": null,
+      "systemDns": {
+        "ok": false,
+        "error": {
+          "code": null,
+          "message": "system dns timeout after 8000 ms"
+        }
+      },
+      "publicDns": {
+        "a": [
+          "104.18.9.145",
+          "104.18.8.145"
+        ],
+        "aaaa": [
+          "2606:4700::6812:991",
+          "2606:4700::6812:891"
+        ],
+        "error": null
+      },
+      "tcp": [
+        {
+          "address": "104.18.9.145",
+          "ok": true,
+          "ms": 167
+        },
+        {
+          "address": "104.18.8.145",
+          "ok": true,
+          "ms": 177
+        },
+        {
+          "address": "2606:4700::6812:991",
+          "ok": false,
+          "ms": 2,
+          "error": {
+            "code": "ENETUNREACH",
+            "message": "connect ENETUNREACH 2606:4700::6812:991:443"
+          }
+        }
+      ],
+      "tls": {
+        "ok": true,
+        "protocol": "TLSv1.3",
+        "subject": "*.bitget.com"
+      },
+      "http": {
+        "ok": true,
+        "status": 200,
+        "snippet": "1f09a\r\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" class=\"dark black\">\n<head>\n  <script nonce=\"MOxFHOxq0iOWi1YKrVNdqQ==\">\n    /*! @bit/security-trustedTypes v1.0.1 */\n!function(e,t){\"object\"==typeof exports&&\"undefined\"!=typeof module?t(exports):\"function\"==typeof define&&define.amd?define([\"exports\"]"
+      }
+    },
+    "api.bitget.com": {
+      "failedStage": null,
+      "systemDns": {
+        "ok": false,
+        "error": {
+          "code": null,
+          "message": "system dns timeout after 8000 ms"
+        }
+      },
+      "publicDns": {
+        "a": [
+          "104.18.15.166",
+          "104.18.14.166"
+        ],
+        "aaaa": [],
+        "error": null
+      },
+      "tcp": [
+        {
+          "address": "104.18.15.166",
+          "ok": true,
+          "ms": 167
+        },
+        {
+          "address": "104.18.14.166",
+          "ok": true,
+          "ms": 180
+        }
+      ],
+      "tls": {
+        "ok": true,
+        "protocol": "TLSv1.3",
+        "subject": "*.bitget.com"
+      },
+      "http": {
+        "ok": true,
+        "status": 404,
+        "snippet": "f\r\n404 not found.\n\r\n0"
+      }
+    },
+    "api.nasdaq.com": {
+      "failedStage": null,
+      "systemDns": {
+        "ok": true,
+        "addresses": [
+          "23.43.64.170"
+        ]
+      },
+      "publicDns": {
+        "a": [
+          "184.24.26.19"
+        ],
+        "aaaa": [
+          "2a02:26f0:1180:19b::1b46",
+          "2a02:26f0:1180:18a::1b46"
+        ],
+        "error": null
+      },
+      "tcp": [
+        {
+          "address": "23.43.64.170",
+          "ok": true,
+          "ms": 156
+        },
+        {
+          "address": "184.24.26.19",
+          "ok": true,
+          "ms": 153
+        },
+        {
+          "address": "2a02:26f0:1180:19b::1b46",
+          "ok": false,
+          "ms": 2,
+          "error": {
+            "code": "ENETUNREACH",
+            "message": "connect ENETUNREACH 2a02:26f0:1180:19b::1b46:443"
+          }
+        }
+      ],
+      "tls": {
+        "ok": true,
+        "protocol": "TLSv1.3",
+        "subject": "www.nasdaq.com"
+      },
+      "http": {
+        "ok": true,
+        "status": 302,
+        "snippet": ""
+      }
+    },
+    "generativelanguage.googleapis.com": {
+      "failedStage": null,
+      "systemDns": {
+        "ok": true,
+        "addresses": [
+          "172.217.113.4",
+          "172.217.118.4",
+          "172.217.119.4",
+          "172.217.115.4",
+          "172.217.114.4",
+          "172.217.117.4",
+          "172.217.112.4",
+          "172.217.116.4"
+        ]
+      },
+      "publicDns": {
+        "a": [
+          "172.217.114.4",
+          "172.217.115.4",
+          "172.217.117.4",
+          "172.217.119.4",
+          "172.217.112.4",
+          "172.217.118.4",
+          "172.217.116.4",
+          "172.217.113.4"
+        ],
+        "aaaa": [
+          "2001:4860:4842:400::",
+          "2001:4860:4847:400::",
+          "2001:4860:4846:400::",
+          "2001:4860:4840:400::",
+          "2001:4860:4843:400::",
+          "2001:4860:4845:400::",
+          "2001:4860:4841:400::",
+          "2001:4860:4844:400::"
+        ],
+        "error": null
+      },
+      "tcp": [
+        {
+          "address": "172.217.113.4",
+          "ok": true,
+          "ms": 35
+        },
+        {
+          "address": "172.217.118.4",
+          "ok": true,
+          "ms": 124
+        },
+        {
+          "address": "172.217.119.4",
+          "ok": true,
+          "ms": 38
+        },
+        {
+          "address": "172.217.115.4",
+          "ok": true,
+          "ms": 125
+        },
+        {
+          "address": "172.217.114.4",
+          "ok": true,
+          "ms": 33
+        }
+      ],
+      "tls": {
+        "ok": true,
+        "protocol": "TLSv1.3",
+        "subject": "upload.video.google.com"
+      },
+      "http": {
+        "ok": true,
+        "status": 404,
+        "snippet": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:1"
+      }
+    }
+  }
+}
