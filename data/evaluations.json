@@ -1,0 +1,2555 @@
+{
+  "generatedAt": "2026-10-07T00:13:49.393Z",
+  "method": "Expanding-window chronological evaluation; each weekend decided with only episodes completed before its Sunday 20:00 ET decision",
+  "referenceInputs": {
+    "HOLD": {
+      "holdingUsdt": 2000,
+      "tradeUsdt": null
+    },
+    "BUY_DIP": {
+      "holdingUsdt": null,
+      "tradeUsdt": 500
+    },
+    "SELL_POP": {
+      "holdingUsdt": 2000,
+      "tradeUsdt": 500
+    }
+  },
+  "holdoutSymbol": "RQQQUSDT",
+  "tuningLog": [],
+  "headlineMinEvaluations": 8,
+  "crossNameActionsByWeekend": {},
+  "evaluations": {
+    "RNVDAUSDT": {
+      "baseCoin": "rNVDA",
+      "holdout": false,
+      "intents": {
+        "HOLD": {
+          "referenceInputs": {
+            "holdingUsdt": 2000,
+            "tradeUsdt": null
+          },
+          "availableWeekends": 23,
+          "evaluatedAfterWarmup": 4,
+          "extremeEpisodes": 1,
+          "matchedExtremeWithAtLeast3": 0,
+          "actions": 0,
+          "standDowns": 4,
+          "standDownFrequency": 1,
+          "headlineEligible": false,
+          "intendedExecutableWeekends": 2,
+          "wealthDifferenceUsdt": {
+            "ZERO": {
+              "modeledVsNoTrade": 0,
+              "modeledVsIntended": -12.044713499999943,
+              "intendedVsNoTrade": -9.714942500000234
+            },
+            "DEFAULT": {
+              "modeledVsNoTrade": 0,
+              "modeledVsIntended": -9.54625783088568,
+              "intendedVsNoTrade": -14.711866423173433
+            },
+            "DOUBLE_SLIPPAGE": {
+              "modeledVsNoTrade": 0,
+              "modeledVsIntended": -8.047784418771016,
+              "intendedVsNoTrade": -17.708820795347037
+            }
+          },
+          "rows": [
+            {
+              "key": "2026-04-25",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: Only 0 completed weekend sessions before the decision",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-02",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: Only 1 completed weekend sessions before the decision",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-09",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: Only 2 completed weekend sessions before the decision",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-16",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09); 2026-04-25: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-23",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Bitget closure calendar not reconciled with the NYSE calendar: NYSE holiday 2026-05-25 not listed in Bitget calendar",
+                "Nonstandard weekend (holiday or early close): Next regular session is 2026-05-26; Monday 2026-05-25 is Memorial Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+                "Session clock not verified: Historical session from the verified NYSE calendar and Bitget Reality calendar",
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-30",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-06-06",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-06-13",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-06-20",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": -0.0155780423783618,
+              "r": 0.02001255917302669,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-06-18 (holiday Juneteenth National Independence Day), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+                "Hourly turnover denominator H_t unavailable: 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -10.006173600000011,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -11.255410367944023,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -12.004652431887962,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-06-27",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": -0.014267185473411104,
+              "r": 0.014394736842105349,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Hourly turnover denominator H_t unavailable: 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -7.197152499999902,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -8.446365022500004,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -9.195592544999954,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-07-04",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.011056258356474391,
+              "r": -0.00040689690249740007,
+              "extreme": false,
+              "eligiblePrior": 1,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-07-02 (holiday Independence Day (observed)), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+                "Hourly turnover denominator H_t unavailable: 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09)",
+                "Only 1 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 0.2034479999999803,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -1.0457992291635492,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -1.7950475673269466,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-07-11",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 1,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09)",
+                "Only 1 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-07-18",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.006325644786157714,
+              "r": 0.010697286422297392,
+              "extreme": false,
+              "eligiblePrior": 1,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09)",
+                "Only 1 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -5.348629999999957,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -6.597876914352355,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -7.347125063705107,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-07-25",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 2,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09)",
+                "Only 2 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-08-01",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.0012666626455153374,
+              "r": 0.03074799196787148,
+              "extreme": false,
+              "eligiblePrior": 2,
+              "matched": 0,
+              "ht": 1398.7366209999998,
+              "proposedParticipation": 0.35746543880615256,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 2 eligible prior episodes (minimum 6)",
+                "Proposed clip is 35.75% of H_t (hard limit 25%)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -15.373749999999973,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -16.62298001199997,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -17.37221802399995,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-08",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.0046023235031278364,
+              "r": -0.019659298136369796,
+              "extreme": false,
+              "eligiblePrior": 3,
+              "matched": 0,
+              "ht": 1398.7366209999998,
+              "proposedParticipation": 0.35746543880615256,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 3 eligible prior episodes (minimum 6)",
+                "Proposed clip is 35.75% of H_t (hard limit 25%)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 9.829637999999932,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 8.580389406655513,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 7.831140250310909,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-15",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.0029814880740477445,
+              "r": 0.00545720750698786,
+              "extreme": false,
+              "eligiblePrior": 4,
+              "matched": 0,
+              "ht": 1766.7038390000002,
+              "proposedParticipation": 0.28301291306584403,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 4 eligible prior episodes (minimum 6)",
+                "Proposed clip is 28.30% of H_t (hard limit 25%)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -2.728509000000031,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -3.9777156185446074,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -4.726939600089054,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-22",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.012235042834258136,
+              "r": -0.03963302752293574,
+              "extreme": false,
+              "eligiblePrior": 5,
+              "matched": 0,
+              "ht": 2329.7029,
+              "proposedParticipation": 0.214619640985123,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 5 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 19.815839999999753,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 18.566632474499784,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 17.817407948999744,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-29",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.009280343810207925,
+              "w": 0.0008718795888400521,
+              "r": 0.008986291320893125,
+              "extreme": false,
+              "eligiblePrior": 6,
+              "matched": 1,
+              "ht": 3359.970974,
+              "proposedParticipation": 0.14881080934004523,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Weekend move 0.09% is not beyond the historical 70th-percentile threshold 0.93%"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -4.49310400000013,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -5.742342416954216,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -6.491585469908159,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-05",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.007507524395777794,
+              "w": 0.006928104575163463,
+              "r": -0.013621100004327369,
+              "extreme": false,
+              "eligiblePrior": 7,
+              "matched": 1,
+              "ht": 5550.735056,
+              "proposedParticipation": 0.09007815991136724,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Nonstandard weekend (holiday or early close): Next regular session is 2026-09-08; Monday 2026-09-07 is Labor Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -6.810363719999714,
+                  "intendedVsNoTrade": 6.810363719999714,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -5.56114788948571,
+                  "intendedVsNoTrade": 5.56114788948571,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -4.811918382971726,
+                  "intendedVsNoTrade": 4.811918382971726,
+                  "intendedExecutable": true
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-12",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.007507524395777794,
+              "w": -0.005869657855306798,
+              "r": -0.029982485250737434,
+              "extreme": false,
+              "eligiblePrior": 7,
+              "matched": 1,
+              "ht": 5550.735056,
+              "proposedParticipation": 0.09007815991136724,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Weekend move -0.59% is not beyond the historical 70th-percentile threshold 0.75%"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -14.990772500000048,
+                  "intendedVsNoTrade": 14.990772500000048,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -13.74156167648016,
+                  "intendedVsNoTrade": 13.74156167648016,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -12.99233517296011,
+                  "intendedVsNoTrade": 12.99233517296011,
+                  "intendedExecutable": true
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-19",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.006280046093072622,
+              "w": -0.0008987552240147245,
+              "r": 0.005892142310979009,
+              "extreme": false,
+              "eligiblePrior": 8,
+              "matched": 1,
+              "ht": 9367.1656645,
+              "proposedParticipation": 0.0533779392730201,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Weekend move -0.09% is not beyond the historical 70th-percentile threshold 0.63%"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 2.946059000000105,
+                  "intendedVsNoTrade": -2.946059000000105,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 4.195303845594481,
+                  "intendedVsNoTrade": -4.195303845594481,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 4.944550754189095,
+                  "intendedVsNoTrade": -4.944550754189095,
+                  "intendedExecutable": true
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-26",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.006143250013817347,
+              "w": -0.006444444444444364,
+              "r": 0.0345336613732945,
+              "extreme": true,
+              "eligiblePrior": 9,
+              "matched": 1,
+              "ht": 4473.9182175000005,
+              "proposedParticipation": 0.11175886006235426,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 1 matched same-direction extreme episodes (minimum 3)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -17.266552000000047,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -18.515781837104896,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -19.265019744209894,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            }
+          ]
+        },
+        "BUY_DIP": {
+          "referenceInputs": {
+            "holdingUsdt": null,
+            "tradeUsdt": 500
+          },
+          "availableWeekends": 23,
+          "evaluatedAfterWarmup": 4,
+          "extremeEpisodes": 1,
+          "matchedExtremeWithAtLeast3": 0,
+          "actions": 0,
+          "standDowns": 4,
+          "standDownFrequency": 1,
+          "headlineEligible": false,
+          "intendedExecutableWeekends": 2,
+          "wealthDifferenceUsdt": {
+            "ZERO": {
+              "modeledVsNoTrade": 0,
+              "modeledVsIntended": 12.0447135,
+              "intendedVsNoTrade": 9.714942500000006
+            },
+            "DEFAULT": {
+              "modeledVsNoTrade": 0,
+              "modeledVsIntended": 16.989444269325816,
+              "intendedVsNoTrade": -0.3094992445037974
+            },
+            "DOUBLE_SLIPPAGE": {
+              "modeledVsNoTrade": 0,
+              "modeledVsIntended": 19.936525190211,
+              "intendedVsNoTrade": -6.30470613898683
+            }
+          },
+          "rows": [
+            {
+              "key": "2026-04-25",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: Only 0 completed weekend sessions before the decision",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-02",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: Only 1 completed weekend sessions before the decision",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-09",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: Only 2 completed weekend sessions before the decision",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-16",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09); 2026-04-25: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-23",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Bitget closure calendar not reconciled with the NYSE calendar: NYSE holiday 2026-05-25 not listed in Bitget calendar",
+                "Nonstandard weekend (holiday or early close): Next regular session is 2026-05-26; Monday 2026-05-25 is Memorial Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+                "Session clock not verified: Historical session from the verified NYSE calendar and Bitget Reality calendar",
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-30",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-06-06",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-06-13",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-06-20",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": -0.0155780423783618,
+              "r": 0.02001255917302669,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-06-18 (holiday Juneteenth National Independence Day), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+                "Hourly turnover denominator H_t unavailable: 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 10.006173600000011,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 7.4700484798882485,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 5.948435273032089,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-06-27",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": -0.014267185473411104,
+              "r": 0.014394736842105349,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Hourly turnover denominator H_t unavailable: 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 7.197152500000016,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 4.672310564728946,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 3.159113749458527,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-07-04",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.011056258356474391,
+              "r": -0.00040689690249740007,
+              "extreme": false,
+              "eligiblePrior": 1,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-07-02 (holiday Independence Day (observed)), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+                "Hourly turnover denominator H_t unavailable: 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09)",
+                "Only 1 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -0.20344800000003715,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -2.6987890247040127,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -4.18990123249597,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-07-11",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 1,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09)",
+                "Only 1 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-07-18",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.006325644786157714,
+              "r": 0.010697286422297392,
+              "extreme": false,
+              "eligiblePrior": 1,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09)",
+                "Only 1 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 5.348630000000014,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 2.830996890846052,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 1.3232582534940889,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-07-25",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 2,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09)",
+                "Only 2 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-08-01",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.0012666626455153374,
+              "r": 0.03074799196787148,
+              "extreme": false,
+              "eligiblePrior": 2,
+              "matched": 0,
+              "ht": 1398.7366209999998,
+              "proposedParticipation": 0.35746543880615256,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 2 eligible prior episodes (minimum 6)",
+                "Proposed clip is 35.75% of H_t (hard limit 25%)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 15.373749999999973,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 12.815946638212495,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 11.27856323343758,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-08",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.0046023235031278364,
+              "r": -0.019659298136369796,
+              "extreme": false,
+              "eligiblePrior": 3,
+              "matched": 0,
+              "ht": 1398.7366209999998,
+              "proposedParticipation": 0.35746543880615256,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 3 eligible prior episodes (minimum 6)",
+                "Proposed clip is 35.75% of H_t (hard limit 25%)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -9.829637999999989,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -12.286263271915061,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -13.748797912071893,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-15",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.0029814880740477445,
+              "r": 0.00545720750698786,
+              "extreme": false,
+              "eligiblePrior": 4,
+              "matched": 0,
+              "ht": 1766.7038390000002,
+              "proposedParticipation": 0.28301291306584403,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 4 eligible prior episodes (minimum 6)",
+                "Proposed clip is 28.30% of H_t (hard limit 25%)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 2.728509000000031,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 0.22144871167512292,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -1.2784429068268537,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-22",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.012235042834258136,
+              "r": -0.03963302752293574,
+              "extreme": false,
+              "eligiblePrior": 5,
+              "matched": 0,
+              "ht": 2329.7029,
+              "proposedParticipation": 0.214619640985123,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 5 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -19.815839999999923,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -22.233236519695993,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -23.66612371926385,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-29",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.009280343810207925,
+              "w": 0.0008718795888400521,
+              "r": 0.008986291320893125,
+              "extreme": false,
+              "eligiblePrior": 6,
+              "matched": 1,
+              "ht": 3359.970974,
+              "proposedParticipation": 0.14881080934004523,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Weekend move 0.09% is not beyond the historical 70th-percentile threshold 0.93%"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 4.49310399999996,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 1.9788752243659928,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 0.4737518787400177,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-05",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.007507524395777794,
+              "w": 0.006928104575163463,
+              "r": -0.013621100004327369,
+              "extreme": false,
+              "eligiblePrior": 7,
+              "matched": 1,
+              "ht": 5550.735056,
+              "proposedParticipation": 0.09007815991136724,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Nonstandard weekend (holiday or early close): Next regular session is 2026-09-08; Monday 2026-09-07 is Labor Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 6.810363719999998,
+                  "intendedVsNoTrade": -6.810363719999998,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 9.279534732736693,
+                  "intendedVsNoTrade": -9.279534732736693,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 10.750638337030978,
+                  "intendedVsNoTrade": -10.750638337030978,
+                  "intendedExecutable": true
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-12",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.007507524395777794,
+              "w": -0.005869657855306798,
+              "r": -0.029982485250737434,
+              "extreme": false,
+              "eligiblePrior": 7,
+              "matched": 1,
+              "ht": 5550.735056,
+              "proposedParticipation": 0.09007815991136724,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Weekend move -0.59% is not beyond the historical 70th-percentile threshold 0.75%"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 14.990772499999991,
+                  "intendedVsNoTrade": -14.990772499999991,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 17.427489594233236,
+                  "intendedVsNoTrade": -17.427489594233236,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 18.87404765366398,
+                  "intendedVsNoTrade": -18.87404765366398,
+                  "intendedExecutable": true
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-19",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.006280046093072622,
+              "w": -0.0008987552240147245,
+              "r": 0.005892142310979009,
+              "extreme": false,
+              "eligiblePrior": 8,
+              "matched": 1,
+              "ht": 9367.1656645,
+              "proposedParticipation": 0.0533779392730201,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Weekend move -0.09% is not beyond the historical 70th-percentile threshold 0.63%"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -2.946058999999991,
+                  "intendedVsNoTrade": 2.946058999999991,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -0.43804532490742076,
+                  "intendedVsNoTrade": 0.43804532490742076,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 1.0624775365470214,
+                  "intendedVsNoTrade": -1.0624775365470214,
+                  "intendedExecutable": true
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-26",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.006143250013817347,
+              "w": -0.006444444444444364,
+              "r": 0.0345336613732945,
+              "extreme": true,
+              "eligiblePrior": 9,
+              "matched": 1,
+              "ht": 4473.9182175000005,
+              "proposedParticipation": 0.11175886006235426,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 1 matched same-direction extreme episodes (minimum 3)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 17.266552000000047,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 14.701069800456025,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 13.158067172484152,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            }
+          ]
+        },
+        "SELL_POP": {
+          "referenceInputs": {
+            "holdingUsdt": 2000,
+            "tradeUsdt": 500
+          },
+          "availableWeekends": 23,
+          "evaluatedAfterWarmup": 4,
+          "extremeEpisodes": 1,
+          "matchedExtremeWithAtLeast3": 0,
+          "actions": 0,
+          "standDowns": 4,
+          "standDownFrequency": 1,
+          "headlineEligible": false,
+          "intendedExecutableWeekends": 2,
+          "wealthDifferenceUsdt": {
+            "ZERO": {
+              "modeledVsNoTrade": 0,
+              "modeledVsIntended": -12.044713499999943,
+              "intendedVsNoTrade": -9.714942500000234
+            },
+            "DEFAULT": {
+              "modeledVsNoTrade": 0,
+              "modeledVsIntended": -9.54625783088568,
+              "intendedVsNoTrade": -14.711866423173433
+            },
+            "DOUBLE_SLIPPAGE": {
+              "modeledVsNoTrade": 0,
+              "modeledVsIntended": -8.047784418771016,
+              "intendedVsNoTrade": -17.708820795347037
+            }
+          },
+          "rows": [
+            {
+              "key": "2026-04-25",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: Only 0 completed weekend sessions before the decision",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-02",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: Only 1 completed weekend sessions before the decision",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-09",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: Only 2 completed weekend sessions before the decision",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-16",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09); 2026-04-25: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-23",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Bitget closure calendar not reconciled with the NYSE calendar: NYSE holiday 2026-05-25 not listed in Bitget calendar",
+                "Nonstandard weekend (holiday or early close): Next regular session is 2026-05-26; Monday 2026-05-25 is Memorial Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+                "Session clock not verified: Historical session from the verified NYSE calendar and Bitget Reality calendar",
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09); 2026-05-02: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-05-30",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09); 2026-05-09: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-06-06",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09); 2026-05-16: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-06-13",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09); 2026-05-23: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-06-20",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": -0.0155780423783618,
+              "r": 0.02001255917302669,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-06-18 (holiday Juneteenth National Independence Day), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+                "Hourly turnover denominator H_t unavailable: 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09); 2026-05-30: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -10.006173600000011,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -11.255410367944023,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -12.004652431887962,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-06-27",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": -0.014267185473411104,
+              "r": 0.014394736842105349,
+              "extreme": false,
+              "eligiblePrior": 0,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Hourly turnover denominator H_t unavailable: 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09); 2026-06-06: Session predates valid Reality turnover (2026-07-09)",
+                "Only 0 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -7.197152499999902,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -8.446365022500004,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -9.195592544999954,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-07-04",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.011056258356474391,
+              "r": -0.00040689690249740007,
+              "extreme": false,
+              "eligiblePrior": 1,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Nonstandard weekend (holiday or early close): Last trading day before the weekend is 2026-07-02 (holiday Independence Day (observed)), not Friday. Reopening comparisons are verified only for standard Friday-to-Monday weekends",
+                "Hourly turnover denominator H_t unavailable: 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09); 2026-06-13: Session predates valid Reality turnover (2026-07-09)",
+                "Only 1 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 0.2034479999999803,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -1.0457992291635492,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -1.7950475673269466,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-07-11",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 1,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09); 2026-06-20: Session predates valid Reality turnover (2026-07-09)",
+                "Only 1 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-07-18",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.006325644786157714,
+              "r": 0.010697286422297392,
+              "extreme": false,
+              "eligiblePrior": 1,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09); 2026-06-27: Session predates valid Reality turnover (2026-07-09)",
+                "Only 1 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -5.348629999999957,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -6.597876914352355,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -7.347125063705107,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-07-25",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": null,
+              "r": null,
+              "extreme": false,
+              "eligiblePrior": 2,
+              "matched": 0,
+              "ht": null,
+              "proposedParticipation": null,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Missing the 15m bar ending exactly at the decision time",
+                "Hourly turnover denominator H_t unavailable: 2026-07-04: Session predates valid Reality turnover (2026-07-09)",
+                "Only 2 eligible prior episodes (minimum 6)",
+                "A proposed limit price is required for this intent"
+              ],
+              "realized": [],
+              "defaultModeledVsNoTrade": null
+            },
+            {
+              "key": "2026-08-01",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.0012666626455153374,
+              "r": 0.03074799196787148,
+              "extreme": false,
+              "eligiblePrior": 2,
+              "matched": 0,
+              "ht": 1398.7366209999998,
+              "proposedParticipation": 0.35746543880615256,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 2 eligible prior episodes (minimum 6)",
+                "Proposed clip is 35.75% of H_t (hard limit 25%)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -15.373749999999973,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -16.62298001199997,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -17.37221802399995,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-08",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.0046023235031278364,
+              "r": -0.019659298136369796,
+              "extreme": false,
+              "eligiblePrior": 3,
+              "matched": 0,
+              "ht": 1398.7366209999998,
+              "proposedParticipation": 0.35746543880615256,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 3 eligible prior episodes (minimum 6)",
+                "Proposed clip is 35.75% of H_t (hard limit 25%)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 9.829637999999932,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 8.580389406655513,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 7.831140250310909,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-15",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.0029814880740477445,
+              "r": 0.00545720750698786,
+              "extreme": false,
+              "eligiblePrior": 4,
+              "matched": 0,
+              "ht": 1766.7038390000002,
+              "proposedParticipation": 0.28301291306584403,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 4 eligible prior episodes (minimum 6)",
+                "Proposed clip is 28.30% of H_t (hard limit 25%)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -2.728509000000031,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -3.9777156185446074,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -4.726939600089054,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-22",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": null,
+              "w": 0.012235042834258136,
+              "r": -0.03963302752293574,
+              "extreme": false,
+              "eligiblePrior": 5,
+              "matched": 0,
+              "ht": 2329.7029,
+              "proposedParticipation": 0.214619640985123,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 5 eligible prior episodes (minimum 6)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 19.815839999999753,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 18.566632474499784,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": 17.817407948999744,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-08-29",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.009280343810207925,
+              "w": 0.0008718795888400521,
+              "r": 0.008986291320893125,
+              "extreme": false,
+              "eligiblePrior": 6,
+              "matched": 1,
+              "ht": 3359.970974,
+              "proposedParticipation": 0.14881080934004523,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Weekend move 0.09% is not beyond the historical 70th-percentile threshold 0.93%"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -4.49310400000013,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -5.742342416954216,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -6.491585469908159,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-05",
+              "evaluable": false,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.007507524395777794,
+              "w": 0.006928104575163463,
+              "r": -0.013621100004327369,
+              "extreme": false,
+              "eligiblePrior": 7,
+              "matched": 1,
+              "ht": 5550.735056,
+              "proposedParticipation": 0.09007815991136724,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Nonstandard weekend (holiday or early close): Next regular session is 2026-09-08; Monday 2026-09-07 is Labor Day. Reopening comparisons are verified only for standard Friday-to-Monday weekends"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -6.810363719999714,
+                  "intendedVsNoTrade": 6.810363719999714,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -5.56114788948571,
+                  "intendedVsNoTrade": 5.56114788948571,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -4.811918382971726,
+                  "intendedVsNoTrade": 4.811918382971726,
+                  "intendedExecutable": true
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-12",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.007507524395777794,
+              "w": -0.005869657855306798,
+              "r": -0.029982485250737434,
+              "extreme": false,
+              "eligiblePrior": 7,
+              "matched": 1,
+              "ht": 5550.735056,
+              "proposedParticipation": 0.09007815991136724,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Weekend move -0.59% is not beyond the historical 70th-percentile threshold 0.75%"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -14.990772500000048,
+                  "intendedVsNoTrade": 14.990772500000048,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -13.74156167648016,
+                  "intendedVsNoTrade": 13.74156167648016,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": -12.99233517296011,
+                  "intendedVsNoTrade": 12.99233517296011,
+                  "intendedExecutable": true
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-19",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.006280046093072622,
+              "w": -0.0008987552240147245,
+              "r": 0.005892142310979009,
+              "extreme": false,
+              "eligiblePrior": 8,
+              "matched": 1,
+              "ht": 9367.1656645,
+              "proposedParticipation": 0.0533779392730201,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Weekend move -0.09% is not beyond the historical 70th-percentile threshold 0.63%"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 2.946059000000105,
+                  "intendedVsNoTrade": -2.946059000000105,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 4.195303845594481,
+                  "intendedVsNoTrade": -4.195303845594481,
+                  "intendedExecutable": true
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": 4.944550754189095,
+                  "intendedVsNoTrade": -4.944550754189095,
+                  "intendedExecutable": true
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            },
+            {
+              "key": "2026-09-26",
+              "evaluable": true,
+              "action": "STAND_DOWN",
+              "side": null,
+              "signal": "INSUFFICIENT",
+              "threshold": 0.006143250013817347,
+              "w": -0.006444444444444364,
+              "r": 0.0345336613732945,
+              "extreme": true,
+              "eligiblePrior": 9,
+              "matched": 1,
+              "ht": 4473.9182175000005,
+              "proposedParticipation": 0.11175886006235426,
+              "modeledClipUsdt": 0,
+              "standDownReasons": [
+                "Only 1 matched same-direction extreme episodes (minimum 3)"
+              ],
+              "realized": [
+                {
+                  "costCase": "ZERO",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -17.266552000000047,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DEFAULT",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -18.515781837104896,
+                  "intendedExecutable": false
+                },
+                {
+                  "costCase": "DOUBLE_SLIPPAGE",
+                  "modeledVsNoTrade": 0,
+                  "modeledVsIntended": null,
+                  "intendedVsNoTrade": -19.265019744209894,
+                  "intendedExecutable": false
+                }
+              ],
+              "defaultModeledVsNoTrade": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}
