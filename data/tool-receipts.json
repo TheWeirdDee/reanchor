@@ -1,0 +1,743 @@
+{
+  "generatedAt": "2026-10-06T05:27:24.006Z",
+  "server": {
+    "url": "https://agent.bitget.com/mcp",
+    "name": "bitget-mcp-server",
+    "version": "4.0.5"
+  },
+  "toolsListed": [
+    "guide",
+    "do_query"
+  ],
+  "toolSchemas": [
+    {
+      "name": "guide",
+      "description": "List available data categories, or entries within a category (optionally filtered).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "subcategory": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "keyword": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "do_query",
+      "description": "Execute a catalog entry by id, forwarding validated params to agent-data-platform.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "entry_id": {
+            "type": "string"
+          },
+          "params": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "entry_id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "receipts": [
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"NVDA\",\"start_time\":1767225600000,\"end_time\":1796448426445}:1791264431239",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "NVDA",
+          "start_time": 1767225600000,
+          "end_time": 1796448426445
+        }
+      },
+      "calledAt": "2026-10-06T05:27:11.239Z",
+      "usedFor": "Corporate actions (dividends/splits) for NVDA to exclude affected weekend episodes",
+      "durationMs": 465,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"NVDA\",\"event_type\":\"股票拆分\"}:1791264431704",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "NVDA",
+          "event_type": "股票拆分"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:11.704Z",
+      "usedFor": "Explicit split/reverse-split check for NVDA",
+      "durationMs": 424,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_calendar:{\"symbol\":\"NVDA\",\"start_date\":\"2026-01-01\",\"end_date\":\"2027-03-31\"}:1791264432128",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_calendar",
+      "arguments": {
+        "entry_id": "equity_calendar",
+        "params": {
+          "symbol": "NVDA",
+          "start_date": "2026-01-01",
+          "end_date": "2027-03-31"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:12.128Z",
+      "usedFor": "Earnings disclosure dates for NVDA (event context near reopenings)",
+      "durationMs": 433,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"TSLA\",\"start_time\":1767225600000,\"end_time\":1796448426445}:1791264432561",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "TSLA",
+          "start_time": 1767225600000,
+          "end_time": 1796448426445
+        }
+      },
+      "calledAt": "2026-10-06T05:27:12.561Z",
+      "usedFor": "Corporate actions (dividends/splits) for TSLA to exclude affected weekend episodes",
+      "durationMs": 563,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"TSLA\",\"event_type\":\"股票拆分\"}:1791264433124",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "TSLA",
+          "event_type": "股票拆分"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:13.124Z",
+      "usedFor": "Explicit split/reverse-split check for TSLA",
+      "durationMs": 557,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_calendar:{\"symbol\":\"TSLA\",\"start_date\":\"2026-01-01\",\"end_date\":\"2027-03-31\"}:1791264433681",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_calendar",
+      "arguments": {
+        "entry_id": "equity_calendar",
+        "params": {
+          "symbol": "TSLA",
+          "start_date": "2026-01-01",
+          "end_date": "2027-03-31"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:13.681Z",
+      "usedFor": "Earnings disclosure dates for TSLA (event context near reopenings)",
+      "durationMs": 909,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"AAPL\",\"start_time\":1767225600000,\"end_time\":1796448426445}:1791264434591",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "AAPL",
+          "start_time": 1767225600000,
+          "end_time": 1796448426445
+        }
+      },
+      "calledAt": "2026-10-06T05:27:14.591Z",
+      "usedFor": "Corporate actions (dividends/splits) for AAPL to exclude affected weekend episodes",
+      "durationMs": 435,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"AAPL\",\"event_type\":\"股票拆分\"}:1791264435026",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "AAPL",
+          "event_type": "股票拆分"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:15.026Z",
+      "usedFor": "Explicit split/reverse-split check for AAPL",
+      "durationMs": 439,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_calendar:{\"symbol\":\"AAPL\",\"start_date\":\"2026-01-01\",\"end_date\":\"2027-03-31\"}:1791264435465",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_calendar",
+      "arguments": {
+        "entry_id": "equity_calendar",
+        "params": {
+          "symbol": "AAPL",
+          "start_date": "2026-01-01",
+          "end_date": "2027-03-31"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:15.465Z",
+      "usedFor": "Earnings disclosure dates for AAPL (event context near reopenings)",
+      "durationMs": 616,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"MSFT\",\"start_time\":1767225600000,\"end_time\":1796448426445}:1791264436081",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "MSFT",
+          "start_time": 1767225600000,
+          "end_time": 1796448426445
+        }
+      },
+      "calledAt": "2026-10-06T05:27:16.081Z",
+      "usedFor": "Corporate actions (dividends/splits) for MSFT to exclude affected weekend episodes",
+      "durationMs": 674,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"MSFT\",\"event_type\":\"股票拆分\"}:1791264436755",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "MSFT",
+          "event_type": "股票拆分"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:16.755Z",
+      "usedFor": "Explicit split/reverse-split check for MSFT",
+      "durationMs": 707,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_calendar:{\"symbol\":\"MSFT\",\"start_date\":\"2026-01-01\",\"end_date\":\"2027-03-31\"}:1791264437462",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_calendar",
+      "arguments": {
+        "entry_id": "equity_calendar",
+        "params": {
+          "symbol": "MSFT",
+          "start_date": "2026-01-01",
+          "end_date": "2027-03-31"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:17.462Z",
+      "usedFor": "Earnings disclosure dates for MSFT (event context near reopenings)",
+      "durationMs": 457,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"AMZN\",\"start_time\":1767225600000,\"end_time\":1796448426445}:1791264437920",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "AMZN",
+          "start_time": 1767225600000,
+          "end_time": 1796448426445
+        }
+      },
+      "calledAt": "2026-10-06T05:27:17.920Z",
+      "usedFor": "Corporate actions (dividends/splits) for AMZN to exclude affected weekend episodes",
+      "durationMs": 615,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"AMZN\",\"event_type\":\"股票拆分\"}:1791264438535",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "AMZN",
+          "event_type": "股票拆分"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:18.535Z",
+      "usedFor": "Explicit split/reverse-split check for AMZN",
+      "durationMs": 473,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_calendar:{\"symbol\":\"AMZN\",\"start_date\":\"2026-01-01\",\"end_date\":\"2027-03-31\"}:1791264439008",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_calendar",
+      "arguments": {
+        "entry_id": "equity_calendar",
+        "params": {
+          "symbol": "AMZN",
+          "start_date": "2026-01-01",
+          "end_date": "2027-03-31"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:19.008Z",
+      "usedFor": "Earnings disclosure dates for AMZN (event context near reopenings)",
+      "durationMs": 451,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"META\",\"start_time\":1767225600000,\"end_time\":1796448426445}:1791264439459",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "META",
+          "start_time": 1767225600000,
+          "end_time": 1796448426445
+        }
+      },
+      "calledAt": "2026-10-06T05:27:19.459Z",
+      "usedFor": "Corporate actions (dividends/splits) for META to exclude affected weekend episodes",
+      "durationMs": 448,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"META\",\"event_type\":\"股票拆分\"}:1791264439907",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "META",
+          "event_type": "股票拆分"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:19.907Z",
+      "usedFor": "Explicit split/reverse-split check for META",
+      "durationMs": 914,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_calendar:{\"symbol\":\"META\",\"start_date\":\"2026-01-01\",\"end_date\":\"2027-03-31\"}:1791264440821",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_calendar",
+      "arguments": {
+        "entry_id": "equity_calendar",
+        "params": {
+          "symbol": "META",
+          "start_date": "2026-01-01",
+          "end_date": "2027-03-31"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:20.821Z",
+      "usedFor": "Earnings disclosure dates for META (event context near reopenings)",
+      "durationMs": 436,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"QQQ\",\"start_time\":1767225600000,\"end_time\":1796448426445}:1791264441257",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "QQQ",
+          "start_time": 1767225600000,
+          "end_time": 1796448426445
+        }
+      },
+      "calledAt": "2026-10-06T05:27:21.257Z",
+      "usedFor": "Corporate actions (dividends/splits) for QQQ to exclude affected weekend episodes",
+      "durationMs": 845,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_fundamental_dividends:{\"symbol\":\"QQQ\",\"event_type\":\"股票拆分\"}:1791264442102",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_fundamental_dividends",
+      "arguments": {
+        "entry_id": "equity_fundamental_dividends",
+        "params": {
+          "symbol": "QQQ",
+          "event_type": "股票拆分"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:22.102Z",
+      "usedFor": "Explicit split/reverse-split check for QQQ",
+      "durationMs": 484,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_calendar:{\"symbol\":\"QQQ\",\"start_date\":\"2026-01-01\",\"end_date\":\"2027-03-31\"}:1791264442586",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_calendar",
+      "arguments": {
+        "entry_id": "equity_calendar",
+        "params": {
+          "symbol": "QQQ",
+          "start_date": "2026-01-01",
+          "end_date": "2027-03-31"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:22.586Z",
+      "usedFor": "Earnings disclosure dates for QQQ (event context near reopenings)",
+      "durationMs": 424,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_price_historical:{\"symbol\":\"NVDA\",\"start_time\":1788220800000,\"end_time\":1791264426445}:1791264443011",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_price_historical",
+      "arguments": {
+        "entry_id": "equity_price_historical",
+        "params": {
+          "symbol": "NVDA",
+          "start_time": 1788220800000,
+          "end_time": 1791264426445
+        }
+      },
+      "calledAt": "2026-10-06T05:27:23.011Z",
+      "usedFor": "Attempted underlying historical OHLC for official anchors",
+      "durationMs": 455,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    },
+    {
+      "id": "equity_price_quote:{\"symbol\":\"NVDA\"}:1791264443466",
+      "server": {
+        "url": "https://agent.bitget.com/mcp",
+        "name": "bitget-mcp-server",
+        "version": "4.0.5"
+      },
+      "tool": "do_query",
+      "entryId": "equity_price_quote",
+      "arguments": {
+        "entry_id": "equity_price_quote",
+        "params": {
+          "symbol": "NVDA"
+        }
+      },
+      "calledAt": "2026-10-06T05:27:23.466Z",
+      "usedFor": "Reference quote; validated against the official Nasdaq close",
+      "durationMs": 494,
+      "outcome": "ERROR",
+      "statusCode": 503,
+      "error": "\"<html>\\r\\n<head><title>503 Service Temporarily Unavailable</title></head>\\r\\n<body>\\r\\n<center><h1>503 Service Temporarily Unavailable</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n\"",
+      "contentSha256": "478f3d1c9815e4b6c3b903ea1917fb033b92f82c1163e83eacf29f9a05221b55",
+      "result": null,
+      "validation": []
+    }
+  ],
+  "attempts": [
+    {
+      "attemptedAt": "2026-10-02T21:31:11.717Z",
+      "connected": false,
+      "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT)",
+      "allOk": false,
+      "calls": 0
+    },
+    {
+      "attemptedAt": "2026-10-03T07:04:37.778Z",
+      "connected": false,
+      "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT)",
+      "allOk": false,
+      "calls": 0
+    },
+    {
+      "attemptedAt": "2026-10-03T07:23:15.448Z",
+      "connected": false,
+      "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT)",
+      "allOk": false,
+      "calls": 0
+    },
+    {
+      "attemptedAt": "2026-10-03T17:10:42.123Z",
+      "connected": false,
+      "error": "fetch failed (UND_ERR_CONNECT_TIMEOUT)",
+      "allOk": false,
+      "calls": 0
+    },
+    {
+      "attemptedAt": "2026-10-06T04:29:54.062Z",
+      "connected": true,
+      "error": null,
+      "allOk": false,
+      "calls": 23
+    },
+    {
+      "attemptedAt": "2026-10-06T05:27:06.445Z",
+      "connected": true,
+      "error": null,
+      "allOk": false,
+      "calls": 23
+    }
+  ]
+}
