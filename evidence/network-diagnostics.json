@@ -15,7 +15,7 @@
     "winhttp": "Current WinHTTP proxy settings:\r\n\r\n    Direct access (no proxy server).",
     "wininetProxyEnable": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\r\n    ProxyEnable    REG_DWORD    0x0",
     "wininetProxyServer": null,
-    "defaultGateway": "172.20.10.1"
+    "defaultGatewayPresent": true
   },
   "hosts": {
     "agent.bitget.com": {
