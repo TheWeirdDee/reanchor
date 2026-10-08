@@ -174,6 +174,12 @@ test("structured replay flow produces one card, history, scenario and sources", 
   await expect(card).toContainText("1 found · 3 required · threshold not met");
   await expect(card).toContainText("Hold: check whether to trim · rNVDA · holding 3,000 USDT");
   await expect(card).toContainText("Decision here");
+  // Hand-off to Bitget: a plain link to Bitget's own page; no order, amount or account is passed.
+  const bitget = card.getByRole("link", { name: "Open rNVDA on Bitget" });
+  await expect(bitget).toHaveAttribute("href", "https://www.bitget.com/spot/RNVDAUSDT");
+  await expect(bitget).toHaveAttribute("target", "_blank");
+  await expect(bitget).toHaveAttribute("rel", "noopener noreferrer");
+  await expect(card).toContainText("Reanchor sends no orders and passes no amounts");
   await expect(page.locator("#history")).toContainText("Prior weekends examined");
   await expect(page.locator("#realized")).toContainText("Everything below happened afterwards.");
   await expect(page.getByRole("heading", { name: "Stress test against prior reopenings" })).toBeVisible();
