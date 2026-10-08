@@ -1,4 +1,4 @@
-import { CalendarClock, CircleSlash, Scissors, ShoppingCart, Tag, TimerReset } from "lucide-react";
+import { ArrowUpRight, CalendarClock, CircleSlash, Scissors, ShoppingCart, Tag, TimerReset } from "lucide-react";
 import type { Card } from "@/domain/decision";
 import { INTENT_LABEL } from "@/domain/intent";
 import { ACTION_LABEL, fmtEtOrNa, fmtNum, fmtPct, fmtUsdt } from "@/lib/format";
@@ -172,6 +172,22 @@ export function DecisionCard({ card }: { card: Card }) {
           <p className="text-ink-2">Corporate actions: {card.corporateAction.status}. {card.corporateAction.detail}</p>
           {card.context.earningsNote && <p className="mt-1 text-ink-2">{card.context.earningsNote}.</p>}
           {card.session.notes.length > 0 && <p className="mt-1 text-xs text-ink-3">Session checks: {card.session.notes.join("; ")}.</p>}
+        </div>
+
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 rounded-2xl border border-line bg-surface px-4 py-3">
+          <a
+            href={`https://www.bitget.com/spot/${encodeURIComponent(card.instrument.symbol)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex min-h-11 items-center gap-2 rounded-full px-5 text-sm font-semibold transition-colors ${
+              standDown ? "border border-line-strong text-ink-2 hover:bg-sunken" : "bg-brand-deep text-mist hover:bg-brand"
+            }`}
+          >
+            Open {card.instrument.baseCoin} on Bitget <ArrowUpRight aria-hidden className="h-4 w-4" />
+          </a>
+          <p className="min-w-0 flex-1 text-xs leading-snug text-ink-3">
+            Opens Bitget&apos;s own {card.instrument.baseCoin} spot page in a new tab. Reanchor sends no orders and passes no amounts; you log in and decide there.
+          </p>
         </div>
 
         <details className="group rounded-2xl border border-line bg-paper/60 px-4 py-3">
