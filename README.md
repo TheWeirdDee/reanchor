@@ -23,7 +23,7 @@ Built for the Bitget AI Base Camp Hackathon S2, track AI Trading Desk, sub-theme
 1. **Describe.** "I hold 2,000 USDT of rNVDA and want to check whether to trim." Google Gemini extracts instrument, intent, holding, trade size and limit price. That is all it does.
 2. **Confirm.** The extracted fields are shown next to your sentence and stay editable. Nothing runs until you confirm.
 3. **Stress-test.** Deterministic code selects the prior weekends that finished before the decision, measures each one from the Friday reference to the Sunday decision quote, the 09:30 ET reopening and the 10:30 ET first-hour end, applies fixed thresholds, and sizes the trade against weekend turnover.
-4. **Decide.** One action, TRIM, FADE or STAND DOWN, with the answer to four questions: what you asked, what was compared, what was found, and which rule decided.
+4. **Decide.** One action, TRIM, FADE or STAND DOWN, with the answer to four questions: what you asked, what was compared, what was found, and which rule decided. If you choose to act, an **Open on Bitget** link opens Bitget's own spot page for that rToken (for example [rNVDA](https://www.bitget.com/spot/RNVDAUSDT)) in a new tab. Reanchor passes no order or amount; you log in and place any trade yourself.
 
 The model never chooses the action, the size or the evidence. Without it, the form and every computed result still work.
 
@@ -91,7 +91,7 @@ Reanchor does not fabricate market data, historical observations, fills, user-st
 | Natural-language extraction and explanation (Gemini) | Working; optional, the form works without it |
 | Live decision inside an open weekend session | Not yet observed |
 | User study | Not yet run |
-| Order placement and live trading | Intentionally unsupported |
+| Order placement and live trading | Intentionally unsupported; the decision card links to Bitget's own spot page, where you place any order yourself |
 
 ## Evidence so far
 
